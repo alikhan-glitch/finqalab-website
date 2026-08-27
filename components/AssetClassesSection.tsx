@@ -43,15 +43,16 @@ const assets: {
 
 export default function AssetClassesSection() {
   return (
-    <section className="relative overflow-hidden px-6 py-16 sm:py-20">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(55% 45% at 50% 0%, rgba(63,214,196,0.12) 0%, rgba(5,7,13,0) 70%)",
-        }}
-      />
+    <section className="relative px-6 py-16 sm:py-20">
+      {/* No accent-color glow here anymore: this section and <TrustGrid/>
+          both sit directly on the shared, page-fixed ink canvas
+          (<HomeInkBackground/>) with no opaque background of their own, and
+          any section-level tint that fades toward a shared edge creates a
+          visible seam/shade mismatch there, since a radial gradient is
+          clipped to its own box and can't blend across into the next
+          element. Removed rather than re-tuned a third time — the canvas
+          underneath is already the uniform background these two sections
+          are meant to share. */}
 
       <div className="relative mx-auto max-w-[clamp(60rem,80vw,76rem)]">
         <Reveal>

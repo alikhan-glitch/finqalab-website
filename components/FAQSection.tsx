@@ -34,7 +34,7 @@ const faqJsonLd = {
 
 export default function FAQSection() {
   return (
-    <section id="faqs" className="relative overflow-hidden px-6 py-16 sm:py-20">
+    <section id="faqs" className="relative px-6 py-16 sm:py-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
