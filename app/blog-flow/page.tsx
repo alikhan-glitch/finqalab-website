@@ -53,7 +53,7 @@ export default function BlogFlowIndexPage() {
 
             <WordReveal
               as="p"
-              text="From plain-English explainers on core financial concepts to real-time commentary on the shifting PSX landscape, we cover every major development at home and around the world."
+              text="Clear, jargon-free explainers on core financial concepts, paired with real-time commentary on the shifting PSX landscape, covering every major development at home and around the world."
               baseDelay={1150}
               stagger={22}
               duration={600}
