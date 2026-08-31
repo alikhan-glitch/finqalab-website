@@ -27,24 +27,24 @@ const stats = [
 
 const culture = [
   {
-    mark: "Ow",
+    mark: "1",
     title: "We Hand Over Real Ownership",
-    body: "New hires get real decisions to make in their first few months, not busywork while they “prove themselves.”",
+    body: "New hires get real decisions to make early on, not busywork while they wait to “prove themselves.” We trust you to make things happen.",
   },
   {
-    mark: "De",
+    mark: "2",
     title: "We Sweat the Details Customers Never See",
-    body: "A dividend that posts a day late, a chart that loads a second slow, we catch it before you do, and we fix it.",
+    body: "A dividend that posts a day late. A chart that loads a second too slowly. We catch the details customers shouldn't have to notice, and we fix them.",
   },
   {
-    mark: "Bu",
-    title: "Nobody Builds Alone Here",
-    body: "Engineers sit with the research desk. Support sits with product. The best ideas come from people who technically don't have to be talking to each other.",
+    mark: "3",
+    title: "Nobody Builds Anything Alone Here",
+    body: "Engineers sit with the research desk. Support sits with product. The best ideas often come from people who technically don't have to be talking to each other.",
   },
   {
-    mark: "Pe",
+    mark: "4",
     title: "We Invest in People for the Long Run",
-    body: "Several of our team have been with Finqalab, or Next Capital before it, for years. We'd rather grow someone than replace them.",
+    body: "Several members of our team have been with Finqalab, or Next Capital before it, for years. We'd rather grow great people than constantly replace them.",
   },
 ];
 
@@ -136,16 +136,17 @@ export default function CareersPage() {
               </Reveal>
               <Reveal delay={160} className="space-y-4 lg:col-span-7">
                 <p className="text-[1.02rem] leading-[1.7] text-text-onDark-muted">
-                  Whether you&apos;re on engineering, research, or the support desk, the work you do
-                  here shows up in real portfolios, not a slide deck. Finqalab is building the
-                  infrastructure and the education that brings retail investing to Pakistan for the
-                  first time, and every team plays a direct part in that.
+                  Whether you&apos;re building the product, researching the market, or supporting an
+                  investor, your work here reaches real people and real portfolios. Finqalab is
+                  building the infrastructure, technology, and education that can bring investing
+                  to millions of Pakistanis, and every team has a direct hand in making that happen.
                 </p>
                 <p className="text-[1.02rem] leading-[1.7] text-text-onDark-muted">
-                  This isn&apos;t a place to coast. You&apos;ll take on problems nobody has solved for
-                  Pakistan&apos;s market before, whether that&apos;s a technical integration, a
-                  research call, or explaining a new asset class to a first-time investor, and grow
-                  alongside the platform as it scales.
+                  We&apos;re solving problems that don&apos;t come with a playbook. From building new
+                  financial integrations to making sense of Pakistan&apos;s markets, or helping a
+                  first-time investor understand where to start, you&apos;ll have the chance to work
+                  on problems that matter and see the impact of what you build. As Finqalab grows,
+                  so will your opportunity to shape where it goes.
                 </p>
               </Reveal>
             </div>
@@ -162,12 +163,12 @@ export default function CareersPage() {
                 Four things we hold to
               </h2>
             </Reveal>
-            <div className="mt-11 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-11 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {culture.map((c, i) => (
-                <Reveal key={c.title} delay={i * 90}>
-                  <GlassCard className="h-full p-6">
+                <Reveal key={c.title} delay={i * 90} className="h-full">
+                  <GlassCard className="flex h-full flex-col p-6">
                     <span
-                    className={`inline-flex h-10 w-10 items-center justify-center rounded-[0.7rem] text-[1.05rem] text-white ${heading}`}
+                    className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.7rem] text-[1.05rem] text-white ${heading}`}
                       style={{ background: "linear-gradient(135deg, #5B0861, #b452ff)" }}
                     >
                       {c.mark}

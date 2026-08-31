@@ -208,17 +208,17 @@ export default function AboutPage() {
                   </Reveal>
                   <Reveal delay={100}>
                     <p className="mt-6 text-[15px] leading-relaxed text-text-onDark-muted">
-                      Najam Ali and Irtaza Ali spent over three decades working inside Pakistan&apos;s
-                      capital markets before they set out to build Finqalab. That time taught them
-                      a frustrating truth, millions of Pakistanis were watching inflation quietly
-                      erode their savings, with no easy way to put that money to work in the stock
-                      market instead.
+                      Najam Ali and Irtaza Ali spent more than three decades working inside
+                      Pakistan&apos;s capital markets before setting out to build Finqalab. Along
+                      the way, they saw a frustrating reality up close, millions of Pakistanis were
+                      watching their savings lose value to inflation, while investing in the stock
+                      market remained difficult to access, understand, and trust.
                     </p>
                     <p className="mt-4 text-[15px] leading-relaxed text-text-onDark-muted">
                       So they built the platform they wished had existed for their own families and
-                      friends, one that treats investing not as something reserved for a select
-                      few, but as something every household in Pakistan can access, understand,
-                      and trust.
+                      friends. A platform that treats investing not as something reserved for a
+                      select few, but as something every household in Pakistan can access,
+                      understand, and trust.
                     </p>
                   </Reveal>
                 </div>

@@ -169,7 +169,7 @@ export default function GoldPage() {
                       <h3 className="text-base font-semibold leading-snug text-text-onDark">
                         {benefit.title}
                       </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-text-onDark-muted">
+                      <p className="mt-8 text-sm leading-relaxed text-text-onDark-muted">
                         {benefit.eyebrow}
                       </p>
                     </div>

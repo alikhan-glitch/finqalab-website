@@ -53,7 +53,7 @@ export default function BlogFlowIndexPage() {
 
             <WordReveal
               as="p"
-              text="Clear, jargon-free explainers on core financial concepts, paired with real-time commentary on the shifting PSX landscape, covering every major development at home and around the world."
+              text="Clear, jargon-free explainers to help you understand investing, alongside timely commentary on the PSX and the events shaping markets in Pakistan and around the world."
               baseDelay={1150}
               stagger={22}
               duration={600}

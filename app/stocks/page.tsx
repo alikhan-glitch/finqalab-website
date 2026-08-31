@@ -179,7 +179,7 @@ export default function StocksPage() {
                       <h3 className="text-base font-semibold leading-snug text-text-onDark">
                         {pillar.title}
                       </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-text-onDark-muted">
+                      <p className="mt-8 text-sm leading-relaxed text-text-onDark-muted">
                         {pillar.eyebrow}
                       </p>
                     </div>
@@ -232,21 +232,20 @@ export default function StocksPage() {
                   <Reveal delay={100}>
                     <div className="max-w-[62ch] space-y-5 text-[15px] leading-relaxed text-text-onDark-muted">
                       <p>
-                        No noise, no clutter. Just the tools serious investors actually use: live
-                        quotes and price charts as the market moves, a watchlist built around the
-                        companies you care about, and price or volume alerts that reach you the
-                        moment something happens, not the next morning.
+                        No noise, no clutter. Just the tools investors actually use: live quotes
+                        and charts as the market moves, a watchlist built around the companies you
+                        care about, and price or volume alerts that reach you when something
+                        happens, not the next morning.
                       </p>
                       <p>
                         Not sure where to start? Our Juice List is a research-backed shortlist
-                        from Finqalab&apos;s own desk, grouped by strategy, a starting point for
-                        your own research, not a buy signal.
+                        from Finqalab&apos;s own desk, organised by strategy. Think of it as a
+                        starting point for your own research, not a buy signal.
                       </p>
                       <p>
-                        Fund instantly through Raast, Pakistan&apos;s real-time payment rail, and
-                        withdraw straight back to your bank without a branch visit. Every order
-                        runs through Next Capital Limited, a PSX-member brokerage regulated by the
-                        SECP and listed on the exchange itself under the ticker NEXT.
+                        Fund instantly through Raast and withdraw straight back to your bank,
+                        without a branch visit. Every order is executed through Next Capital
+                        Limited, a PSX-member brokerage regulated by the SECP.
                       </p>
                     </div>
                   </Reveal>
