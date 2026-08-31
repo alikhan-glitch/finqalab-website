@@ -52,16 +52,16 @@ export default function DiversifySection() {
 
         <Reveal delay={160}>
           <p className="mx-auto mt-6 max-w-xl text-balance text-[0.95rem] text-text-onDark-muted">
-            Confused about a trade or your account? Talk to a real person
-            directly, no ticket, no queue, just a straight answer from
-            someone who knows the market.
+            Confused about a trade or your account? Get the help you need,
+            when you need it, with support from a team that understands the
+            market.
           </p>
         </Reveal>
 
         <Reveal delay={240}>
           <div className="mt-10">
             <ContactSupportButton
-              phoneNumber="021-1234567"
+              email="hello@finqalab.com"
               className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-base font-semibold font-heading text-text-onDark backdrop-blur-md backdrop-saturate-150 transition-[background-color,transform] duration-200 hover:bg-white/10 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-onDark focus-visible:ring-offset-2 focus-visible:ring-offset-bg-navy"
             />
           </div>

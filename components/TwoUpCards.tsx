@@ -4,7 +4,7 @@ const cards = [
   {
     title: "Investing, Simplified",
     description:
-      "What if investing felt as easy as it should? On Finqalab, it does. One clean screen, built for the investor you are today and the one you're becoming.",
+      "What if investing felt as easy as it should? With Finqalab, it does. One clean screen, built for the investor you are today and the one you're becoming.",
     image: "/images/smart-baskets-bg.webp",
     // Sharpest phone in frame sits left-of-center in the source photo.
     objectPosition: "35% 50%",
@@ -12,7 +12,7 @@ const cards = [
   {
     title: "Your Money, On Your Time",
     description:
-      "Withdraw through Raast, and it's back in your bank in minutes. Your money moves as fast as you do.",
+      "Withdraw through RAAST and get your money back in your bank in minutes. Your money moves as fast as you do.",
     image: "/images/trading-tools-bg.jpg",
     // Phone and its screen sit right-of-center, upper half of the frame.
     objectPosition: "75% 25%",
