@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Trade Pakistan Stock Exchange stocks from your phone with Finqalab. Open an account online, fund instantly with Raast, and track live prices, all SECP-regulated through Next Capital Limited.",
 };
 
-// Product page for Stocks — layout/content unchanged from the original
+// Product page for Stocks, layout/content unchanged from the original
 // build (<TradeStepsShowcase/> 3-step walkthrough, <GlassCard/> market
 // panel), theme swapped to match the management-approved flow-state system:
 // <FluidPageBackground/> instead of <StarfieldBackground/>,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 // Fraunces headings instead of italic Figtree. The "Why Finqalab" pillars
 // were originally <EditorialCard/> poster cards on a white paper backing;
 // that design was rejected, so they're now flow-state <GlassCard/> panels
-// (heading + copy + illustration) — same licensed illustrations, but set
+// (heading + copy + illustration), same licensed illustrations, but set
 // into a dark navy→black backing panel instead of white paper, so nothing
 // reads as a white box against the rest of the page.
 // Copy is unchanged, still the live finqalab.com/stocks content.
@@ -62,34 +62,32 @@ const steps: TradeStep[] = [
 const pillars: { image: string; title: string; eyebrow: string }[] = [
   {
     image: "/images/icons/low-investment.webp",
-    title: "Low Investment",
+    title: "Start With What You Have",
     eyebrow:
-      "Start small and scale at your own pace, with no minimum balance to maintain. Add as little or as much as you like, whenever it suits your budget, and grow your position as your confidence builds.",
+      "There's no minimum balance to open with, and no fee just for holding an account. Add as much or as little as fits your budget right now, funded instantly through Raast, and build your position over time. Whether you're testing the waters or going all in, the app scales with you, not the other way around.",
   },
   {
     image: "/images/icons/community.webp",
-    title: "Community",
+    title: "You're Never Trading Alone",
     eyebrow:
-      "One space where beginner and experienced investors come together to talk markets, share ideas, and ask questions. Our team keeps every discussion active and on track, so it ends in clarity, not confusion.",
+      "Ask a question in the Finqalab community and get an answer from someone who's actually traded PSX stocks, not a script. Our team keeps every conversation active and useful, so even a question you'd hesitate to ask still gets answered. New investors and veterans share the same space, and that's on purpose.",
   },
   {
     image: "/images/icons/education-cap.webp",
-    title: "Education",
+    title: "Understand Before You Invest",
     eyebrow:
-      "Finqalab Academy takes you from asset-class basics through full sector deep dives, built for Pakistani investors specifically, in plain language, at your own pace.",
+      "Finqalab Academy walks you through every asset class and sector in plain language, no finance degree required. Watch a short video or read the breakdown, whichever fits how you learn, built around the Pakistani market specifically. You'll know exactly why you're buying before you ever tap confirm.",
   },
 ];
 
 const facts = [
-  // Raast replaces what used to be a "Rs. 5,000 minimum" stat here — that
-  // figure already appeared on the pillar cards above, and repeating it in
-  // the same scroll made the page read as though it only had one thing to
-  // say. Instant funding is on-theme for a "in real time" section and is
-  // backed by the copy in the column beside it.
+  // Swapped the credential/tenure stats (CDC-Backed, 30+ years) for the
+  // actual in-app tools that help someone invest better day to day, tied
+  // to the section heading and body copy below.
   { value: "Raast", label: "Instant account funding" },
-  { value: "2–3 days", label: "To open an account" },
-  { value: "30+ years", label: "Combined desk experience" },
-  { value: "PSX Member", label: "Licensed brokerage firm" },
+  { value: "Watchlists", label: "Track what you actually care about" },
+  { value: "Custom Alerts", label: "Know the moment a price moves" },
+  { value: "Juice List", label: "Curated picks from our research desk" },
 ];
 
 const faqs = [
@@ -120,19 +118,18 @@ export default function StocksPage() {
         <FluidPageBackground hueMin={0.75} hueMax={1.03} pauseOrbitPastHero />
 
         <FlowPageHero
-          eyebrow="Our Products · Stocks"
           title={
             <>
-              Trade smarter,
+              Own a piece of
               <br />
-              invest wiser with Finqalab
+              Pakistan&apos;s biggest companies
             </>
           }
-          subtitle="Buy and sell PSX-listed stocks in real time with Finqalab. Open your account online, fund it digitally, and trade Pakistan's stock market from your phone."
+          subtitle="The Pakistan Stock Exchange, live in your pocket. Buy and sell in seconds, funded instantly through Raast."
         />
 
         {/* ---------------------------------------------------------------
-            How trading works — the home page's phone-mockup pattern
+            How trading works, the home page's phone-mockup pattern
             (<FeatureShowcase/>'s single-mockup-with-swapped-screen idea),
             here driven by a clickable numbered step list instead of an
             auto-scrolling film strip.
@@ -157,10 +154,10 @@ export default function StocksPage() {
         </section>
 
         {/* ---------------------------------------------------------------
-            Why Finqalab — full-bleed illustration cards: heading + a "+"
+            Why Finqalab, full-bleed illustration cards: heading + a "+"
             badge in the top corner, then the licensed illustration filling
             the rest of the card down to its bottom edge (design lifted from
-            a client-supplied reference — heading/badge row over a large
+            a client-supplied reference, heading/badge row over a large
             image, not the reference's own art or type). Same illustrations
             as before, still transparent, now washed over a navy→black
             gradient that fills the whole lower card rather than a small
@@ -170,7 +167,7 @@ export default function StocksPage() {
           <div className="mx-auto max-w-5xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-balance text-center text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-5xl">
-                Built to get you started, not to get in your way
+                Why invest in stocks with Finqalab
               </h2>
             </Reveal>
 
@@ -186,7 +183,7 @@ export default function StocksPage() {
                         {pillar.eyebrow}
                       </p>
                     </div>
-                    {/* No separate panel/backing here — the icon sits
+                    {/* No separate panel/backing here, the icon sits
                         straight on the card's own glass surface, so it
                         blends with the same translucent background as the
                         rest of the site rather than reading as an inset
@@ -215,7 +212,7 @@ export default function StocksPage() {
                 <div className="lg:col-span-5">
                   <Reveal>
                     <h2 className="text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-4xl">
-                      Everything the market gives you, in real time
+                      Everything you need. Nothing in your way.
                     </h2>
                   </Reveal>
 
@@ -235,22 +232,21 @@ export default function StocksPage() {
                   <Reveal delay={100}>
                     <div className="max-w-[62ch] space-y-5 text-[15px] leading-relaxed text-text-onDark-muted">
                       <p>
-                        Finqalab puts the full Pakistan Stock Exchange in your pocket. Follow live
-                        quotes and price charts as the exchange moves, build watchlists around the
-                        companies you actually care about, and set your own price and volume alerts
-                        so you hear about a move the moment it happens rather than the next morning.
+                        No noise, no clutter. Just the tools serious investors actually use: live
+                        quotes and price charts as the market moves, a watchlist built around the
+                        companies you care about, and price or volume alerts that reach you the
+                        moment something happens, not the next morning.
                       </p>
                       <p>
-                        Fund your account in minutes through Raast, Pakistan&apos;s real-time payment
-                        rail, and withdraw straight back to your bank without a branch visit. Opening
-                        an account takes about two to three working days from your phone, with no
-                        paperwork, no queues, and no waiting room.
+                        Not sure where to start? Our Juice List is a research-backed shortlist
+                        from Finqalab&apos;s own desk, grouped by strategy, a starting point for
+                        your own research, not a buy signal.
                       </p>
                       <p>
-                        Every order you place runs through Next Capital Limited, a licensed brokerage
-                        firm and member of the Pakistan Stock Exchange, regulated by the Securities
-                        and Exchange Commission of Pakistan. Next Capital is itself publicly listed
-                        on the PSX under the ticker NEXT.
+                        Fund instantly through Raast, Pakistan&apos;s real-time payment rail, and
+                        withdraw straight back to your bank without a branch visit. Every order
+                        runs through Next Capital Limited, a PSX-member brokerage regulated by the
+                        SECP and listed on the exchange itself under the ticker NEXT.
                       </p>
                     </div>
                   </Reveal>

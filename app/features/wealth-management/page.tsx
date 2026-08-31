@@ -8,7 +8,7 @@ import WealthFluidHero from "@/components/WealthFluidHero";
 export const metadata: Metadata = {
   title: "Wealth Management",
   description:
-    "Download Finqalab, open your account, and start investing in PSX stocks and Sukuks — with real-time market data and portfolio tracking built in.",
+    "Download Finqalab, open your account, and start investing in PSX stocks and Sukuks, with real-time market data and portfolio tracking built in.",
 };
 
 export default function WealthManagementPage() {

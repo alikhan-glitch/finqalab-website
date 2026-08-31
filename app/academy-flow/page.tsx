@@ -12,27 +12,21 @@ import { academyCourses } from "@/lib/academyCourses";
 export const metadata: Metadata = {
   title: "Academy (Flow State)",
   description:
-    "Free courses on Pakistan's markets — written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
+    "Free courses on Pakistan's markets, written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
 };
 
 // Fourth Academy option, alongside /academy (Primer-inspired light),
 // /academy-dark, and /academy-stripe: the same three courses on the
-// management-approved flow-state system — ink canvas background, Onest body,
+// management-approved flow-state system, ink canvas background, Onest body,
 // Fraunces headings, glass course panels. None of the existing three are
 // touched; this is an alternate for comparison, and it uses the site's real
 // <Navbar/>/<Footer/> like every other flow-state page rather than
 // <AcademyHeader/>, which belongs to the light Academy design.
 //
-// Course content is unchanged — the same academyCourses entries every other
+// Course content is unchanged, the same academyCourses entries every other
 // Academy variant reads from, so the writing can't drift between designs.
 
 const heading ="font-semibold tracking-tight text-text-onDark";
-
-const stats = [
-  { value: `${academyCourses.length}`, label: "Courses available" },
-  { value: "Free", label: "Every course, no paywall" },
-  { value: "Read + Watch", label: "Article and video in one" },
-];
 
 export default function AcademyFlowPage() {
   return (
@@ -59,7 +53,7 @@ export default function AcademyFlowPage() {
 
             <WordReveal
               as="p"
-              text="Every course pairs a written breakdown with a full video lesson — read the summary, or press play and start watching right away."
+              text="Every course pairs a written breakdown with a full video lesson. Read the summary, or press play and start watching right away."
               baseDelay={1150}
               stagger={22}
               duration={600}
@@ -73,16 +67,6 @@ export default function AcademyFlowPage() {
               </PillButton>
             </Reveal>
 
-            <Reveal delay={1650} className="mt-14 w-full sm:mt-20">
-              <div className="mx-auto grid max-w-2xl grid-cols-3 gap-6">
-                {stats.map((s) => (
-                  <div key={s.label}>
-                    <p className={`text-xl sm:text-2xl ${heading}`}>{s.value}</p>
-                    <p className="mt-1.5 text-[0.78rem] leading-tight text-text-onDark-muted">{s.label}</p>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
           </div>
         </section>
 

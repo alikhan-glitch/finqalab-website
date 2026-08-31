@@ -1,7 +1,7 @@
 import PillButton from "./PillButton";
 import Reveal from "./Reveal";
 
-// Flow-state counterpart to <ClosingCTA/> — same copy/CTA by default, but a
+// Flow-state counterpart to <ClosingCTA/>, same copy/CTA by default, but a
 // glass radial-gradient panel (matching the banner treatment on
 // /careers and /updates) instead of a background video, since <ClosingCTA/>
 // is still shared with the homepage and other untouched pages and can't be

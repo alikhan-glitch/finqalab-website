@@ -4,12 +4,12 @@ import { useEffect, useState, type ReactNode } from "react";
 
 // A fade+rise-in that actually works for above-the-fold content, unlike
 // <Reveal/>. <Reveal/> is scroll/IntersectionObserver-based and, by design,
-// renders at full opacity until JS "arms" it — for anything already in the
+// renders at full opacity until JS "arms" it, for anything already in the
 // initial viewport, arming and becoming visible happen in the same render,
 // so it never passes through a hidden state and no transition ever plays;
 // its `delay` prop is silently a no-op there. This instead mounts hidden and
 // flips to visible after a timer, the same technique <WordReveal/> already
-// uses for the hero headline/subtitle — so a `delay` here genuinely holds
+// uses for the hero headline/subtitle, so a `delay` here genuinely holds
 // the element invisible until it elapses, regardless of scroll position.
 export default function DelayedReveal({
   children,

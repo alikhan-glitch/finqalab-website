@@ -7,15 +7,13 @@ import GlossaryBrowser from "@/components/GlossaryBrowser";
 import PillButton from "@/components/PillButton";
 import Reveal from "@/components/Reveal";
 import WordReveal from "@/components/WordReveal";
-import { glossaryLetters, glossaryTerms } from "@/lib/glossary";
-
 export const metadata: Metadata = {
   title: "Glossary",
   description:
-    "Plain-English definitions of the financial terms you'll meet investing in Pakistan's markets — from asset allocation and free float to Sukuk, KSE-100, and yield to maturity.",
+    "Plain-English definitions of the financial terms you'll meet investing in Pakistan's markets, from asset allocation and free float to Sukuk, KSE-100, and yield to maturity.",
 };
 
-// The glossary was a "#" placeholder in the nav until now — this is its first
+// The glossary was a "#" placeholder in the nav until now. This is its first
 // real page, built directly on the flow-state theme rather than as an
 // alternate, since there was no existing design to preserve.
 //
@@ -26,14 +24,6 @@ export const metadata: Metadata = {
 const heading ="font-semibold tracking-tight text-text-onDark";
 
 export default function GlossaryPage() {
-  const letterCount = glossaryLetters().length;
-
-  const stats = [
-    { value: `${glossaryTerms.length}`, label: "Terms defined" },
-    { value: `${letterCount}`, label: "Letters covered" },
-    { value: "Plain English", label: "No jargon loops" },
-  ];
-
   return (
     <>
       <Navbar />
@@ -48,7 +38,7 @@ export default function GlossaryPage() {
           <div className="flex w-full max-w-sm flex-col items-center sm:max-w-2xl lg:max-w-4xl">
             <WordReveal
               as="h1"
-              text="Every term, in plain English"
+              text="Every Finance Term, In Plain English"
               baseDelay={320}
               stagger={85}
               duration={720}
@@ -58,7 +48,7 @@ export default function GlossaryPage() {
 
             <WordReveal
               as="p"
-              text="The vocabulary you'll meet investing in Pakistan's markets — defined without sending you looking up three more words to understand the first one."
+              text="The vocabulary you'll meet investing in Pakistan's markets, defined without sending you looking up three more words to understand the first one."
               baseDelay={1150}
               stagger={22}
               duration={600}
@@ -72,16 +62,6 @@ export default function GlossaryPage() {
               </PillButton>
             </Reveal>
 
-            <Reveal delay={1650} className="mt-14 w-full sm:mt-20">
-              <div className="mx-auto grid max-w-2xl grid-cols-3 gap-6">
-                {stats.map((s) => (
-                  <div key={s.label}>
-                    <p className={`text-xl sm:text-2xl ${heading}`}>{s.value}</p>
-                    <p className="mt-1.5 text-[0.78rem] leading-tight text-text-onDark-muted">{s.label}</p>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
           </div>
         </section>
 
@@ -102,7 +82,7 @@ export default function GlossaryPage() {
             </Reveal>
             <Reveal delay={140}>
               <p className="mt-5 max-w-xl text-[1.02rem] leading-relaxed text-text-onDark-muted">
-                Search by word or browse by letter — the search covers definitions too, so you can
+                Search by word or browse by letter, the search covers definitions too, so you can
                 find a term even when you only know how to describe it.
               </p>
             </Reveal>

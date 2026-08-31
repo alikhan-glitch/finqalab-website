@@ -1,5 +1,5 @@
 // Finqalab glossary terms, sourced from the live finqalab.com/glossary page.
-// Definitions are kept verbatim — these are the client's own published
+// Definitions are kept verbatim, these are the client's own published
 // explanations of financial terms, not rewrites.
 //
 // Ordering note: the live page groups terms under letter tabs but does not
@@ -8,7 +8,7 @@
 // <GlossaryBrowser/> sorts within each letter at render time, so the page
 // reads correctly without editing the source data.
 //
-// The live page also carries two genuinely redundant pairs — "PIBs" and
+// The live page also carries two genuinely redundant pairs, "PIBs" and
 // "Pakistan Investment Bonds (PIBs)", and "Treasury bills" alongside
 // "Market Treasury Bills". Both are kept rather than silently merged: they
 // are published content, and which one to drop is the content team's call.
@@ -176,7 +176,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   { term: "Shares outstanding", definition: "The number of total shares of a corporation that are authorized, issued, and purchased on the secondary market by investors." },
   { term: "Stock", definition: "A security that represents partial ownership in a company." },
   { term: "Stock exchange", definition: "A regulated marketplace where buyers and sellers trade stocks and other financial securities." },
-  { term: "Stock Market", definition: "Where investors connect to buy and sell investments — most commonly, stocks." },
+  { term: "Stock Market", definition: "Where investors connect to buy and sell investments, most commonly, stocks." },
   { term: "Stock valuation", definition: "The process of determining the intrinsic value or worth of a company's stock." },
   { term: "Stop loss", definition: "A strategy developed to limit losses and control risk by deciding to sell or buy an asset when it reaches a certain price." },
   { term: "Stock Split", definition: "Occurs when a corporation increases the number of its outstanding shares by distributing more shares to current stockholders." },
@@ -207,7 +207,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   { term: "Zero Coupon Bond", definition: "A debt security instrument that does not pay interest." },
 ];
 
-/** The first character a term is filed under — uppercased, digits collapsed to "#". */
+/** The first character a term is filed under, uppercased, digits collapsed to "#". */
 export function glossaryLetter(term: string): string {
   const first = term.trim().charAt(0).toUpperCase();
   return /[0-9]/.test(first) ? "#" : first;

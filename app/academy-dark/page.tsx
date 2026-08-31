@@ -10,10 +10,10 @@ import { academyCourses } from "@/lib/academyCourses";
 export const metadata: Metadata = {
   title: "Academy (Dark)",
   description:
-    "Free courses on Pakistan's markets — written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
+    "Free courses on Pakistan's markets, written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
 };
 
-// Dark-theme edition of /academy — same layout, copy, and course content,
+// Dark-theme edition of /academy, same layout, copy, and course content,
 // restyled onto the site's usual dark palette instead of the page's normal
 // one-off light theme. Built as a sibling route (not a toggle on /academy)
 // so it can be reviewed and shared independently without touching the live
@@ -48,7 +48,7 @@ export default function AcademyDarkPage() {
               <div className="lg:col-span-4">
                 <Reveal>
                   <p className="max-w-sm text-base leading-relaxed text-text-onDark-muted">
-                    Plain-language courses on Pakistan&apos;s markets — free to read, free to
+                    Plain-language courses on Pakistan&apos;s markets, free to read, free to
                     watch.
                   </p>
                 </Reveal>
@@ -110,7 +110,7 @@ export default function AcademyDarkPage() {
                 </h2>
                 <p className="mt-10 max-w-md text-[15px] leading-relaxed text-text-onDark-muted lg:ml-auto lg:mt-12">
                   Each course pairs a written breakdown with a full video lesson. Open one below to
-                  read it and watch it in the same place — no sign-up, no redirect.
+                  read it and watch it in the same place, no sign-up, no redirect.
                 </p>
               </div>
             </Reveal>

@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  /* Dark surfaces — reserved for the hero-style immersive video/image blocks
+  /* Dark surfaces, reserved for the hero-style immersive video/image blocks
      (Hero, TwoUpCards, TradingToolsSection, DiversifySection) */
   --color-bg-black: #05070d;
   --color-bg-navy: #0b1220;
   --color-bg-navy-soft: #121a2c;
 
-  /* Light surfaces — the site's primary theme */
+  /* Light surfaces, the site's primary theme */
   --color-bg-light: #faf8fc;
   --color-bg-light-soft: #f1ecf9;
   --color-bg-light-card: #ffffff;
@@ -18,10 +18,10 @@
   --color-text-onLight: #1a1523;
   --color-text-onLight-muted: #6b6478;
 
-  /* Brand — royal violet, tuned to outshine Robinhood's neon lime */
-  --color-primary: #9333ea;
-  --color-primary-strong: #7e22ce;
-  --color-primary-light: #a855f7;
+  /* Brand, royal violet, tuned to outshine Robinhood's neon lime */
+  --color-primary: #8067DA;
+  --color-primary-strong: #6A54B8;
+  --color-primary-light: #9C8CE0;
   --color-onPrimary: #ffffff;
   --color-accent-teal: #3fd6c4;
 
@@ -63,7 +63,7 @@
      Headings carry their weight via font-semibold/font-medium; body copy
      stays at 400. Previously these pointed at Figtree (body) and Playfair
      (the /academy serif), and a separate Fraunces was applied inline on the
-     flow-state pages — all three are gone. */
+     flow-state pages, all three are gone. */
   --font-display: var(--font-onest);
   --font-heading: var(--font-onest);
   --font-sans: var(--font-onest);
@@ -120,7 +120,7 @@ body {
   }
 }
 
-/* Infinite horizontal marquee — the track renders its item list twice back
+/* Infinite horizontal marquee, the track renders its item list twice back
    to back, and this slides exactly one copy's width (-50%) so the loop point
    is seamless. Used by the /updates ticker strip. */
 @keyframes marquee {

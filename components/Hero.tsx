@@ -4,8 +4,8 @@ import WordReveal from "./WordReveal";
 import BackgroundVideo from "./BackgroundVideo";
 
 // Homepage hero. Carries the flow-state surface treatment used across the
-// rest of the site — glass badge chip, Fraunces headline, word-by-word
-// entrance, white pill CTA — over this page's own background video, which is
+// rest of the site, glass badge chip, Fraunces headline, word-by-word
+// entrance, white pill CTA, over this page's own background video, which is
 // deliberately kept rather than swapped for the ink canvas the inner pages
 // use. The video and its glow/scrim stack below are untouched.
 export default function Hero() {
@@ -13,7 +13,7 @@ export default function Hero() {
     // -mt-[78px] pulls the section up to true y=0: the header is `sticky`
     // and transparent, but still reserves its own ~78px of flow height at
     // the top of the page, which otherwise pushed this section (and its
-    // video, being `absolute inset-0` *within* it) down by that much —
+    // video, being `absolute inset-0` *within* it) down by that much , 
     // exposing a plain dark strip above the video instead of letting it run
     // full-bleed behind the floating header. The matching extra pt- cancels
     // the shift for the actual heading/text content.
@@ -29,7 +29,7 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 50% at 50% 0%, rgba(147,51,234,0.22) 0%, rgba(5,7,13,0) 70%)",
+            "radial-gradient(60% 50% at 50% 0%, rgba(128,103,218,0.22) 0%, rgba(5,7,13,0) 70%)",
         }}
       />
       <div
@@ -74,7 +74,7 @@ export default function Hero() {
           stagger={18}
           duration={600}
           fromY={14}
-          className="mx-auto mt-6 max-w-2xl text-balance text-lg text-text-onDark-muted"
+          className="mx-auto mt-6 max-w-2xl text-balance text-[0.95rem] text-text-onDark-muted"
         />
 
         <Reveal delay={1250}>

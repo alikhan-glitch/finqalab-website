@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-// Pavel Dobryakov's WebGL fluid solver (MIT), pasted verbatim as supplied —
+// Pavel Dobryakov's WebGL fluid solver (MIT), pasted verbatim as supplied , 
 // the only edits from the stock engine are already baked in here: the tuned
 // config, the strong load-in burst (multipleSplats(34) + 8 queued waves),
 // generateColor()'s cyan→magenta hue band, and the invisible auto-cursor
@@ -14,7 +14,7 @@ import { useEffect, useRef } from "react";
 // across gl.R16F/RG16F/RGBA16F, the FBO/program uniform maps) doesn't have a
 // clean shared shape to type precisely without rewriting the algorithm
 // itself, which risks introducing a real bug into a working port. Same
-// reasoning for the comma-expression switch cases in HSVtoRGB below — a
+// reasoning for the comma-expression switch cases in HSVtoRGB below, a
 // direct translation of the original assignment-expression style.
 /* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-expressions */
 function fluidSimulation(
@@ -827,7 +827,7 @@ function fluidSimulation(
   initFramebuffers();
   // Strong entrance: a dense burst plus several rapid follow-up waves
   // (drained one-per-frame by input() via splatStack). Skipped entirely in
-  // pointer-only mode — that mode wants the canvas to stay blank until the
+  // pointer-only mode, that mode wants the canvas to stay blank until the
   // visitor's own cursor puts ink into it, not greet them with a burst.
   if (!pointerOnly) {
     multipleSplats(34);
@@ -842,7 +842,7 @@ function fluidSimulation(
   let virtualColor: any = null;
   let lastVColorTime = 0;
   const engineStart = Date.now();
-  const ORBIT_RADIUS = 300; // px — the auto-cursor circles the centre at this radius
+  const ORBIT_RADIUS = 300; // px, the auto-cursor circles the centre at this radius
   const ORBIT_SPEED = 0.026; // rad/frame (~4 s per loop)
   const ORBIT_START_DELAY = 700; // ms after load before the auto-cursor begins (burst plays first)
 
@@ -854,7 +854,7 @@ function fluidSimulation(
   function update() {
     if (destroyed) return;
     // Skip the GPU work (but keep the rAF chain alive) while the tab is
-    // backgrounded — this loop otherwise runs forever, so an idle hidden tab
+    // backgrounded, this loop otherwise runs forever, so an idle hidden tab
     // shouldn't keep burning a full fluid-sim pass every frame.
     if (!document.hidden) {
       resizeCanvas();
@@ -871,7 +871,7 @@ function fluidSimulation(
   // after load so the burst plays first.
   //
   // When `pauseOrbitPastHero` is set, the orbit only runs while the hero is
-  // still roughly in view — past that (reading an article, browsing a course
+  // still roughly in view, past that (reading an article, browsing a course
   // list, etc.) it stops adding new splats entirely, so the existing ink
   // decays away via the sim's own DENSITY_DISSIPATION and the background
   // settles rather than swirling distractingly behind body copy. A plain
@@ -879,7 +879,7 @@ function fluidSimulation(
   // wired to the hero element: every affected page's hero is `min-h-[100svh]`,
   // so this is a reliable proxy without threading a ref through the page →
   // FluidPageBackground → FluidCanvas chain for one threshold. Real pointer-
-  // driven splats (below, in input()) are untouched by this — moving or
+  // driven splats (below, in input()) are untouched by this, moving or
   // hovering the mouse still splats ink anywhere on the page, at any scroll
   // position, exactly as before.
   function driveVirtualPointer() {
@@ -1235,7 +1235,7 @@ function fluidSimulation(
   };
 
   function generateColor() {
-    // Hue band is caller-supplied (see FluidCanvas's hueMin/hueMax props) —
+    // Hue band is caller-supplied (see FluidCanvas's hueMin/hueMax props) , 
     // defaults to the electric cyan→blue→violet→magenta band used on
     // /features/wealth-management; the flow-state pages pass Finqalab's
     // violet→purple→magenta→rose-gold band instead. Wrapped mod 1.0 so a
@@ -1296,7 +1296,7 @@ function fluidSimulation(
   }
 }
 
-// Full-bleed background canvas — behind page content (z-0, pointer-events:none),
+// Full-bleed background canvas, behind page content (z-0, pointer-events:none),
 // so the engine reads real pointer position from window events instead.
 export default function FluidCanvas({
   className = "",
@@ -1312,11 +1312,11 @@ export default function FluidCanvas({
   hueMax?: number;
   /** Stop the autonomous orbiting auto-cursor once scrolled past one
    *  viewport height, leaving only real pointer interaction. Off by
-   *  default — every existing caller keeps the always-orbiting look. */
+   *  default, every existing caller keeps the always-orbiting look. */
   pauseOrbitPastHero?: boolean;
-  /** Skip the load-in burst and the auto-orbiting virtual cursor entirely —
+  /** Skip the load-in burst and the auto-orbiting virtual cursor entirely , 
    *  the canvas stays blank until the visitor actually moves their mouse
-   *  over it. Off by default — every existing caller keeps the ambient
+   *  over it. Off by default, every existing caller keeps the ambient
    *  swirling look. */
   pointerOnly?: boolean;
 }) {
@@ -1329,7 +1329,7 @@ export default function FluidCanvas({
     // sim entirely rather than just slowing it down.
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     // WebGL context creation can throw on unsupported browsers/environments
-    // (headless CI, disabled GPU) — the scrim + content still work without it,
+    // (headless CI, disabled GPU), the scrim + content still work without it,
     // this just skips the effect rather than crashing the page.
     let destroy: (() => void) | undefined;
     try {

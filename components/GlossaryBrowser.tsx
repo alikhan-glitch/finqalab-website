@@ -37,7 +37,7 @@ export default function GlossaryBrowser() {
     });
   }, [query, letter]);
 
-  // Group the survivors by letter, sorting within each group — the source
+  // Group the survivors by letter, sorting within each group, the source
   // data preserves the live site's own (unsorted) order on purpose, so the
   // alphabetising happens here at render time.
   const groups = useMemo(() => {
@@ -86,12 +86,12 @@ export default function GlossaryBrowser() {
           onChange={(e) => {
             setQuery(e.target.value);
             // Searching across the whole glossary, not within the active
-            // letter — see the note at the top of this file.
+            // letter, see the note at the top of this file.
             if (e.target.value) setLetter(ALL);
           }}
           placeholder="Search terms and definitions…"
           // type="search" keeps the semantics, but WebKit/Chrome draw their
-          // own clear "✕" for it — suppressed here so it doesn't sit next to
+          // own clear "✕" for it, suppressed here so it doesn't sit next to
           // the styled clear button below.
           className="min-w-0 flex-1 bg-transparent text-[1rem] text-text-onDark outline-none placeholder:text-text-onDark-muted/60 [&::-webkit-search-cancel-button]:appearance-none"
         />

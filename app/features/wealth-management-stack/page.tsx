@@ -9,13 +9,13 @@ import { wealthManagementFeatures } from "@/lib/wealthManagementFeatures";
 export const metadata: Metadata = {
   title: "Wealth Management (Card Stack)",
   description:
-    "Download Finqalab, open your account, and start investing in PSX stocks and Sukuks — with real-time market data and portfolio tracking built in.",
+    "Download Finqalab, open your account, and start investing in PSX stocks and Sukuks, with real-time market data and portfolio tracking built in.",
 };
 
 // Second option for the features page, alongside the live fluid-hero design
 // at /features/wealth-management and the editorial accordion at
 // /features/wealth-management-v2. Same 16 real features and the same scene
-// mockups in all three — only the container differs. Here it's a minimal
+// mockups in all three, only the container differs. Here it's a minimal
 // two-column editorial layout with an animated, physically-layered card deck
 // (see components/FeatureCardStack.tsx).
 //
@@ -30,7 +30,7 @@ export default function WealthManagementStackPage() {
       <main id="main-content" className="flex-1 bg-[#ecf0ef] text-[#12100e]">
         <section className="overflow-hidden px-6 py-24 sm:px-10 lg:py-32">
           <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 items-center gap-20 lg:grid-cols-[minmax(0,0.86fr)_minmax(0,1fr)] lg:gap-16">
-            {/* Left — intro. No container, border or card: the whitespace
+            {/* Left, intro. No container, border or card: the whitespace
                 around it is the composition. */}
             <div>
               <Reveal>
@@ -46,7 +46,7 @@ export default function WealthManagementStackPage() {
               <Reveal delay={160}>
                 <p className="mt-7 max-w-sm text-[0.92rem] leading-[1.65] text-[#3f413e]">
                   Sixteen tools for funding your account, placing trades, tracking what you own and
-                  staying ahead of the market — built into one SECP-regulated app for the Pakistan
+                  staying ahead of the market, built into one SECP-regulated app for the Pakistan
                   Stock Exchange.
                 </p>
               </Reveal>
@@ -60,7 +60,7 @@ export default function WealthManagementStackPage() {
               </Reveal>
             </div>
 
-            {/* Right — the deck. Extra bottom padding leaves room for the
+            {/* Right, the deck. Extra bottom padding leaves room for the
                 lower cards, which overhang the front card by design. */}
             <div className="pb-24 sm:pb-28 lg:pb-24">
               <FeatureCardStack features={wealthManagementFeatures} />

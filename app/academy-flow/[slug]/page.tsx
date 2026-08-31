@@ -29,13 +29,13 @@ export async function generateMetadata({
   };
 }
 
-// The course article behind a <FlowCourseCard/>'s "Read course" link — the
+// The course article behind a <FlowCourseCard/>'s "Read course" link, the
 // flow-state counterpart to /academy-stripe/[slug]. Same content source
 // (academyCourses) and same <CourseBlocks/> renderer, just its `dark`
 // variant, so the written article can't drift between Academy designs.
 //
 // Video sits last, after the full write-up, matching the "read first, then
-// watch" order of the /academy-stripe article — the opposite of /academy's
+// watch" order of the /academy-stripe article, the opposite of /academy's
 // accordion panel, which leads with the video.
 
 const heading ="font-semibold tracking-tight text-text-onDark";

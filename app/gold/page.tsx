@@ -20,15 +20,15 @@ export const metadata: Metadata = {
     "Finqalab is bringing digital gold trading to Pakistan through a partnership with PMEX. Join the waitlist to be first in line.",
 };
 
-// Product page for Gold — same chassis as /stocks and /etf, adapted for a
+// Product page for Gold, same chassis as /stocks and /etf, adapted for a
 // pre-launch/waitlist product: "Join the Waitlist" in place of "Open Your
 // Account" everywhere, and content drawn from the client-supplied Gold SEO
 // spec rather than a live-product spec. Copy is honest about launch status
-// throughout — nothing here claims gold trading is live today.
+// throughout, nothing here claims gold trading is live today.
 
 // Gold trading isn't live yet, so there's no real app UI to screenshot here.
 // Borrowing the /stocks page's real screenshots as stand-ins for the phone
-// mockup rather than the generic icon mock (per instruction) — swap these
+// mockup rather than the generic icon mock (per instruction), swap these
 // for actual gold screens once that UI exists.
 const steps: TradeStep[] = [
   {
@@ -60,26 +60,24 @@ const steps: TradeStep[] = [
   },
 ];
 
-// Short by design — see the same note on /stocks: this eyebrow sets in a
-// narrow column of small uppercase type, and longer copy gets clipped.
 const benefits: { image: string; title: string; eyebrow: string }[] = [
   {
     image: "/images/icons/buy-sell-digitally.webp",
     title: "Buy & Sell Digitally",
     eyebrow:
-      "Buy and sell gold digitally, backed by PMEX-traded contracts, with no physical delivery, storage, or purity checks to worry about, all from the app you already use.",
+      "Buy and sell gold digitally, backed by contracts traded on the Pakistan Mercantile Exchange. Skip the jeweller, the vault, and second-guessing purity, gold moves the same way your stocks already do, right from the app you use every day. One tap in, one tap out, whenever the moment feels right.",
   },
   {
     image: "/images/icons/one-portfolio-view.webp",
     title: "One Portfolio View",
     eyebrow:
-      "Track your gold holdings in the same portfolio view as your stocks and ETFs, so your full net worth stays in one place, not spread across separate apps.",
+      "Track your gold holdings in the same portfolio view as your stocks and ETFs, so your full net worth stays in one place instead of scattered across apps. Every rupee you've put into gold sits right next to what you've put into the market. One number tells you exactly where you stand.",
   },
   {
     image: "/images/icons/no-new-account.webp",
     title: "No New Account",
     eyebrow:
-      "Add a new asset class to your portfolio without opening a separate account or application. It simply appears in the app you already use, ready to trade alongside your other holdings.",
+      "Add a new asset class to your portfolio without opening a separate account or repeating your CNIC verification. Gold simply appears inside the app you already use, ready to trade alongside your other holdings the day it launches. Same login, same portfolio, one more way to grow it.",
   },
 ];
 
@@ -87,7 +85,7 @@ const facts = [
   { value: "PMEX Partnership", label: "Contracts traded on the Pakistan Mercantile Exchange" },
   { value: "Coming Soon", label: "Currently in development" },
   { value: "One Account", label: "No separate app or account needed" },
-  { value: "SECP-Regulated", label: "Existing Finqalab account, already regulated" },
+  { value: "Real-Time Pricing", label: "Trade gold as the market moves" },
 ];
 
 const faqs = [
@@ -114,7 +112,6 @@ export default function GoldPage() {
         <FluidPageBackground hueMin={0.75} hueMax={1.03} pauseOrbitPastHero />
 
         <FlowPageHero
-          eyebrow="Our Products · Gold (Coming Soon)"
           title={
             <>
               Invest in gold online in Pakistan,
@@ -198,7 +195,7 @@ export default function GoldPage() {
                 <div className="lg:col-span-5">
                   <Reveal>
                     <h2 className="text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-4xl">
-                      Why Gold Investing Is Coming to Finqalab
+                      Backed by the same trust you already invest with
                     </h2>
                   </Reveal>
 
@@ -231,10 +228,9 @@ export default function GoldPage() {
                         paperwork to sign.
                       </p>
                       <p>
-                        Finqalab is a subsidiary of Next Capital Limited, a licensed brokerage firm
-                        and member of the Pakistan Stock Exchange, regulated by the Securities and
-                        Exchange Commission of Pakistan. Next Capital is itself publicly listed on
-                        the PSX under the ticker NEXT.
+                        Gold is a work in progress, and we&apos;re excited to bring it to you as
+                        soon as it&apos;s ready. Follow Finqalab on social media to be the first to
+                        know the moment it goes live.
                       </p>
                     </div>
                   </Reveal>

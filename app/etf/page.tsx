@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Diversify your portfolio with ETFs on Finqalab, built for Pakistani retail investors. SECP regulated, fully digital, a few taps to get started.",
 };
 
-// Product page for ETFs — same chassis as /stocks and the old /sukuks (now
+// Product page for ETFs, same chassis as /stocks and the old /sukuks (now
 // removed): <FluidPageBackground/> + <FlowPageHero/>/<FlowClosingCTA/> +
 // <TradeStepsShowcase/> + <GlassCard/> icon cards + <FlowFAQSection/>.
 // Copy is drawn from the client-supplied ETF SEO spec. Per instruction, the
@@ -57,29 +57,33 @@ const steps: TradeStep[] = [
 const benefits: { image: string; title: string; eyebrow: string }[] = [
   {
     image: "/images/icons/diversification.webp",
-    title: "One-Trade Diversification",
+    title: "Spread Your Risk in One Tap",
     eyebrow:
-      "Get exposure to a whole sector or index in a single trade, instead of building a portfolio stock by stock. One purchase spreads your risk across dozens of underlying holdings at once.",
+      "Buy a single Finqalab ETF and you're instantly holding dozens of underlying companies, not just one. Instead of researching and buying each stock separately, one purchase spreads your money across an entire sector or index. It's the same diversification serious investors chase, done in a single tap instead of twenty.",
   },
   {
     image: "/images/icons/lower-research-burden.webp",
-    title: "Lower Research Burden",
+    title: "Skip the Research Marathon",
     eyebrow:
-      "The fund's underlying holdings do the diversifying for you, so there's less to research yourself. Spend less time picking individual names and more time on your overall strategy.",
+      "The fund's managers already did the homework, picking and weighting the companies inside each ETF. You get the diversification without spending your weekends reading balance sheets and annual reports. Less research, same broad exposure, more time for the parts of investing you actually enjoy.",
   },
   {
     image: "/images/icons/real-time-trading.webp",
-    title: "Real-Time Trading",
+    title: "Trade It Like Any Stock",
     eyebrow:
-      "Traded in real time on the PSX, just like any other listed security, with live pricing throughout the session rather than a once-a-day valuation, so you always know where the market stands.",
+      "Every ETF on Finqalab prices and trades in real time on the PSX, just like any individual stock. You're never stuck waiting on an end-of-day valuation to know where you stand, and there's no separate application or waiting period to start. Buy, sell, or hold, the same way you already trade, just spread across more companies at once.",
   },
 ];
 
 const facts = [
-  { value: "Broad Exposure", label: "A whole sector or index in one trade" },
-  { value: "PSX-Listed", label: "Traded in real time like any stock" },
-  { value: "One Account", label: "Alongside your existing stock holdings" },
-  { value: "PSX Member", label: "Licensed brokerage firm" },
+  // Swapped out the licensing-credential stat ("PSX Member") for one that's
+  // actually about diversification, and reframed the PSX-Listed stat around
+  // real-time pricing instead, so all four now tie to the section heading
+  // below rather than mixing in a compliance fact covered elsewhere.
+  { value: "One Trade", label: "A whole sector or index at once" },
+  { value: "One Account", label: "Sits right beside your stocks" },
+  { value: "Real-Time", label: "Priced and traded like any stock" },
+  { value: "Diversified", label: "Spread across many holdings, not one" },
 ];
 
 const faqs = [
@@ -110,15 +114,14 @@ export default function EtfPage() {
         <FluidPageBackground hueMin={0.75} hueMax={1.03} pauseOrbitPastHero />
 
         <FlowPageHero
-          eyebrow="Our Products · ETFs"
           title={
             <>
-              Invest in ETFs in Pakistan
+              One trade.
               <br />
-              with Finqalab
+              Hundreds of holdings.
             </>
           }
-          subtitle="Buy and sell ETFs alongside PSX stocks, all from one digital account, a straightforward way to diversify your portfolio."
+          subtitle="Get a whole sector or index in a single tap, without picking stocks one by one."
         />
 
         {/* ---------------------------------------------------------------
@@ -150,12 +153,12 @@ export default function EtfPage() {
           <div className="mx-auto max-w-5xl">
             <Reveal>
               <h2 className="mx-auto max-w-3xl text-balance text-center text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-5xl">
-                Why Invest in ETFs
+                Why invest in ETFs with Finqalab
               </h2>
             </Reveal>
             <Reveal delay={100}>
               <p className="mx-auto mt-5 max-w-xl text-balance text-center text-base text-text-onDark-muted">
-                One investment, a whole basket of exposure.
+                Diversify without the guesswork.
               </p>
             </Reveal>
 
@@ -193,7 +196,7 @@ export default function EtfPage() {
                 <div className="lg:col-span-5">
                   <Reveal>
                     <h2 className="text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-4xl">
-                      What are ETFs?
+                      A simpler way to hold the whole market
                     </h2>
                   </Reveal>
 
@@ -213,11 +216,10 @@ export default function EtfPage() {
                   <Reveal delay={100}>
                     <div className="max-w-[62ch] space-y-5 text-[15px] leading-relaxed text-text-onDark-muted">
                       <p>
-                        An ETF (exchange-traded fund) is a single investment that holds a basket of
-                        stocks or assets, traded on the exchange just like an individual stock.
-                        Instead of researching and buying each company yourself, an ETF gives you
-                        exposure to a whole sector or index in one trade, a straightforward way to
-                        diversify your portfolio.
+                        One trade puts a whole sector or index in your portfolio, instead of
+                        buying each company inside it separately. It's the same diversification
+                        serious investors chase, done in a single tap and priced in real time,
+                        right alongside your PSX stocks.
                       </p>
                       <p>
                         Finqalab lets you trade ETFs the same way you already invest in stocks:

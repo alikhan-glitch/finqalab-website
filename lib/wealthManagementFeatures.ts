@@ -17,18 +17,18 @@ export type WealthFeature = {
   description: string;
   accent: "primary" | "teal";
   scene: FeatureScene;
-  // Pre-composited mockup for this feature — a real in-app screenshot
+  // Pre-composited mockup for this feature, a real in-app screenshot
   // already set inside a device frame (status bar, notch, and all), supplied
   // as one flat image rather than assembled from a separate frame + cutout
-  // — see <FluidFeatureGrid/>. Optional in the type for resilience, but
+  //, see <FluidFeatureGrid/>. Optional in the type for resilience, but
   // every feature currently has one.
   image?: string;
   // Testing alternate scene-panel treatments on a few cards, rather than the
-  // default white one — see FeatureGridCard / FeatureScenes for the styling.
+  // default white one, see FeatureGridCard / FeatureScenes for the styling.
   // "dark" / "darkPurple" are both frosted glass; darkPurple additionally
   // gets a thin violet outline instead of the plain white one.
   panelTheme?: "light" | "dark" | "darkPurple";
-  // Short form for layouts that can't fit the full title — currently the
+  // Short form for layouts that can't fit the full title, currently the
   // vertical title rail on <FeatureCardStack/>, where the text runs down the
   // card's edge and a 50-character title would be unreadably small. Only set
   // where `title` is too long; everything else falls back to `title`.
@@ -42,13 +42,13 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Help Center",
     image: "/images/features-mockups/help-center.webp",
     description:
-      "Raise a support ticket for any issue directly from the app and get a ticket number to track it. Our team follows up by email with a resolution timeline, so you always know where your complaint stands.",
+      "What if support actually got back to you? Ours does. Raise a ticket from the app, get a number to track it, and hear back with a real resolution timeline.",
     accent: "primary",
     scene: {
       type: "chat",
       icon: "lifeBuoy",
       prompt: "How do I reset my PIN?",
-      reply: "Sure — here's how to reset it.",
+      reply: "Sure, here's how to reset it.",
     },
     panelTheme: "dark",
   },
@@ -57,7 +57,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Finbot",
     image: "/images/features-mockups/finbot.webp",
     description:
-      "Finbot is Finqalab's in-app AI assistant for quick answers on portfolio allocation, market activity, and account questions. Ask in plain language and get a straight response, no digging through menus or reports.",
+      "What if support never slept? Finbot doesn't. Instant, 24/7 answers on your account or PSX basics, with a straight handoff to a real person when you need one.",
     accent: "teal",
     scene: {
       type: "chat",
@@ -72,7 +72,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Corporate Announcements",
     image: "/images/features-mockups/corporate-announcements.webp",
     description:
-      "See dividend declarations, bonus issues, AGM notices, and other PSX corporate actions for the companies in your portfolio and watchlists as soon as they're announced, right inside the app.",
+      "Dividends. Bonus issues. AGM notices. The moment a company in your portfolio files one, you know first, straight from the source, not the next morning.",
     accent: "primary",
     scene: {
       type: "list",
@@ -86,11 +86,10 @@ export const wealthManagementFeatures: WealthFeature[] = [
   },
   {
     icon: "wallet",
-    title: "In-App Payments: Raast Instant Deposit & In-App Withdrawals",
+    title: "RAAST Instant Deposit",
     image: "/images/features-mockups/in-app-payments.webp",
-    shortLabel: "In-App Payments",
     description:
-      "Fund your account instantly through Raast, Pakistan's real-time payment rail, and withdraw straight back to your bank from inside the app. No branch visits, no waiting on bank transfers to clear.",
+      "Fund your account through Raast in seconds, and withdraw just as instantly when you need it back. No branch visit, no bank queue, no waiting on a transfer.",
     accent: "teal",
     scene: { type: "wallet", from: "Bank Account", to: "Finqalab Wallet" },
     panelTheme: "dark",
@@ -100,7 +99,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Digital Onboarding",
     image: "/images/features-mockups/digital-onboarding.webp",
     description:
-      "Open a Finqalab account entirely from your phone: verify your identity, add your bank details, and get approved in about two to three working days. No paperwork, no branch visit.",
+      "Open your account entirely from your phone. Verify your identity, add your bank details, and get approved in minutes. We made paperwork and queues extinct.",
     accent: "primary",
     scene: {
       type: "checklist",
@@ -113,7 +112,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Portfolio Weightage",
     image: "/images/features-mockups/portfolio-weightage.webp",
     description:
-      "See exactly how your money is spread across individual stocks and sectors, plus how much sits as uninvested cash. Portfolio Weightage breaks your holdings down by allocation, so you can spot when one position has grown too large.",
+      "Know exactly where your money sits, by stock, by sector, and how much is still sitting in cash. Catch an oversized position before it becomes a liability.",
     accent: "teal",
     scene: {
       type: "pie",
@@ -130,18 +129,17 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "In-App Subscriptions",
     image: "/images/features-mockups/in-app-subscriptions.webp",
     description:
-      "Unlock add-ons like Finqalab Technicals directly inside the app, billed and managed alongside your account. Turn premium tools on when you need them, cancel just as easily.",
+      "Finqalab Technicals, on your terms. Turn it on for weekly outlooks, trade setups, and risk calls when you need the edge, and cancel the moment you don't.",
     accent: "primary",
     scene: { type: "badge", icon: "badge", label: "Finqalab Technicals" },
     panelTheme: "dark",
   },
   {
     icon: "eye",
-    title: "Watchlist & Multiple Custom Watchlists",
+    title: "Watchlist",
     image: "/images/features-mockups/watchlist.webp",
-    shortLabel: "Watchlist",
     description:
-      "Track the PSX-listed companies you care about with live prices and daily change, organized into as many custom watchlists as you need — one for long-term holdings, another for stocks you're still researching.",
+      "Track your favorite PSX names with live prices and daily change. Build as many custom watchlists as your strategy needs, one for conviction, one for research.",
     accent: "teal",
     scene: {
       type: "list",
@@ -158,7 +156,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Juice List",
     image: "/images/features-mockups/juice-list.webp",
     description:
-      "A research-backed shortlist of PSX stocks, grouped by strategy like long-term growth, curated by Finqalab's desk. It's a starting point for your own research, not a buy or sell recommendation.",
+      "A shortlist of stocks our desk believes still have juice left. Research-backed and grouped by risk level for the medium to long term, but never a buy or sell call.",
     accent: "primary",
     scene: {
       type: "list",
@@ -175,7 +173,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Custom Alerts",
     image: "/images/features-mockups/custom-alerts.webp",
     description:
-      "Set your own price and volume triggers for any PSX stock and get notified the moment they hit, so you hear about a move as it happens instead of the next morning.",
+      "Set the trigger, price or volume, on any PSX stock, and we tell you the second it hits. No refreshing the app, no next-morning surprises, no missed moves.",
     accent: "teal",
     scene: {
       type: "bell",
@@ -191,7 +189,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Portfolio Analytics",
     image: "/images/features-mockups/portfolio-analytics.webp",
     description:
-      "Track your portfolio's performance over time with charts covering gains, losses, and value trends, so you can see how your investments are actually doing beyond a single day's snapshot.",
+      "A single day's number isn't your track record. Track your gains, losses, and value trends over time, and know if you're actually improving.",
     accent: "primary",
     scene: { type: "chart" },
     panelTheme: "dark",
@@ -201,7 +199,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "News",
     image: "/images/features-mockups/news.webp",
     description:
-      "A live feed of PSX market news, SECP updates, and economic developments, curated so you can stay informed about what's actually moving the companies in your portfolio.",
+      "PSX headlines. SECP updates. The economics that actually move your holdings. Curated by people who read the whole report, not crawled from everywhere at once.",
     accent: "teal",
     scene: {
       type: "list",
@@ -218,7 +216,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Portfolio Alerts",
     image: "/images/features-mockups/portfolio-alerts.webp",
     description:
-      "Get notified on portfolio-level moves, like your overall value crossing a threshold or a holding hitting your target price, instead of tracking every stock separately.",
+      "Set one threshold for your whole portfolio instead of twenty for twenty different stocks. Get notified the instant your total value crosses it, up or down.",
     accent: "primary",
     scene: {
       type: "bell",
@@ -234,7 +232,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Finqueue",
     image: "/images/features-mockups/finqueue.webp",
     description:
-      "PSX orders placed on Friday get cancelled over the midday break and normally have to be placed again once the market reopens. Finqueue queues your order instead, and carries it forward automatically the moment trading resumes.",
+      "What happens to a Friday order over the midday break? Normally, it vanishes. With Finqueue, it holds its place and fires the second trading resumes.",
     accent: "teal",
     scene: {
       type: "list",
@@ -251,7 +249,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Circle",
     image: "/images/features-mockups/circle.webp",
     description:
-      "Join a community of Finqalab investors to swap ideas, ask questions, and follow discussions on PSX stocks and Sukuks, right inside the app you already invest in.",
+      "Investing alone is optional. Swap ideas, ask questions, and follow real conversations on PSX stocks and ETFs with investors who actually trade them.",
     accent: "primary",
     scene: { type: "avatars", count: 5, extra: "+128" },
     panelTheme: "dark",
@@ -261,7 +259,7 @@ export const wealthManagementFeatures: WealthFeature[] = [
     title: "Finqalab Premium",
     image: "/images/features-mockups/finqalab-premium.webp",
     description:
-      "Finqalab Premium unlocks priority support, advanced portfolio tools, and other member-only perks for investors who want more from the app on a day-to-day basis.",
+      "Priority support and a free Finqalab Technicals subscription, bundled into one membership, for investors who want more from the app and want it included.",
     accent: "teal",
     scene: { type: "badge", icon: "shieldCheck", label: "Premium Member" },
     panelTheme: "dark",

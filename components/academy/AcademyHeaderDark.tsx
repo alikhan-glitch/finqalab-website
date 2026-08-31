@@ -8,7 +8,7 @@ import { navItems } from "../Navbar";
 
 // Dark-theme fork of <AcademyHeader/>, used only on /academy-dark. Same
 // structure and copy, just the light-theme tokens swapped for their dark
-// equivalents — kept as a sibling component rather than a themed prop so it
+// equivalents, kept as a sibling component rather than a themed prop so it
 // matches the rest of this page's existing light/dark split (AcademyHeader
 // itself already forked from the shared <Navbar/> for the same reason).
 

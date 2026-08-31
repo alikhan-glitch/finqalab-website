@@ -3,7 +3,7 @@ import SocialIcon, { type SocialIconName } from "./academy/SocialIcons";
 
 // Exported so AcademyFooter (a differently-styled light-theme footer used
 // only on /academy) can reuse the same link and legal copy rather than a
-// forked duplicate that would drift out of sync — the legal paragraphs in
+// forked duplicate that would drift out of sync, the legal paragraphs in
 // particular are compliance text, not just filler.
 export const columns = [
   {

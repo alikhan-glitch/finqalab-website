@@ -17,8 +17,8 @@ function mod(n: number, m: number) {
 
 // The 16 real features as glass cards on the fluid ink background.
 //
-// Each card leads with a pre-composited mockup — a real in-app screenshot
-// already set inside its device frame, supplied as one flat image — rather
+// Each card leads with a pre-composited mockup, a real in-app screenshot
+// already set inside its device frame, supplied as one flat image, rather
 // than the site's own frame-plus-cutout technique used elsewhere
 // (<PhoneMockup/>): that approach depended on every screenshot having no
 // status bar of its own, which didn't hold for two of these captures and
@@ -64,31 +64,20 @@ export default function FluidFeatureGrid() {
   const [page, setPage] = useState(0);
   const go = (delta: number) => setPage((p) => mod(p + delta, PAGE_COUNT));
 
-  // Clamp the slice's start index rather than slicing directly by
-  // page*PER_PAGE: with 16 features and 3 per page the last page would
-  // otherwise land on a single leftover card. Clamping means that page
-  // instead shows the last 3 features — repeating whichever ones the
-  // previous page already showed — so every page reads as a full 3-card row.
-  const start = Math.min(page * PER_PAGE, TOTAL - PER_PAGE);
-  const pageItems = wealthManagementFeatures.slice(start, start + PER_PAGE);
+  // True circular indexing rather than clamping the last page: with 16
+  // features and 3 per page, the last page wraps past the final feature
+  // and picks up again from the first (16, 1, 2), instead of repeating the
+  // previous page's 14-15-16. Every page reads as a full 3-card row, and
+  // paging never dead-ends, "next" from the last page loops straight back
+  // to the start.
+  const start = page * PER_PAGE;
+  const pageItems = [0, 1, 2].map((i) => wealthManagementFeatures[mod(start + i, TOTAL)]);
 
   return (
-    <section className="relative z-10 px-5 pb-28 pt-4 sm:px-10">
+    <section className="relative z-10 px-5 pb-28 pt-0 sm:px-10">
       <div className="mx-auto max-w-6xl">
-        <Reveal>
-          <p className="text-[0.8rem] font-medium" style={{ color: "#b9becf" }}>
-            All Features
-          </p>
-          <h2
-          className="mt-3 max-w-xl text-3xl font-medium leading-[1.15] tracking-[-0.02em] sm:text-4xl"
-            style={{ color: "#eef0f6" }}
-          >
-            Every Tool, In One Place.
-          </h2>
-        </Reveal>
-
         {/* Three cards per page rather than one long scroll, with arrow
-            buttons on either side to page through the rest — same idea as
+            buttons on either side to page through the rest, same idea as
             the three-up carousel already live on finqalab.com, just paging
             through this grid's own glass cards unchanged rather than
             replacing them with that reference's card style. */}

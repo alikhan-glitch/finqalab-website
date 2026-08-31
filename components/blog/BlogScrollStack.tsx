@@ -20,13 +20,13 @@ function chunk<T>(items: T[], size: number): T[][] {
   return out;
 }
 
-// Sticky, scroll-driven "batch swap" through all 25 articles, 3 at a time —
+// Sticky, scroll-driven "batch swap" through all 25 articles, 3 at a time , 
 // replaces a long flat grid so the full archive doesn't read as an
 // exhausting wall of cards. The section is a tall spacer (BATCH_COUNT *
 // VH_PER_BATCH) with a `sticky` viewport pinned inside it; scroll position
 // within that spacer maps to a batch index.
 //
-// The displayed batch always tracks the scroll-computed index immediately —
+// The displayed batch always tracks the scroll-computed index immediately , 
 // there's no queued/animated hand-off between batches. An earlier version
 // kept the outgoing batch mounted and cross-faded it against the incoming
 // one (two full sets of blurred glass cards animating opacity+transform at
@@ -35,14 +35,14 @@ function chunk<T>(items: T[], size: number): T[][] {
 // queuing each transition to finish before the next could start meant fast
 // scrolling visibly lagged behind the real scroll position. Now only the
 // incoming batch plays a short fade/slide-in (direction-aware, so scrolling
-// up visibly reverses it) — the outgoing one just unmounts — so there are
+// up visibly reverses it), the outgoing one just unmounts, so there are
 // never more than 3 blurred cards animating, and the visible batch is never
 // more than one frame behind the actual scroll position.
 //
 // Driven by a plain scroll listener reading getBoundingClientRect() (rAF
 // throttled), not IntersectionObserver: IO reports intersection changes, not
 // continuous position, and a single 9-batch section only crosses a handful
-// of IO thresholds over ~6 screens of scroll — nowhere near enough
+// of IO thresholds over ~6 screens of scroll, nowhere near enough
 // resolution to track a batch index changing every ~0.7 screens.
 export default function BlogScrollStack({ posts }: { posts: BlogPost[] }) {
   const batches = chunk(posts, PER_BATCH);
@@ -107,7 +107,7 @@ export default function BlogScrollStack({ posts }: { posts: BlogPost[] }) {
     const targetProgress = (i + 0.5) / batchCount;
     // getBoundingClientRect().top + scrollY, not el.offsetTop: offsetTop is
     // only relative to the nearest positioned ancestor (here, <main>, which
-    // has its own position: relative), not the document — using it directly
+    // has its own position: relative), not the document, using it directly
     // as a page-absolute scrollTo target landed on the wrong spot entirely,
     // which is why the sidebar previously did nothing useful when clicked.
     const currentAbsoluteTop = el.getBoundingClientRect().top + window.scrollY;
@@ -148,10 +148,10 @@ export default function BlogScrollStack({ posts }: { posts: BlogPost[] }) {
       style={{ height: `${batchCount * VH_PER_BATCH}vh` }}
     >
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden px-5 sm:px-10 lg:pl-24">
-        {/* Progress rail — down the left edge of the screen rather than
+        {/* Progress rail, down the left edge of the screen rather than
             below the cards, so it's visible the moment this section is in
             view instead of needing to look past a full row of cards first.
-            Ticks are clickable — scrolls the page so that batch's segment of
+            Ticks are clickable, scrolls the page so that batch's segment of
             the pinned section is centered, a manual alternative to
             scrubbing through by hand. Hidden below lg: there isn't a spare
             side margin to put it in once the 3-card grid drops to 1 column. */}
@@ -187,7 +187,7 @@ export default function BlogScrollStack({ posts }: { posts: BlogPost[] }) {
             </div>
           </div>
 
-          {/* Same progress, as a compact bottom row — the left-edge rail
+          {/* Same progress, as a compact bottom row, the left-edge rail
               above is lg-only, so anything narrower still gets a way to see
               and jump between batches. */}
           <div className="mt-8 flex items-center justify-center gap-4 lg:hidden">

@@ -1,6 +1,6 @@
 // The Stripe-blog reference's atmospheric ribbon behind the floating card:
 // a large, blurred, rotated multi-stop gradient rather than a hard-edged
-// shape — the blur is what gives it that "soft, flowing graphic, no
+// shape, the blur is what gives it that "soft, flowing graphic, no
 // geometric boundary" quality instead of reading as a rotated rectangle.
 // Colour stops were pixel-sampled from the reference screenshot rather than
 // guessed, so the hue transitions (purple → pink → orange → yellow → cyan)

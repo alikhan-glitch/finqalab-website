@@ -25,14 +25,14 @@ export async function generateMetadata({
   };
 }
 
-// The standalone article a Stripe-style course card's "Read more" leads to —
+// The standalone article a Stripe-style course card's "Read more" leads to , 
 // deliberately self-contained within the /academy-stripe experience rather
 // than routing into the Primer-inspired /academy page: "Back to Courses"
 // returns to the card list, not /academy, and the article reuses
 // <CourseBlocks/> (the same h/p/ul/ol renderer <CourseAccordion/> uses) so
 // the written content can't drift between the two. The video is placed last,
 // after the full write-up, per the requested "read first, then watch" order
-// — the opposite of the accordion panel, which puts the video first.
+//, the opposite of the accordion panel, which puts the video first.
 export default async function AcademyStripeCoursePage({
   params,
 }: {

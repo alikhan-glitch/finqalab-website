@@ -27,24 +27,24 @@ const stats = [
 
 const culture = [
   {
-    mark: "Em",
-    title: "Empowerment",
-    body: "We foster a culture of empowerment, entrusting young graduates with decision-making roles to drive innovation and propel organizational growth.",
+    mark: "Ow",
+    title: "We Hand Over Real Ownership",
+    body: "New hires get real decisions to make in their first few months, not busywork while they “prove themselves.”",
   },
   {
-    mark: "Co",
-    title: "Commitment",
-    body: "Our culture at Finqalab revolves around a commitment to excellence, in every product we ship and every person we serve.",
+    mark: "De",
+    title: "We Sweat the Details Customers Never See",
+    body: "A dividend that posts a day late, a chart that loads a second slow, we catch it before you do, and we fix it.",
   },
   {
-    mark: "Te",
-    title: "Teamwork",
-    body: "We value teamwork as essential to our success, fostering a collaborative environment where every contribution is respected and valued.",
+    mark: "Bu",
+    title: "Nobody Builds Alone Here",
+    body: "Engineers sit with the research desk. Support sits with product. The best ideas come from people who technically don't have to be talking to each other.",
   },
   {
-    mark: "Lo",
-    title: "Loyalty",
-    body: "Loyalty is fundamental to our culture, reflecting our dedication to long-term relationships built on trust and mutual respect.",
+    mark: "Pe",
+    title: "We Invest in People for the Long Run",
+    body: "Several of our team have been with Finqalab, or Next Capital before it, for years. We'd rather grow someone than replace them.",
   },
 ];
 
@@ -64,7 +64,7 @@ export default function CareersPage() {
           <div className="flex w-full max-w-sm flex-col items-center sm:max-w-2xl lg:max-w-4xl">
             <WordReveal
               as="h1"
-              text="Want to work at Finqalab?"
+              text="Help Pakistan learn to invest"
               baseDelay={320}
               stagger={85}
               duration={720}
@@ -74,7 +74,7 @@ export default function CareersPage() {
 
             <WordReveal
               as="p"
-              text="At Finqalab, we're building a team that's reshaping how Pakistan saves and invests, bringing fresh thinking, sharp skills, and real commitment to the mission."
+              text="We're building the platform and the education to bring an entire country into the market for the first time. That mission runs both ways, the people building it get to grow just as fast as the thing they're building."
               baseDelay={1150}
               stagger={22}
               duration={600}
@@ -131,21 +131,21 @@ export default function CareersPage() {
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
               <Reveal delay={80} className="lg:col-span-5">
                 <h2 className={`text-3xl leading-[1.15] sm:text-4xl lg:text-[2.6rem] ${heading}`}>
-                  Innovation, impact, and growth, together
+                  Work that actually moves the needle
                 </h2>
               </Reveal>
               <Reveal delay={160} className="space-y-4 lg:col-span-7">
                 <p className="text-[1.02rem] leading-[1.7] text-text-onDark-muted">
-                  This is where innovation, impact, and growth potential come together in a unique way. Our
-                  team is committed to using cutting-edge technology and innovative approaches to transform
-                  the investing landscape in Pakistan. By working with us, you&apos;ll help broaden financial
-                  market access while significantly contributing to economic development and empowerment.
+                  Whether you&apos;re on engineering, research, or the support desk, the work you do
+                  here shows up in real portfolios, not a slide deck. Finqalab is building the
+                  infrastructure and the education that brings retail investing to Pakistan for the
+                  first time, and every team plays a direct part in that.
                 </p>
                 <p className="text-[1.02rem] leading-[1.7] text-text-onDark-muted">
-                  But it&apos;s not just about the work. It&apos;s about the journey. At Finqalab, we
-                  believe in celebrating the successes, overcoming the challenges, and learning from every
-                  experience along the way. We offer a dynamic and inclusive workplace where diversity is
-                  embraced, and individuality is celebrated.
+                  This isn&apos;t a place to coast. You&apos;ll take on problems nobody has solved for
+                  Pakistan&apos;s market before, whether that&apos;s a technical integration, a
+                  research call, or explaining a new asset class to a first-time investor, and grow
+                  alongside the platform as it scales.
                 </p>
               </Reveal>
             </div>

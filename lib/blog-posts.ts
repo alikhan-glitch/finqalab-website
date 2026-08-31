@@ -79,11 +79,11 @@ export const blogPosts: BlogPost[] = [
       {
         type: "ul",
         items: [
-          "Expansion plans — such as a textile company purchasing new machinery or a bank growing its branch network.",
-          "Debt reduction or restructuring — paying down borrowing and reducing interest burden.",
-          "Working capital requirements — day-to-day operations need liquidity for raw materials, suppliers, or seasonal demand.",
-          "Acquisitions and new projects — financing capital-intensive moves, particularly acquisitions.",
-          "Meeting regulatory capital requirements — banks and insurers must maintain minimum capital levels set by regulators like the SBP.",
+          "Expansion plans, such as a textile company purchasing new machinery or a bank growing its branch network.",
+          "Debt reduction or restructuring, paying down borrowing and reducing interest burden.",
+          "Working capital requirements, day-to-day operations need liquidity for raw materials, suppliers, or seasonal demand.",
+          "Acquisitions and new projects, financing capital-intensive moves, particularly acquisitions.",
+          "Meeting regulatory capital requirements, banks and insurers must maintain minimum capital levels set by regulators like the SBP.",
         ],
       },
       { type: "h3", text: "Key Dates, Ratios, and Your Entitlement" },
@@ -93,7 +93,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "The Book Closure Date is when the company's shareholder register is frozen — you must be a registered shareholder before this date to receive your entitlement. The Ex-Rights Date is when the share price adjusts to reflect the upcoming issuance. Before the subscription window opens, rights entitlements themselves trade on PSX for a limited period, so if you haven't decided whether to subscribe, you can buy or sell these entitlements in the open market.",
+        text: "The Book Closure Date is when the company's shareholder register is frozen, you must be a registered shareholder before this date to receive your entitlement. The Ex-Rights Date is when the share price adjusts to reflect the upcoming issuance. Before the subscription window opens, rights entitlements themselves trade on PSX for a limited period, so if you haven't decided whether to subscribe, you can buy or sell these entitlements in the open market.",
       },
       {
         type: "p",
@@ -102,13 +102,13 @@ export const blogPosts: BlogPost[] = [
       { type: "h3", text: "Your Two Options as a Shareholder" },
       {
         type: "p",
-        text: "Option 1 — Subscribe: fill out the subscription form (sent via CDC) and pay for your new shares through your broker or directly to the company's designated bank. Under PSX regulations, the subscription window must remain open for a minimum of 15 days and no more than 30 days.",
+        text: "Option 1, Subscribe: fill out the subscription form (sent via CDC) and pay for your new shares through your broker or directly to the company's designated bank. Under PSX regulations, the subscription window must remain open for a minimum of 15 days and no more than 30 days.",
       },
       {
         type: "p",
-        text: "Option 2 — Sell Your Rights: if you don't wish to invest more capital, you may be able to sell your rights entitlement on PSX during the trading window, realising some value without subscribing.",
+        text: "Option 2, Sell Your Rights: if you don't wish to invest more capital, you may be able to sell your rights entitlement on PSX during the trading window, realising some value without subscribing.",
       },
-      { type: "h3", text: "Understanding TERP — What Happens to the Share Price?" },
+      { type: "h3", text: "Understanding TERP, What Happens to the Share Price?" },
       {
         type: "p",
         text: "The Theoretical Ex-Rights Price (TERP) is what the share price should theoretically settle at after the rights issue: TERP = (Market Price × Existing Shares + Issue Price × New Shares) ÷ (Existing Shares + New Shares).",
@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "On the ex-rights date, the share price drops from PKR 100 to PKR 96. But if you subscribed, your portfolio stays intact — you now hold 500 shares worth PKR 48,000, having invested PKR 8,000 to maintain your ownership percentage. If you didn't subscribe, your 400 shares are now worth PKR 38,400, a loss of PKR 1,600 in value and a reduction in your ownership percentage.",
+        text: "On the ex-rights date, the share price drops from PKR 100 to PKR 96. But if you subscribed, your portfolio stays intact, you now hold 500 shares worth PKR 48,000, having invested PKR 8,000 to maintain your ownership percentage. If you didn't subscribe, your 400 shares are now worth PKR 38,400, a loss of PKR 1,600 in value and a reduction in your ownership percentage.",
       },
       { type: "h3", text: "Real Examples from Pakistan" },
       {
@@ -134,9 +134,9 @@ export const blogPosts: BlogPost[] = [
       {
         type: "ul",
         items: [
-          "Review the company's last three years of financial performance — profit trends, debt levels, dividend history.",
+          "Review the company's last three years of financial performance, profit trends, debt levels, dividend history.",
           "Read the offer document to understand why the company is raising funds. Capital for growth is generally more reassuring than funds to plug cash flow problems.",
-          "Compare the issue price to the current market price — a meaningful discount is a positive signal but doesn't guarantee returns.",
+          "Compare the issue price to the current market price, a meaningful discount is a positive signal but doesn't guarantee returns.",
           "Calculate your required outlay and whether you can afford it without straining your finances.",
           "Factor in the broader market and sector outlook.",
         ],
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
         items: [
           "A rights issue gives you priority access to new shares at a discount before the general public.",
           "If you don't participate, your ownership percentage is diluted and your share value may decline.",
-          "In Pakistan, the process runs through CDC and your broker — the subscription window is limited.",
+          "In Pakistan, the process runs through CDC and your broker, the subscription window is limited.",
           "Use the TERP formula to understand the real price impact and make an informed decision.",
         ],
       },
@@ -157,7 +157,7 @@ export const blogPosts: BlogPost[] = [
     slug: "portfolio-shock-absorbers",
     title: "Portfolio Shock Absorbers: Four Ways to Protect Your Gains",
     excerpt:
-      "The KSE-100 has pulled back from 191,000 — a reminder that bull runs don't last forever. Four practical ways to lock in gains before the next correction arrives.",
+      "The KSE-100 has pulled back from 191,000, a reminder that bull runs don't last forever. Four practical ways to lock in gains before the next correction arrives.",
     date: "2026-03-03",
     accent: "primary",
     icon: "shield",
@@ -223,7 +223,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-are-dividends",
     title: "What Are Dividends? And Why Do They Matter More Than You Think",
     excerpt:
-      "When a company earns profits, it can reinvest them or share them with shareholders. Here's how that second option — dividends — actually works.",
+      "When a company earns profits, it can reinvest them or share them with shareholders. Here's how that second option, dividends, actually works.",
     date: "2026-01-27",
     accent: "primary",
     icon: "calendar",
@@ -248,10 +248,10 @@ export const blogPosts: BlogPost[] = [
       {
         type: "ul",
         items: [
-          "Announcement Date — when the company publicly declares the dividend and shares the amount and key dates.",
-          "Book Closure — the period during which the company closes its shareholder register to determine eligibility. PSX companies often announce a book closure period instead of a specific ex-date.",
-          "Ex-Date — the date the stock starts trading without the right to the upcoming dividend. You must hold shares before this date to be eligible. Finqalab users can find ex-dates in the Events tab of the Discover section.",
-          "Payment Date — when the dividend is actually credited to your bank account, usually two to six weeks after the ex-date.",
+          "Announcement Date, when the company publicly declares the dividend and shares the amount and key dates.",
+          "Book Closure, the period during which the company closes its shareholder register to determine eligibility. PSX companies often announce a book closure period instead of a specific ex-date.",
+          "Ex-Date, the date the stock starts trading without the right to the upcoming dividend. You must hold shares before this date to be eligible. Finqalab users can find ex-dates in the Events tab of the Discover section.",
+          "Payment Date, when the dividend is actually credited to your bank account, usually two to six weeks after the ex-date.",
         ],
       },
       {
@@ -261,12 +261,12 @@ export const blogPosts: BlogPost[] = [
       { type: "h3", text: "Which Companies Pay Dividends, and How Often?" },
       {
         type: "p",
-        text: "Not all companies pay dividends, and they're not legally obligated to. Dividend payments are typically associated with mature, well-established companies with strong, stable cash flows. Many listed banks, such as MCB Bank, Bank Alfalah, and Habib Bank Limited, pay dividends quarterly. Lucky Cement typically announces annually, while Pakistan Oilfields Limited generally follows a semi-annual pattern. There's no fixed rule — policy depends on future cash requirements, profitability outlook, and growth strategy.",
+        text: "Not all companies pay dividends, and they're not legally obligated to. Dividend payments are typically associated with mature, well-established companies with strong, stable cash flows. Many listed banks, such as MCB Bank, Bank Alfalah, and Habib Bank Limited, pay dividends quarterly. Lucky Cement typically announces annually, while Pakistan Oilfields Limited generally follows a semi-annual pattern. There's no fixed rule, policy depends on future cash requirements, profitability outlook, and growth strategy.",
       },
       { type: "h3", text: "Dividends from the Investor's Perspective" },
       {
         type: "p",
-        text: "For an investor, total returns come from two sources: capital gains and dividends. While capital gains depend on price and volatility, dividends represent real cash in hand — which is why many investors place strong value on them. They're often viewed as a form of regular income, particularly attractive for retirees and conservative investors, adding predictability to a portfolio.",
+        text: "For an investor, total returns come from two sources: capital gains and dividends. While capital gains depend on price and volatility, dividends represent real cash in hand, which is why many investors place strong value on them. They're often viewed as a form of regular income, particularly attractive for retirees and conservative investors, adding predictability to a portfolio.",
       },
       {
         type: "p",
@@ -279,12 +279,12 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Dividend yield is particularly useful for comparing dividend-paying companies with different share prices and payout levels. A company may pay a higher dividend per share than another, but that doesn't automatically make it the better dividend payer — if the second company has a higher yield, it may offer a better cash return relative to the price you're paying.",
+        text: "Dividend yield is particularly useful for comparing dividend-paying companies with different share prices and payout levels. A company may pay a higher dividend per share than another, but that doesn't automatically make it the better dividend payer, if the second company has a higher yield, it may offer a better cash return relative to the price you're paying.",
       },
       { type: "h3", text: "Conclusion" },
       {
         type: "p",
-        text: "For some investors, dividends represent regular income; for others, stability in an otherwise volatile market, or a signal of a company's confidence in its future. They reward patience and long-term ownership — compensating investors not just for holding shares, but for trusting the business through different market cycles. Dividend investing continues to be one of the most reliable strategies in Pakistan's equity market.",
+        text: "For some investors, dividends represent regular income; for others, stability in an otherwise volatile market, or a signal of a company's confidence in its future. They reward patience and long-term ownership, compensating investors not just for holding shares, but for trusting the business through different market cycles. Dividend investing continues to be one of the most reliable strategies in Pakistan's equity market.",
       },
     ],
   },
@@ -292,14 +292,14 @@ export const blogPosts: BlogPost[] = [
     slug: "bonus-shares-vs-stock-splits",
     title: "Bonus Shares vs. Stock Splits: A Clear Guide for Pakistani Investors",
     excerpt:
-      "Both increase your share count and lower the price per share — but the mechanics, accounting, and tax treatment in Pakistan are very different.",
+      "Both increase your share count and lower the price per share, but the mechanics, accounting, and tax treatment in Pakistan are very different.",
     date: "2025-12-24",
     accent: "teal",
     icon: "idea",
     content: [
       {
         type: "p",
-        text: "In equity markets, companies often take corporate actions to make their shares more accessible and liquid without altering the underlying value of the business. Two commonly misunderstood actions are stock splits and bonus shares. Both increase the number of shares held by investors and reduce share price, but the mechanics, accounting treatment, and tax implications — especially in Pakistan — are materially different.",
+        text: "In equity markets, companies often take corporate actions to make their shares more accessible and liquid without altering the underlying value of the business. Two commonly misunderstood actions are stock splits and bonus shares. Both increase the number of shares held by investors and reduce share price, but the mechanics, accounting treatment, and tax implications, especially in Pakistan, are materially different.",
       },
       { type: "h3", text: "What Is a Stock Split?" },
       {
@@ -308,7 +308,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Example: an investor owns 100 shares priced at PKR 1,000 each (total value PKR 100,000). After a 5-for-1 split: 500 shares at PKR 200 each — still PKR 100,000 total. The reduction in price is purely mathematical and represents no loss in wealth, since the company's market capitalization and the shareholder's proportional ownership remain unchanged.",
+        text: "Example: an investor owns 100 shares priced at PKR 1,000 each (total value PKR 100,000). After a 5-for-1 split: 500 shares at PKR 200 each, still PKR 100,000 total. The reduction in price is purely mathematical and represents no loss in wealth, since the company's market capitalization and the shareholder's proportional ownership remain unchanged.",
       },
       {
         type: "p",
@@ -321,16 +321,16 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Example: an investor holds 1,000 shares at PKR 120 each (PKR 120,000 total). A 20% bonus issue adds 200 shares (1,200 total), and the adjusted price becomes 120 ÷ 1.20 = PKR 100 — total value unchanged at PKR 120,000. Mari Energies' 800% bonus issue in 2014 — eight bonus shares for every one held — increased shares ninefold and reduced the share price from around PKR 3,600 to approximately PKR 400, noticeably improving liquidity and trading activity.",
+        text: "Example: an investor holds 1,000 shares at PKR 120 each (PKR 120,000 total). A 20% bonus issue adds 200 shares (1,200 total), and the adjusted price becomes 120 ÷ 1.20 = PKR 100, total value unchanged at PKR 120,000. Mari Energies' 800% bonus issue in 2014, eight bonus shares for every one held, increased shares ninefold and reduced the share price from around PKR 3,600 to approximately PKR 400, noticeably improving liquidity and trading activity.",
       },
       { type: "h3", text: "Key Difference: Tax Treatment in Pakistan" },
       {
         type: "p",
-        text: "In Pakistan, no tax applies to stock splits, since shares are merely subdivided — there's no concept of additional income. Bonus shares, however, are treated by the government as additional income even though the investor's overall value doesn't increase, so a withholding tax (currently 15%) applies.",
+        text: "In Pakistan, no tax applies to stock splits, since shares are merely subdivided, there's no concept of additional income. Bonus shares, however, are treated by the government as additional income even though the investor's overall value doesn't increase, so a withholding tax (currently 15%) applies.",
       },
       {
         type: "p",
-        text: "Example: you own 100 shares at PKR 520 each (PKR 52,000). After a stock split, 200 shares at PKR 260 — still PKR 52,000, no tax. With bonus shares, a 15% tax on the additional shares means you effectively receive 85 extra shares instead of 100 — at PKR 260, that's 260 × 185 = PKR 48,100, a real reduction in value.",
+        text: "Example: you own 100 shares at PKR 520 each (PKR 52,000). After a stock split, 200 shares at PKR 260, still PKR 52,000, no tax. With bonus shares, a 15% tax on the additional shares means you effectively receive 85 extra shares instead of 100, at PKR 260, that's 260 × 185 = PKR 48,100, a real reduction in value.",
       },
       {
         type: "p",
@@ -358,7 +358,7 @@ export const blogPosts: BlogPost[] = [
         "CGT is a tax on profits from selling assets like shares.",
         "NCCPL is the brains behind the operation that guarantees settlements and computes and collects CGT using data from PSX, as well as from the CDC, AMCs, and PMEX.",
         "CGT rate is inversely linked to holding period as per latest structure; the detailed structure is provided later for your understanding.",
-        "It's not all gloom — losses can offset gains, and refunds are automatic if overpaid.",
+        "It's not all gloom, losses can offset gains, and refunds are automatic if overpaid.",
       ] },
       { type: "h3", text: "Understanding Capital Gains Tax" },
       { type: "p", text: "Suppose you purchase shares of a high-performing technology company for PKR 100/share and then sell them for PKR 150/share. The resulting PKR 50 profit from that sale would be subject to capital gains tax." },
@@ -396,7 +396,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "personal-finance-living-smart",
-    title: "Personal Finance Isn't Just About Saving — It's About Living Smart",
+    title: "Personal Finance Isn't Just About Saving, It's About Living Smart",
     excerpt:
       "Saving and investing get all the attention, but real personal finance is about balancing today's life with tomorrow's goals. Four simple pillars to get there.",
     date: "2025-05-05",
@@ -406,15 +406,15 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "I see a lot of people posting about saving and investing these days under the umbrella of personal finance. However, in my opinion, personal finance is more than that. It's about building a balanced relationship with money that supports both your future goals and your present quality of life." },
       { type: "p", text: "Let's break it down into four simple pillars:" },
       { type: "h3", text: "1. Pay Yourself First" },
-      { type: "p", text: "Yes, spending is just as important. A good lifestyle — the right environment, health, experiences — directly impacts your mental clarity, motivation, and earning capacity. But balance is key. Don't spend to impress, spend to enhance your life. The real flex is financial peace, not flashy purchases." },
+      { type: "p", text: "Yes, spending is just as important. A good lifestyle, the right environment, health, experiences, directly impacts your mental clarity, motivation, and earning capacity. But balance is key. Don't spend to impress, spend to enhance your life. The real flex is financial peace, not flashy purchases." },
       { type: "h3", text: "2. Save Whatever You Can" },
-      { type: "p", text: "Your salary isn't truly yours until you've saved a part of it. Whether it's 10% or 30%, consistency is more important than the amount. Automate your savings so it becomes non-negotiable — like a monthly bill you owe your future self." },
+      { type: "p", text: "Your salary isn't truly yours until you've saved a part of it. Whether it's 10% or 30%, consistency is more important than the amount. Automate your savings so it becomes non-negotiable, like a monthly bill you owe your future self." },
       { type: "h3", text: "3. Track, Don't Restrict" },
       { type: "p", text: "Budgeting isn't about saying “no” to everything fun. It's about knowing where your money goes and making intentional choices. Use the 50/30/20 rule as a starting point:" },
       { type: "ul", items: ["50% for needs", "30% for wants", "20% for savings & investments"] },
-      { type: "p", text: "Awareness creates control — not guilt." },
+      { type: "p", text: "Awareness creates control, not guilt." },
       { type: "h3", text: "4. Grow What You Save" },
-      { type: "p", text: "Saving alone won't beat inflation. Investing — whether in fixed income, mutual funds, or stocks — helps your money work for you. You don't need to be a market expert to get started. Start small. Stay consistent. Focus on the long term." },
+      { type: "p", text: "Saving alone won't beat inflation. Investing, whether in fixed income, mutual funds, or stocks, helps your money work for you. You don't need to be a market expert to get started. Start small. Stay consistent. Focus on the long term." },
       { type: "p", text: "In the end, I would like to reiterate that you don't need to worry if you can't spare 10% of your salary today. Consistency is more important than the amount even if it is only 2%. In the next writeup, I would delve into how your monthly savings or contributions can grow exponentially over time." },
     ],
   },
@@ -422,13 +422,13 @@ export const blogPosts: BlogPost[] = [
     slug: "pakistan-india-tensions-and-psx",
     title: "Pakistan-India Tensions and PSX: What Should Be Your Strategy?",
     excerpt:
-      "As tensions flare between Pakistan and India, PSX investors face a familiar dilemma — sell, sit tight, or keep buying. Here's how to think through risk tolerance in the moment.",
+      "As tensions flare between Pakistan and India, PSX investors face a familiar dilemma, sell, sit tight, or keep buying. Here's how to think through risk tolerance in the moment.",
     date: "2025-05-05",
     accent: "primary",
     icon: "compass",
     content: [
       { type: "p", text: "The two countries have engaged in yet another conflict recently in the wake of the Pahalgam Terrorist Attack. The last escalation was witnessed in 2019 amid the Pulwama Attack, and we have seen many similar situations. This isn't the first time." },
-      { type: "p", text: "The way I see it — both sides are smart enough to understand that a war can only bring destruction and could result in massive (massive is probably too small a word here) casualties, given the combined population of the two countries is more than 1.8 billion. Having said that, some escalation cannot be ruled out due to political reasons." },
+      { type: "p", text: "The way I see it, both sides are smart enough to understand that a war can only bring destruction and could result in massive (massive is probably too small a word here) casualties, given the combined population of the two countries is more than 1.8 billion. Having said that, some escalation cannot be ruled out due to political reasons." },
       { type: "p", text: "How do we position ourselves as PSX investors in this situation? I can see three different strategies in this scenario." },
       { type: "ul", items: [
         "Sell everything today and keep cash in hand. When things cool down and you're feeling confident, you can get back in. In this case, you may be buying back at higher prices, but that is probably the cost of insurance against a large-scale problem. Having said that, I believe we would have bigger things to worry about in case of a full-scale war.",
@@ -436,22 +436,22 @@ export const blogPosts: BlogPost[] = [
         "Keep your SIP mode on and continue buying if the market falls. This is a riskier approach but could offer you supernormal gains once things are back to normal.",
       ] },
       { type: "p", text: "If you have any other strategy in mind, please do share in the comments." },
-      { type: "p", text: "What should be our strategy? There is no right or wrong here — your approach depends on your risk tolerance and whatever you are comfortable with." },
-      { type: "p", text: "Risk tolerance is usually ignored by investors when it comes to PSX; however, it is the single biggest determinant of your investing strategy. We have also recently made a video on how to assess your risk tolerance and come up with asset allocations — you can watch that if you're unclear on this." },
+      { type: "p", text: "What should be our strategy? There is no right or wrong here, your approach depends on your risk tolerance and whatever you are comfortable with." },
+      { type: "p", text: "Risk tolerance is usually ignored by investors when it comes to PSX; however, it is the single biggest determinant of your investing strategy. We have also recently made a video on how to assess your risk tolerance and come up with asset allocations, you can watch that if you're unclear on this." },
     ],
   },
   {
     slug: "understanding-market-cycles-in-psx",
     title: "Understanding Market Cycles in Pakistan Stock Exchange (PSX)",
     excerpt:
-      "Pakistan's stock market often looks unpredictable — sharp growth followed by steep declines. But these swings follow patterns, not randomness.",
+      "Pakistan's stock market often looks unpredictable, sharp growth followed by steep declines. But these swings follow patterns, not randomness.",
     date: "2025-03-26",
     accent: "teal",
     icon: "shape",
     content: [
       {
         type: "p",
-        text: "Market cycles are a fundamental concept every investor should understand. In Pakistan, the stock market often seems unpredictable, with periods of sharp growth followed by steep declines. But these movements aren't random — they follow patterns driven by economic realities.",
+        text: "Market cycles are a fundamental concept every investor should understand. In Pakistan, the stock market often seems unpredictable, with periods of sharp growth followed by steep declines. But these movements aren't random, they follow patterns driven by economic realities.",
       },
       {
         type: "p",
@@ -471,7 +471,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "While stock markets globally are influenced by various factors, Pakistan's market cycles — particularly bear markets — can largely be traced back to one root cause: the current account deficit.",
+        text: "While stock markets globally are influenced by various factors, Pakistan's market cycles, particularly bear markets, can largely be traced back to one root cause: the current account deficit.",
       },
       {
         type: "p",
@@ -479,7 +479,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Interest rates carry an inverse relationship with equities. In periods of higher rates, fixed income or risk-free instruments offer attractive returns and money moves away from risky assets like stocks, and vice versa. Fundamentally, justified P/E = 1 ÷ (R − G), where R is the cost of equity — R rises or falls with interest rates, inversely impacting equity valuations.",
+        text: "Interest rates carry an inverse relationship with equities. In periods of higher rates, fixed income or risk-free instruments offer attractive returns and money moves away from risky assets like stocks, and vice versa. Fundamentally, justified P/E = 1 ÷ (R − G), where R is the cost of equity, R rises or falls with interest rates, inversely impacting equity valuations.",
       },
       {
         type: "p",
@@ -487,7 +487,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Market cycles are inevitable, but how investors react to them can make all the difference. Trying to time the market — predicting exact highs and lows — is rarely successful. A long-term, disciplined approach works better: during downturns, focus on gradually accumulating fundamentally strong assets at attractive valuations. In bull markets, it's important to avoid overconfidence.",
+        text: "Market cycles are inevitable, but how investors react to them can make all the difference. Trying to time the market, predicting exact highs and lows, is rarely successful. A long-term, disciplined approach works better: during downturns, focus on gradually accumulating fundamentally strong assets at attractive valuations. In bull markets, it's important to avoid overconfidence.",
       },
       {
         type: "quote",
@@ -500,17 +500,17 @@ export const blogPosts: BlogPost[] = [
     slug: "finding-opportunities-with-sip",
     title: "Finding Opportunities in the Market's Ups and Downs – SIP",
     excerpt:
-      "With the KSE100 brushing 100,000 points, volatility isn't the enemy — it's the opportunity. Here's why a disciplined SIP approach beats chasing headlines every time.",
+      "With the KSE100 brushing 100,000 points, volatility isn't the enemy, it's the opportunity. Here's why a disciplined SIP approach beats chasing headlines every time.",
     date: "2024-11-27",
     accent: "primary",
     icon: "coins",
     content: [
       { type: "p", text: "Since the KSE100 has now reached almost 100K points, I feel it's a good time to write on how volatility is your best friend in your investing journey. Unfortunately, our country goes through an economic crisis every five years, which also translates into a stock market crash." },
-      { type: "p", text: "Investors (including big shots) suffer big losses on their capital; however, common people mostly stay away from this kind of adventure. Hence we hear this famous statement — “Pakistan's stock market always ends up in losses” — from our acquaintances." },
+      { type: "p", text: "Investors (including big shots) suffer big losses on their capital; however, common people mostly stay away from this kind of adventure. Hence we hear this famous statement, “Pakistan's stock market always ends up in losses”, from our acquaintances." },
       { type: "p", text: "Despite volatility over time (especially over the past seven years), the KSE100 index reaching an all-time high of close to the 100K level is a testament to the fact that valuations are realized sooner or later, and that stocks tend to provide the highest returns of all asset classes in the long run." },
-      { type: "p", text: "Volatility is good because it lets you buy high-quality businesses at discounted prices. UBL's stock price fell under PKR 100 last year while interest rates were rising, and the bank was working as usual. Imagine a PKR 100 stock price versus an expected dividend of PKR 30/share (the actual dividend turned out to be more than PKR 40/share) — I can only say WTF. Today, the stock is worth PKR 340, and now people wish they had bought it earlier. And there are so many other examples." },
-      { type: "p", text: "I see a lot of people posting stuff like “who gets rich on salaries?” on social media. That's true — not because salaries aren't enough, but because people don't properly manage their finances. The best part about being a salaried person is monthly inflow, a portion of which can be invested through strict discipline. With SIP, you can keep buying monthly. If the market crashes, you can keep buying and pulling down your average cost, so that when there is a bounce back (there is a bounce back every time) you come out with a much larger gain." },
-      { type: "p", text: "There is one caveat, though: you must invest in fundamentally sound businesses with strong moats. Investing for short-term gains based on news and rumors isn't going to help you in the long run. If you do this, we will probably have more people saying, “Pakistan's stock market always ends up in losses.” That's not the stock market's problem — that's your investing problem." },
+      { type: "p", text: "Volatility is good because it lets you buy high-quality businesses at discounted prices. UBL's stock price fell under PKR 100 last year while interest rates were rising, and the bank was working as usual. Imagine a PKR 100 stock price versus an expected dividend of PKR 30/share (the actual dividend turned out to be more than PKR 40/share), I can only say WTF. Today, the stock is worth PKR 340, and now people wish they had bought it earlier. And there are so many other examples." },
+      { type: "p", text: "I see a lot of people posting stuff like “who gets rich on salaries?” on social media. That's true, not because salaries aren't enough, but because people don't properly manage their finances. The best part about being a salaried person is monthly inflow, a portion of which can be invested through strict discipline. With SIP, you can keep buying monthly. If the market crashes, you can keep buying and pulling down your average cost, so that when there is a bounce back (there is a bounce back every time) you come out with a much larger gain." },
+      { type: "p", text: "There is one caveat, though: you must invest in fundamentally sound businesses with strong moats. Investing for short-term gains based on news and rumors isn't going to help you in the long run. If you do this, we will probably have more people saying, “Pakistan's stock market always ends up in losses.” That's not the stock market's problem, that's your investing problem." },
     ],
   },
   {
@@ -526,7 +526,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "However, last week, it all turned out to be a failure when only one bidder participated, with a bid value of PKR 10 billion against the privatization commission's minimum value of PKR 85 billion. While it wasn't a surprise considering what happened with the IPPs' PPA terminations, I won't go into those details here." },
       { type: "p", text: "PIA's market capitalization on the Pakistan Stock Exchange at its peak was close to more than PKR 160 billion. The government would probably have been better off selling its shares in the stock market. Nonetheless, it's not such an easy call, as PIA is the national flag carrier." },
       { type: "p", text: "Now, since the bidding day, the stock has been hitting lower circuits every day and has reached PKR 14 today. Despite the supernormal run, I never participated in this stock. A lot of my friends pitched this stock to me on the turnaround story, but I stayed away due to too much reliance on the bureaucracy, which has a history of bad decision-making." },
-      { type: "p", text: "Some might argue that I missed out on good potential returns, but that involved more timing than anything. The best part about investing on fundamentals is that value is realized sooner or later — it's much safer and simpler. Investing is more about discipline than anything else." },
+      { type: "p", text: "Some might argue that I missed out on good potential returns, but that involved more timing than anything. The best part about investing on fundamentals is that value is realized sooner or later, it's much safer and simpler. Investing is more about discipline than anything else." },
       { type: "quote", text: "Don't lose money. Capital protection is your key, as your returns compound over time into something big.", attribution: "Warren Buffett, Rule #1" },
     ],
   },
@@ -539,9 +539,9 @@ export const blogPosts: BlogPost[] = [
     accent: "primary",
     icon: "chart",
     content: [
-      { type: "p", text: "EV infrastructure isn't just about installing charging stations with heavy loads. The biggest obstacle in Pakistan is the cost of electricity, which has now reached nearly PKR 70 per unit — and that's the cost of electricity delivered by distribution companies." },
+      { type: "p", text: "EV infrastructure isn't just about installing charging stations with heavy loads. The biggest obstacle in Pakistan is the cost of electricity, which has now reached nearly PKR 70 per unit, and that's the cost of electricity delivered by distribution companies." },
       { type: "p", text: "EV infrastructure providers would need to cover additional costs and earn some profit too, thereby further elevating the cost of electricity for EV charging purposes (assuming no government intervention). However, if the government intervenes to keep pricing low, we are talking about another source of circular debt, discouraging private investors unless returns are guaranteed, like IPPs." },
-      { type: "p", text: "The already high cost of electricity doesn't leave much savings on the table for 4-wheeler EV buyers. Let's take the Deepal L07 as an example — it has a battery capacity of 67 kWh and a range of 540 km. Bear in mind that EV range numbers are quoted under ideal conditions; the number usually drops when the AC is turned on or other factors come into play." },
+      { type: "p", text: "The already high cost of electricity doesn't leave much savings on the table for 4-wheeler EV buyers. Let's take the Deepal L07 as an example, it has a battery capacity of 67 kWh and a range of 540 km. Bear in mind that EV range numbers are quoted under ideal conditions; the number usually drops when the AC is turned on or other factors come into play." },
       { type: "ul", items: [
         "One full charge of the battery should cost 67 x 70 = PKR 4,700.",
         "Assuming 50 km of running in a day, the cost of electricity per day should be PKR 435.",
@@ -550,7 +550,7 @@ export const blogPosts: BlogPost[] = [
         "Monthly savings = PKR 34,125",
         "Annual savings = PKR 409,500",
       ] },
-      { type: "p", text: "On the other hand, the upfront price of EVs is higher compared to their gasoline counterparts. The Deepal L07 costs PKR 15.5 million — we can comfortably assume that this is a premium of PKR 4 million." },
+      { type: "p", text: "On the other hand, the upfront price of EVs is higher compared to their gasoline counterparts. The Deepal L07 costs PKR 15.5 million, we can comfortably assume that this is a premium of PKR 4 million." },
       { type: "p", text: "We can calculate the payback period as 4,000,000 / 409,500 ≈ 10 years." },
       { type: "p", text: "I feel that this payback period is absurd, and these calculations assume PKR 70 per unit of electricity. EV adoption is high in countries where:" },
       { type: "ul", items: [
@@ -565,32 +565,32 @@ export const blogPosts: BlogPost[] = [
     slug: "regulatory-contradictions-banking-sector",
     title: "Regulatory Contradictions in Banking Sector",
     excerpt:
-      "Banks keep parking deposits in government paper instead of lending to businesses — and the very rules meant to fix that are quietly working against it.",
+      "Banks keep parking deposits in government paper instead of lending to businesses, and the very rules meant to fix that are quietly working against it.",
     date: "2024-09-24",
     accent: "teal",
     icon: "scale",
     content: [
-      { type: "p", text: "The banks in Pakistan have remained under severe criticism for routing a major portion of their liabilities towards government securities and leaving the private credit market dry. But banks are not social organizations — they are businesses. There is no logical incentive for banks to extend risky lending to the private sector for a few hundred bps more when the government is willing to offer sky-high returns for no risk." },
+      { type: "p", text: "The banks in Pakistan have remained under severe criticism for routing a major portion of their liabilities towards government securities and leaving the private credit market dry. But banks are not social organizations, they are businesses. There is no logical incentive for banks to extend risky lending to the private sector for a few hundred bps more when the government is willing to offer sky-high returns for no risk." },
       { type: "p", text: "Policymakers have been trying to push banks towards private sector lending through regulatory interventions; however, they have failed so far due to the lack of a conducive environment. Let's take a look at some interesting regulatory contradictions." },
-      { type: "p", text: "A policy rate below the discount rate was introduced in 2015, at which banks could borrow from the SBP discount window. As a result, banks could earn a risk-free spread by borrowing from the SBP discount window and lending to the government — seemingly created to evade the IMF's restriction on the government's borrowing from the SBP." },
-      { type: "p", text: "While the spread has fluctuated between positive and negative due to movement in the yield curve, the average has been a positive 0.4% since it was introduced. No wonder large banks like UBL are excited to borrow from this discount window — as per its latest financial statements, UBL's repo borrowings stand close to PKR 4 trillion versus a total deposit base of PKR 2.9 trillion." },
+      { type: "p", text: "A policy rate below the discount rate was introduced in 2015, at which banks could borrow from the SBP discount window. As a result, banks could earn a risk-free spread by borrowing from the SBP discount window and lending to the government, seemingly created to evade the IMF's restriction on the government's borrowing from the SBP." },
+      { type: "p", text: "While the spread has fluctuated between positive and negative due to movement in the yield curve, the average has been a positive 0.4% since it was introduced. No wonder large banks like UBL are excited to borrow from this discount window, as per its latest financial statements, UBL's repo borrowings stand close to PKR 4 trillion versus a total deposit base of PKR 2.9 trillion." },
       { type: "p", text: "Amid large fiscal deficits, it's the government that's crowding out the private sector by creating an abnormally large demand for money. Despite such a high concentration of banking deposits in government securities, OMO injection stands at an all-time high of PKR 12 trillion (more than 10% of GDP), reflecting the liquidity crisis in the system. In addition, there is an outstanding net budgetary borrowing of PKR 4.4 trillion from the SBP." },
       { type: "p", text: "Moreover, there is an additional income tax on banks that are unable to maintain an advance-to-deposit ratio (ADR) of 50%. Private sector lending is M2 expansionary, whereas the central bank is running a tight monetary policy owing to an external account crisis at the same time." },
-      { type: "p", text: "Regulatory interventions would not help as long as the government remains the largest borrower in the system. In 2003–04, T-Bill yields had dropped under 3% (despite a discount rate of 7.5%) because the government was running a very low budget deficit. Lowering the fiscal deficit is not going to help much at this stage — the government must run large primary surpluses in order to lower its borrowings relative to GDP and leave room for private credit expansion at the same time." },
+      { type: "p", text: "Regulatory interventions would not help as long as the government remains the largest borrower in the system. In 2003–04, T-Bill yields had dropped under 3% (despite a discount rate of 7.5%) because the government was running a very low budget deficit. Lowering the fiscal deficit is not going to help much at this stage, the government must run large primary surpluses in order to lower its borrowings relative to GDP and leave room for private credit expansion at the same time." },
     ],
   },
   {
     slug: "how-to-10x-your-savings",
     title: "How to 10x Your Savings",
     excerpt:
-      "A simple compounding example shows how patience, reinvestment, and steady monthly contributions — not luck — can turn modest savings into roughly PKR 7 million over ten years.",
+      "A simple compounding example shows how patience, reinvestment, and steady monthly contributions, not luck, can turn modest savings into roughly PKR 7 million over ten years.",
     date: "2024-09-24",
     accent: "primary",
     icon: "rocket",
     content: [
       { type: "p", text: "I have come across various videos on YouTube that talk about how you can double your money. I thought I should go multiples higher and explain how you can 10x your savings." },
       { type: "p", text: "I am a fundamental investor and not fond of casinos. I try to capitalize on the powers of patience, contributions, and compounding. Let's understand it through an example." },
-      { type: "p", text: "Assuming you have an initial investment of PKR 1,000 and you earn 10% profit per year. At the end of Year 1, you would have an initial capital of PKR 1,000 and PKR 100 in profit. Let's assume further that your initial investment is locked at face value; you would have PKR 2,000 at the end of 10 years — PKR 1,000 in initial capital and PKR 100 x 10 = PKR 1,000 in profit. These are called simple calculations." },
+      { type: "p", text: "Assuming you have an initial investment of PKR 1,000 and you earn 10% profit per year. At the end of Year 1, you would have an initial capital of PKR 1,000 and PKR 100 in profit. Let's assume further that your initial investment is locked at face value; you would have PKR 2,000 at the end of 10 years, PKR 1,000 in initial capital and PKR 100 x 10 = PKR 1,000 in profit. These are called simple calculations." },
       { type: "p", text: "Now let's consider reinvestment of the profits into the same investment. Now, you would begin with PKR 1,100 in Year 2: PKR 1,100 x (1 + 10%) = PKR 1,210." },
       { type: "p", text: "See, you have an additional amount of PKR 10, from the profit component on the reinvested amount of PKR 100. Let's take it further: Year 3 = PKR 1,210 x (1 + 10%) = PKR 1,331. Year 4 = PKR 1,331 x (1 + 10%) = PKR 1,464." },
       { type: "p", text: "By Year 10, you would have PKR 1,000 x (1 + 10%) ^ 10 = PKR 2,594." },
@@ -607,7 +607,7 @@ export const blogPosts: BlogPost[] = [
     slug: "outperforming-the-market-big-picture",
     title: "Outperforming the Market: It's All About the Big Picture",
     excerpt:
-      "Real outperformance rarely comes from fine-tuning an EPS estimate by a few cents — it comes from spotting the big trend the rest of the market hasn't priced in yet.",
+      "Real outperformance rarely comes from fine-tuning an EPS estimate by a few cents, it comes from spotting the big trend the rest of the market hasn't priced in yet.",
     date: "2024-09-18",
     accent: "teal",
     icon: "thinking",
@@ -633,7 +633,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       {
         type: "p",
-        text: "While it feels way too complicated to a majority, determining a target P/E multiple for a stock isn't any rocket science. Using a simple formula and some basic judgment gets you most of the way there — though remember that valuation is an art, not a science, so your approach can differ.",
+        text: "While it feels way too complicated to a majority, determining a target P/E multiple for a stock isn't any rocket science. Using a simple formula and some basic judgment gets you most of the way there, though remember that valuation is an art, not a science, so your approach can differ.",
       },
       {
         type: "p",
@@ -641,12 +641,12 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "For companies with strong cash flow generation, such as fertilizers or autos, a 100% payout ratio is a reasonable assumption — otherwise they'd be reinvesting in growth instead.",
+        text: "For companies with strong cash flow generation, such as fertilizers or autos, a 100% payout ratio is a reasonable assumption, otherwise they'd be reinvesting in growth instead.",
       },
       { type: "h3", text: "Estimating the Cost of Equity" },
       {
         type: "p",
-        text: "Cost of equity can be calculated a few ways; a common approach is risk-free bond yield plus a risk premium. The equity risk premium is the additional return an investor requires to take on the added risk of equities — 10% is a reasonable starting point, though this can vary with your risk profile.",
+        text: "Cost of equity can be calculated a few ways; a common approach is risk-free bond yield plus a risk premium. The equity risk premium is the additional return an investor requires to take on the added risk of equities, 10% is a reasonable starting point, though this can vary with your risk profile.",
       },
       {
         type: "p",
@@ -655,16 +655,16 @@ export const blogPosts: BlogPost[] = [
       { type: "h3", text: "Estimating the Growth Rate" },
       {
         type: "p",
-        text: "For growth rate (G), nominal GDP growth is a reasonable benchmark: 10% inflation + 2.5% real GDP growth = 12.5% earnings growth. That gives us: Target P/E = 1 ÷ (28.0% − 12.5%) = 6.5x — a benchmark multiple for sound, cash-flow generating companies.",
+        text: "For growth rate (G), nominal GDP growth is a reasonable benchmark: 10% inflation + 2.5% real GDP growth = 12.5% earnings growth. That gives us: Target P/E = 1 ÷ (28.0% − 12.5%) = 6.5x, a benchmark multiple for sound, cash-flow generating companies.",
       },
       { type: "h3", text: "Adjusting for Special Cases" },
       {
         type: "p",
-        text: "Two considerations may require additional work. First, above or below short-term earnings growth: if a company is likely to experience supernormal growth for the next 2–3 years, apply the 6.5x multiple to fourth-year earnings (once it enters a normal growth period) and discount it back using the cost of equity. Second, cash flow constraints: for companies unable to generate cash flows in line with their profitability, apply a discount depending on the severity of the problem — for example, a 50% discount for PSO.",
+        text: "Two considerations may require additional work. First, above or below short-term earnings growth: if a company is likely to experience supernormal growth for the next 2–3 years, apply the 6.5x multiple to fourth-year earnings (once it enters a normal growth period) and discount it back using the cost of equity. Second, cash flow constraints: for companies unable to generate cash flows in line with their profitability, apply a discount depending on the severity of the problem, for example, a 50% discount for PSO.",
       },
       {
         type: "p",
-        text: "Assigning a target P/E is the last step in your valuation process. Forming an earnings outlook is a much more critical and time-consuming exercise — one worth its own deep dive.",
+        text: "Assigning a target P/E is the last step in your valuation process. Forming an earnings outlook is a much more critical and time-consuming exercise, one worth its own deep dive.",
       },
     ],
   },
@@ -693,7 +693,7 @@ export const blogPosts: BlogPost[] = [
     slug: "sazew-stock-imagination-and-valuation",
     title: "SAZEW Stock: How Imagination and Valuation Led to Big Gains",
     excerpt:
-      "A three-wheeler maker most investors overlooked went from a 7.4 rupee quarterly EPS to a ten-month rally — a lesson in what patience, imagination, and downside math can do for a portfolio.",
+      "A three-wheeler maker most investors overlooked went from a 7.4 rupee quarterly EPS to a ten-month rally, a lesson in what patience, imagination, and downside math can do for a portfolio.",
     date: "2024-09-18",
     accent: "primary",
     icon: "writing",
@@ -714,7 +714,7 @@ export const blogPosts: BlogPost[] = [
     slug: "truth-about-reer",
     title: "The Truth About REER: Lagging Indicator of Currency Value",
     excerpt:
-      "REER often gets read as a signal that the rupee is about to swing — but the numbers from 2023 show it tells you where the currency has been, not where it's headed.",
+      "REER often gets read as a signal that the rupee is about to swing, but the numbers from 2023 show it tells you where the currency has been, not where it's headed.",
     date: "2024-09-18",
     accent: "teal",
     icon: "chart",
@@ -726,14 +726,14 @@ export const blogPosts: BlogPost[] = [
       { type: "h3", text: "The December 2023 Reality Check" },
       { type: "p", text: "By December 2023, while PKR remained around 280 versus the USD, REER had climbed to nearly 99. This occurred because REER incorporates inflation differentials between domestic and basket currencies. The hyperinflation following the previous devaluation widened the currency gap, pushing REER back toward 99." },
       { type: "h3", text: "Practical Market Dynamics" },
-      { type: "p", text: "Beyond its theoretical limitations, REER remains largely academic. Market realities — specifically current account and financial account supply-demand dynamics — ultimately determine actual currency equilibrium levels." },
+      { type: "p", text: "Beyond its theoretical limitations, REER remains largely academic. Market realities, specifically current account and financial account supply-demand dynamics, ultimately determine actual currency equilibrium levels." },
     ],
   },
   {
     slug: "hinoon-stock-market-fear",
     title: "How Market Fear Led to 150% Gains in HINOON Stock",
     excerpt:
-      "When Highnoon Laboratories' profits surged even as its share price collapsed with the wider market, one investor saw a mispricing too obvious to ignore — and it paid off within months.",
+      "When Highnoon Laboratories' profits surged even as its share price collapsed with the wider market, one investor saw a mispricing too obvious to ignore, and it paid off within months.",
     date: "2024-09-16",
     accent: "primary",
     icon: "compass",
@@ -742,7 +742,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Back in Jul/2019, Pakistan Stock Market was bleeding against the harsh realities of tough macroeconomic adjustments, and I was screening for some fundamentally sound stocks which could at least double in response to economic stabilization." },
       { type: "p", text: "It wasn't easy since it required a lot of imagination in terms of company responses to the economic environment. While corporate profitability was taking a hit, Highnoon Laboratories (PSX: HINOON) had reported more than 40% growth in its profit for the Jun/2019 quarter. It wasn't any one-off, rather pure revenue and margins driven growth." },
       { type: "p", text: "HINOON's stock price had less than halved since its peak in 2017 whereas its profit after tax was up nearly 60% in 2019, thereby causing its price-to-earnings ratio (P/E) to shrink from close to 30x to less than 10x." },
-      { type: "p", text: "A systematic risk had led to over-correction in this fundamentally strong company. The forest fire burns even the sandalwood tree, creating opportunities for value investors — especially contrarians." },
+      { type: "p", text: "A systematic risk had led to over-correction in this fundamentally strong company. The forest fire burns even the sandalwood tree, creating opportunities for value investors, especially contrarians." },
       { type: "p", text: "I discussed my thesis with a few friends and concluded that people were trying to justify the market valuation as they couldn't digest that financial performance in such a turbulent economic period." },
       { type: "p", text: "As soon as the market stabilized, it took the stock only 5 months to yield 150% return. It was arguably one of the safest bets at the time. There were a lot of similar stories in 2023 when there was panic across the board." },
       { type: "p", text: "This theme also resonates with a famous saying:" },
@@ -753,7 +753,7 @@ export const blogPosts: BlogPost[] = [
     slug: "power-of-compounding-efert",
     title: "The Power of Compounding: How EFERT Delivered 10x Returns Over a Decade",
     excerpt:
-      "A decade of steady dividend reinvestment turned Engro Fertilizers into a quiet tenbagger — proof that patience and compounding can outperform chasing exciting stories.",
+      "A decade of steady dividend reinvestment turned Engro Fertilizers into a quiet tenbagger, proof that patience and compounding can outperform chasing exciting stories.",
     date: "2024-09-16",
     accent: "teal",
     icon: "coins",
@@ -774,7 +774,7 @@ export const blogPosts: BlogPost[] = [
     accent: "primary",
     icon: "scale",
     content: [
-      { type: "p", text: "While valuations are taught in schools using the mathematical formula of present value of future cash flows, estimation of those future cash flows involves huge assumptions and subjectivity. And the beauty of scientific formulae lies in its inputs, as the value of output is as good as that of input — or GIGO." },
+      { type: "p", text: "While valuations are taught in schools using the mathematical formula of present value of future cash flows, estimation of those future cash flows involves huge assumptions and subjectivity. And the beauty of scientific formulae lies in its inputs, as the value of output is as good as that of input, or GIGO." },
       { type: "p", text: "Using financial ratios, one cannot just say that a lower multiple is better since it can be a value trap. A stock may command a premium due to a variety of factors, including but not limited to growth, balance sheet strength, and management quality." },
       { type: "p", text: "Combining important financial aspects, making assumptions on key variables, and choosing a valuation methodology allows one to create a picture, called outlook, which must be analysed through the lens of market expectations. One learns with experience after several interpretations." },
       { type: "p", text: "The entire framework involves judgements, which can never have a 100% success ratio, and a resulting outlook is constantly assessed in the court of the stock market, which then proves one right or wrong every day. One just needs to be right more often than wrong!" },
@@ -791,7 +791,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       { type: "p", text: "Loss aversion is a concept in behavioral finance, in which investors hold on to loss making investments for the fear of locking in losses and/or in the hope of breaking even someday." },
       { type: "p", text: "I have seen so many people, in my career, who were unable to take advantage of other profitable opportunities just because they wanted to avoid releasing a loss. What investors must understand is that the loss has already occurred." },
-      { type: "p", text: "I had personally invested in Lalpir Power (LPL) in 2019. A couple of months later I realised that some other stocks were offering much better returns than LPL (despite falling). My average selling price was near its all-time low — not something to be proud of. However, it was one of my best investing decisions because the next stocks helped me generate far more returns than I could have earned with LPL." },
+      { type: "p", text: "I had personally invested in Lalpir Power (LPL) in 2019. A couple of months later I realised that some other stocks were offering much better returns than LPL (despite falling). My average selling price was near its all-time low, not something to be proud of. However, it was one of my best investing decisions because the next stocks helped me generate far more returns than I could have earned with LPL." },
       { type: "p", text: "Unlike relationships, one must not have any emotional connection with stocks. Keep your biases aside and be completely logical. Assess your universe of investable stocks with an open mind and go after the ones that make most sense." },
     ],
   },

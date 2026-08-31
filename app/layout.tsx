@@ -3,12 +3,12 @@ import { Onest } from "next/font/google";
 import GrainOverlay from "@/components/GrainOverlay";
 import "./globals.css";
 
-// Onest is the site's single typeface — every font utility resolves to it
+// Onest is the site's single typeface, every font utility resolves to it
 // (see the token block in globals.css). The weights below cover the whole
 // range in use: 400 for body copy, 500/600 for headings, 700 where extra
 // emphasis is wanted.
 //
-// This replaced three separate families that used to run side by side —
+// This replaced three separate families that used to run side by side , 
 // Figtree (body), Playfair Display (the /academy serif) and Fraunces
 // (flow-state display headings). Dropping them removes three font downloads
 // as well as the typeface mixing.

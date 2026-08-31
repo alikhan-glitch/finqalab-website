@@ -16,7 +16,7 @@ export default function WordReveal({
   fromY,
   className = "",
 }: {
-  /** A "\n" forces a hard line break — see the note below. */
+  /** A "\n" forces a hard line break, see the note below. */
   text: string;
   as?: ElementType;
   baseDelay: number;
@@ -31,7 +31,7 @@ export default function WordReveal({
     // A timer, not requestAnimationFrame: this only needs to defer past the
     // initial paint so the "from" state renders before the transition to
     // "to" starts, and a backgrounded/inactive tab can throttle rAF for a
-    // long time (sometimes not run it at all) — which would leave an
+    // long time (sometimes not run it at all), which would leave an
     // above-the-fold hero stuck invisible. setTimeout doesn't have that
     // dependency and still lands well within a frame in practice.
     const id = setTimeout(() => setVisible(true), 0);
@@ -40,7 +40,7 @@ export default function WordReveal({
 
   // A "\n" in `text` forces a hard break. Needed because every word renders
   // as its own inline-block, which wraps at slightly different points than
-  // plain text would — so a headline that has to break at a particular
+  // plain text would, so a headline that has to break at a particular
   // phrase can't be left to natural wrapping (the homepage H1 was splitting
   // "…ETFs and / more."). The stagger index runs continuously across lines,
   // so the entrance choreography is unchanged.
@@ -78,7 +78,7 @@ export default function WordReveal({
                     nothing and the words run together
                     ("InvestinPSXstocks…"). Out here it sits in the parent's
                     inline formatting context, where it both renders as a real
-                    space and still offers a soft-wrap opportunity — which a
+                    space and still offers a soft-wrap opportunity, which a
                     non-breaking space inside the span would not. */}
                 {!isLastInLine && " "}
               </Fragment>

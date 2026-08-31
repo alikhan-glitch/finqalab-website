@@ -5,7 +5,7 @@ export type AssetVisualKind = "stocks" | "etfs" | "gold" | "more";
 //
 // Stocks / ETFs / Gold use supplied photography, pre-cropped to this tile's
 // wide format (see public/images/assets). "More Asset Classes" has no photo
-// to use — it's a roadmap, not a product that exists yet — so it stays a
+// to use, it's a roadmap, not a product that exists yet, so it stays a
 // drawn tile naming the classes the copy promises, which also keeps it from
 // looking like a stock-photo stand-in for something shippable.
 //
@@ -13,8 +13,8 @@ export type AssetVisualKind = "stocks" | "etfs" | "gold" | "more";
 // edge, sized to the card's full width so it reads as a small product
 // surface rather than a decorative glyph.
 
-const VIOLET = "#a855f7";
-const VIOLET_DEEP = "#7e22ce";
+const VIOLET = "#9C8CE0";
+const VIOLET_DEEP = "#6A54B8";
 const TEAL = "#3fd6c4";
 
 const PHOTOS: Partial<Record<AssetVisualKind, { src: string; alt: string }>> = {
@@ -31,7 +31,7 @@ const PHOTOS: Partial<Record<AssetVisualKind, { src: string; alt: string }>> = {
 
 /* ------------------------------------------------------------------ More */
 // Chips naming the asset classes the copy promises are on the way, plus a
-// trailing "+" — reads as a roadmap rather than a finished product surface.
+// trailing "+", reads as a roadmap rather than a finished product surface.
 const CHIPS = ["Fixed Income", "Mutual Funds", "Insurance"];
 
 function MoreVisual() {
@@ -59,7 +59,7 @@ function MoreVisual() {
         </g>
       ))}
       <g transform="translate(160 40)">
-        <circle r="17" fill="rgba(168,85,247,0.12)" stroke="rgba(168,85,247,0.4)" strokeWidth="1" />
+        <circle r="17" fill="rgba(156,140,224,0.12)" stroke="rgba(156,140,224,0.4)" strokeWidth="1" />
         <path d="M-7 0 H7 M0 -7 V7" stroke={VIOLET} strokeWidth="2" strokeLinecap="round" />
       </g>
     </svg>
@@ -71,7 +71,7 @@ export default function AssetClassVisual({ kind }: { kind: AssetVisualKind }) {
 
   return (
     <div
-      className="relative h-28 w-full overflow-hidden rounded-2xl border"
+      className="relative h-24 w-full overflow-hidden rounded-2xl border"
       style={{
         borderColor: "rgba(255,255,255,0.10)",
         background: "linear-gradient(160deg, rgba(255,255,255,0.05) 0%, rgba(5,7,13,0.55) 100%)",

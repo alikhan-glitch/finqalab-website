@@ -1,6 +1,6 @@
 import type { CourseBlock } from "@/lib/academyCourses";
 
-// The h/p/ul/ol renderer for a course's written article — shared between
+// The h/p/ul/ol renderer for a course's written article, shared between
 // <CourseAccordion/> (the in-page panel on /academy), the standalone article
 // page at /academy-stripe/[slug], and the flow-state article at
 // /academy-flow/[slug], so the three can't drift apart on how a block
@@ -8,7 +8,7 @@ import type { CourseBlock } from "@/lib/academyCourses";
 // a server component.
 //
 // `dark` switches the palette for the flow-state pages (Fraunces headings on
-// the dark ink background) rather than forking this file — the block
+// the dark ink background) rather than forking this file, the block
 // structure and spacing stay identical either way, only colour/typeface
 // change.
 export default function CourseBlocks({

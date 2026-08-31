@@ -9,7 +9,7 @@ import type { WealthFeature } from "@/lib/wealthManagementFeatures";
 // deals itself: the front card lifts up and away, every card behind shifts
 // forward one slot, and a new card rises into the front position from below.
 //
-// Deliberately NOT a carousel — nothing translates sideways in lockstep and
+// Deliberately NOT a carousel, nothing translates sideways in lockstep and
 // no card is ever fully hidden by a viewport edge; the stack keeps its depth
 // and overlap through the whole transition, which is the defining
 // characteristic of the reference composition.
@@ -19,7 +19,7 @@ const CYCLE_MS = 3400; // dwell time per card
 const MOVE_MS = 1150; // how long a card takes to travel one slot
 const EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
 
-// Card geometry — sourced from <EditorialCard/> itself so the aspect-ratio
+// Card geometry, sourced from <EditorialCard/> itself so the aspect-ratio
 // wrapper below can never drift out of sync with the frame it's sizing.
 const CARD_W = EDITORIAL_CARD_W;
 const CARD_H = EDITORIAL_CARD_H;
@@ -38,7 +38,7 @@ const STACK: Placement[] = [
   { x: 19.5, y: 32.5, scale: 0.875, rot: 3.2, opacity: 1, z: 10 },
 ];
 
-// The card that just left the front — lifted clear of the deck and faded.
+// The card that just left the front, lifted clear of the deck and faded.
 // Highest z so it reads as being picked off the top, not sinking through.
 const EXIT: Placement = { x: -6, y: -30, scale: 1.03, rot: -2, opacity: 0, z: 60 };
 // Everything not yet in play, parked below the deck and invisible. A card
@@ -87,7 +87,7 @@ export default function FeatureCardStack({ features }: { features: WealthFeature
     const el = frameRef.current;
     if (!el || prefersReducedMotion()) return;
     const r = el.getBoundingClientRect();
-    // Restrained on purpose — a few degrees reads as the deck responding to
+    // Restrained on purpose, a few degrees reads as the deck responding to
     // the cursor; more than that starts to look like a toy.
     setTilt({
       x: ((e.clientY - r.top) / r.height - 0.5) * -5,

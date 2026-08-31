@@ -22,7 +22,7 @@ function buildRays() {
       y1,
       x2,
       y2,
-      color: isAccent ? `rgba(168,85,247,${Math.min(opacity + 0.15, 0.9)})` : `rgba(255,255,255,${opacity})`,
+      color: isAccent ? `rgba(156,140,224,${Math.min(opacity + 0.15, 0.9)})` : `rgba(255,255,255,${opacity})`,
       width: i % 5 === 0 ? 2.5 : 1.5,
     });
   }

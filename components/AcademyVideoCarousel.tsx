@@ -5,7 +5,7 @@ import Link from "next/link";
 import YouTubeEmbed from "./academy/YouTubeEmbed";
 import { academyCourses } from "@/lib/academyCourses";
 
-// Only courses with a real video make sense here — a card that can't
+// Only courses with a real video make sense here, a card that can't
 // actually play anything would contradict the whole point of this section.
 const videoCourses = academyCourses.filter((c) => c.videoId);
 
@@ -50,7 +50,7 @@ function ArrowButton({
 }
 
 // A neighboring course: smaller than the focused card, tucked mostly behind
-// it, peeking out only at the outer edge — like an album flipping through a
+// it, peeking out only at the outer edge, like an album flipping through a
 // deck (see the car-stereo cover-flow reference this was modeled on), rather
 // than the earlier version's separate, gap-spaced, full-height panel.
 //
@@ -58,7 +58,7 @@ function ArrowButton({
 // rotateY attempt combined translateX + scale + rotateY under a shared
 // perspective and came out genuinely asymmetric between sides (a real bug,
 // not a tuning issue). `left`/`right` are direct, mirrored box placement, so
-// the rotateY here is purely cosmetic tilt on an already-symmetric box —
+// the rotateY here is purely cosmetic tilt on an already-symmetric box , 
 // verified both sides still land at equal size and equal distance from
 // center.
 function NeighborSlide({
@@ -79,9 +79,9 @@ function NeighborSlide({
       style={{
         left: side === "left" ? "-24%" : undefined,
         right: side === "right" ? "-24%" : undefined,
-        transform: `scale(0.94) rotateY(${side === "left" ? 22 : -22}deg)`,
+        transform: `scale(0.9) rotateY(${side === "left" ? 22 : -22}deg)`,
         transformOrigin: side === "left" ? "right center" : "left center",
-        filter: "brightness(0.6) blur(2px)",
+        filter: "brightness(0.5) blur(8px) saturate(0.85)",
       }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -107,12 +107,14 @@ export default function AcademyVideoCarousel() {
   };
 
   return (
-    <div className="mx-auto mt-20 w-full max-w-[1800px] overflow-hidden px-2 pb-6">
+    <div className="mx-auto mt-6 w-full max-w-[1800px] overflow-hidden px-2 pb-4">
       {/* Neighbors are absolutely positioned against this centered box (not
           flex siblings with a gap) so they can overlap behind the focused
           card and peek out at its edges, instead of sitting apart from it
-          across a strip of plain purple background. */}
-      <div className="relative mx-auto max-w-4xl" style={{ perspective: "1600px" }}>
+          across a strip of plain purple background. max-w-2xl (not the
+          earlier 4xl) so the whole section, heading, subtext, button,
+          player, link, dots, fits inside one screen without scrolling. */}
+      <div className="relative mx-auto max-w-2xl" style={{ perspective: "1600px" }}>
         {videoCourses.length > 1 && (
           <>
             <NeighborSlide course={prevCourse} side="left" onClick={() => go(-1)} />
@@ -120,7 +122,7 @@ export default function AcademyVideoCarousel() {
           </>
         )}
 
-        {/* Focused card — rectangular (rounded-xl, not the site's usual
+        {/* Focused card, rectangular (rounded-xl, not the site's usual
             rounded-3xl) to match the reference player's squared-off frame. */}
         <div
           className="relative z-10 overflow-hidden rounded-xl bg-[#12081c] text-left"
@@ -129,11 +131,11 @@ export default function AcademyVideoCarousel() {
               to its poster instead of continuing to play off-screen. */}
           <YouTubeEmbed key={course.slug} videoId={course.videoId!} title={course.title} />
 
-          <div className="p-6 sm:p-7">
-            <p className="text-sm text-onPrimary/60">
+          <div className="p-3 sm:p-4">
+            <p className="text-xs text-onPrimary/60">
               {course.kicker} · Finqalab Academy
             </p>
-            <p className="mt-1.5 font-heading text-lg font-semibold leading-snug text-onPrimary sm:text-xl">
+            <p className="mt-1 font-heading text-base font-semibold leading-snug text-onPrimary sm:text-lg">
               {course.title}
             </p>
           </div>
@@ -143,13 +145,13 @@ export default function AcademyVideoCarousel() {
         <ArrowButton direction="next" onClick={() => go(1)} />
       </div>
 
-      {/* Its own row below the card, not tucked into the card's text block —
+      {/* Its own row below the card, not tucked into the card's text block , 
           a plain underlined link there read as a footnote, not a second CTA
           worth noticing. */}
-      <div className="mt-6 flex justify-center">
+      <div className="mt-3 flex justify-center">
         <Link
-          href="/academy"
-          className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/10 px-6 py-3 text-sm font-semibold text-onPrimary backdrop-blur-md transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+          href={`/academy-flow/${course.slug}`}
+          className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/10 px-5 py-2.5 text-sm font-semibold text-onPrimary backdrop-blur-md transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
         >
           Read more about this
           <svg
@@ -167,7 +169,7 @@ export default function AcademyVideoCarousel() {
         </Link>
       </div>
 
-      <div className="mt-6 flex items-center justify-center gap-2">
+      <div className="mt-3 flex items-center justify-center gap-2">
         {videoCourses.map((c, i) => (
           <button
             key={c.slug}

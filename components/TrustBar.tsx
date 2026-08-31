@@ -5,7 +5,7 @@
 // globals.css) slides the track by exactly -50%, so the visible list is
 // rendered as two identical halves to make the loop point seamless. Each
 // half repeats the stat set a few times so the track is wider than a large
-// desktop viewport — otherwise a short track visibly runs out mid-screen
+// desktop viewport, otherwise a short track visibly runs out mid-screen
 // before the loop restarts.
 const stats = [
   { value: "75,260+", label: "signups" },
@@ -25,7 +25,7 @@ export default function TrustBar() {
       className="relative z-[10] overflow-hidden border-y bg-bg-black"
       style={{ borderColor: "rgba(247,245,239,0.12)" }}
     >
-      {/* The scrolling copy is decorative duplication — the accessible copy
+      {/* The scrolling copy is decorative duplication, the accessible copy
           is the visually-hidden list below, so screen readers read the four
           stats once rather than twelve times. */}
       <div

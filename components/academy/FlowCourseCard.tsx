@@ -3,13 +3,13 @@ import GlassCard from "../GlassCard";
 import YouTubeEmbed from "./YouTubeEmbed";
 import type { AcademyCourse } from "@/lib/academyCourses";
 
-// The flow-state course card — the same "read or watch" two-column idea as
+// The flow-state course card, the same "read or watch" two-column idea as
 // <StripeCourseCard/>, rebuilt as a glass panel on the ink background rather
 // than a floating white card on a gradient ribbon. `flip` alternates which
 // side the video sits on down the list, so the page doesn't read as three
 // identical rows.
 //
-// "Read course" goes to /academy-flow/[slug] — this alternate design stays
+// "Read course" goes to /academy-flow/[slug], this alternate design stays
 // self-contained, exactly as /academy-stripe does, rather than routing into
 // another Academy variant's article pages.
 export default function FlowCourseCard({

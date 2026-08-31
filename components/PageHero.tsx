@@ -3,7 +3,7 @@ import PillButton from "./PillButton";
 import Reveal from "./Reveal";
 import StarfieldBackground from "./StarfieldBackground";
 
-// The shared hero for every page besides the homepage itself — same violet
+// The shared hero for every page besides the homepage itself, same violet
 // top bloom / teal bottom bloom / centre scrim / italic display headline
 // recipe as <Hero/> (the homepage's own component), but with the background
 // video swapped for <StarfieldBackground/> (a ported Three.js scene) rather
@@ -32,7 +32,7 @@ export default function PageHero({
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 50% at 50% 0%, rgba(147,51,234,0.22) 0%, rgba(5,7,13,0) 70%)",
+            "radial-gradient(60% 50% at 50% 0%, rgba(128,103,218,0.22) 0%, rgba(5,7,13,0) 70%)",
         }}
       />
       <div
@@ -43,7 +43,7 @@ export default function PageHero({
             "radial-gradient(50% 100% at 50% 100%, rgba(63,214,196,0.10) 0%, rgba(5,7,13,0) 70%)",
         }}
       />
-      {/* Text-protection scrim — same reasoning as the home hero: the video
+      {/* Text-protection scrim, same reasoning as the home hero: the video
           runs bright enough that headline contrast isn't safe without it. */}
       <div
         aria-hidden

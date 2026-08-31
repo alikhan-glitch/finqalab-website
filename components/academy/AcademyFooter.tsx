@@ -5,7 +5,7 @@ import { columns, legalParagraphs } from "../Footer";
 // Light-theme footer used only on /academy, matching the reference design's
 // big wordmark + flat link columns + full-height photo layout. Reuses the
 // shared <Footer/>'s link and legal copy (see Footer.tsx) rather than a
-// forked duplicate — the legal paragraphs are compliance text, not filler,
+// forked duplicate, the legal paragraphs are compliance text, not filler,
 // and must not drift between the two footers.
 
 const linkFocus =
@@ -58,7 +58,7 @@ export default function AcademyFooter() {
         </div>
 
         {/* Matches primer.com/tuition's own footer image treatment: no
-            padding, image flush against the column — their photo reads
+            padding, image flush against the column, their photo reads
             "square" only because their whole footer is short; ours runs
             much taller (real compliance text), so the outer column still
             stretches full height for the divider line, but the photo itself

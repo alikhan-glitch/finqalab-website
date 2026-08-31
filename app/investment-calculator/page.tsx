@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Estimate the future value of your investments with compound growth using Finqalab's free investment calculator.",
 };
 
-// Same flow-state chassis as /careers — see that file for the shared-
+// Same flow-state chassis as /careers, see that file for the shared-
 // component notes. The interactive form/results live in
 // <InvestmentCalculator/> (a client component) since this page itself stays
 // a server component so it can export metadata.
@@ -43,7 +43,7 @@ export default function InvestmentCalculatorPage() {
 
             <WordReveal
               as="p"
-              text="Estimate the future value of your investments with compound growth — enter what you're starting with and where you want to end up."
+              text="Estimate the future value of your investments with compound growth. Enter what you're starting with and where you want to end up."
               baseDelay={1150}
               stagger={22}
               duration={600}

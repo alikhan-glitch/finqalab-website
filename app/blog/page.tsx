@@ -8,7 +8,7 @@ import { blogPosts } from "@/lib/blog-posts";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Learn how to invest in Pakistan Stock Exchange stocks and Sukuks — rights issues, dividends, bonus shares, market cycles, and valuation, explained simply.",
+    "Learn how to invest in Pakistan Stock Exchange stocks and Sukuks, rights issues, dividends, bonus shares, market cycles, and valuation, explained simply.",
 };
 
 export default function BlogIndexPage() {
@@ -40,7 +40,7 @@ export default function BlogIndexPage() {
               </h1>
               <p className="mt-4 max-w-lg text-balance text-sm text-text-onDark-muted sm:text-base lg:text-lg">
                 Straightforward explainers on investing in Pakistan&apos;s
-                markets — from rights issues to valuation, written for real
+                markets, from rights issues to valuation, written for real
                 PSX investors.
               </p>
             </div>

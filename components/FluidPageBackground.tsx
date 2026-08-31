@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import FluidCanvas from "./FluidCanvas";
 
-// The fluid ink sim + scrim as a persistent page-level background — `fixed`,
+// The fluid ink sim + scrim as a persistent page-level background, `fixed`,
 // not scoped to the hero's own section, so the same swirling canvas stays
 // visible behind every section as the page scrolls, not just the first
 // viewport height. `fixed` also means the canvas's internal resolution stays
@@ -14,21 +14,21 @@ import FluidCanvas from "./FluidCanvas";
 // at the text, fading at the edges) to a flat wash: a radial centred on the
 // viewport would, once fixed, spotlight whatever happens to be scrolled to
 // the middle of the screen at any given moment rather than any particular
-// content — a flat scrim keeps legibility consistent for the glass cards
+// content, a flat scrim keeps legibility consistent for the glass cards
 // further down the page as well as the hero text up top.
 //
 // Lenis smooth-scroll lives here too (not in the hero) since it's a
-// whole-page concern now — still scoped to this page only (mounted/destroyed
+// whole-page concern now, still scoped to this page only (mounted/destroyed
 // with this component), not a global site-wide change.
 export default function FluidPageBackground({
   hueMin,
   hueMax,
   pauseOrbitPastHero,
 }: {
-  /** Forwarded to <FluidCanvas/> — omit to keep its cyan→magenta default. */
+  /** Forwarded to <FluidCanvas/>, omit to keep its cyan→magenta default. */
   hueMin?: number;
   hueMax?: number;
-  /** Forwarded to <FluidCanvas/> — see its own doc comment. */
+  /** Forwarded to <FluidCanvas/>, see its own doc comment. */
   pauseOrbitPastHero?: boolean;
 } = {}) {
   useEffect(() => {

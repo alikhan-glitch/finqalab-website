@@ -11,13 +11,13 @@ import { updates } from "@/lib/updates";
 export const metadata: Metadata = {
   title: "Updates",
   description:
-    "Product launches, partnerships, and milestones from Finqalab — Pakistan's end-to-end digital investing app.",
+    "Product launches, partnerships, and milestones from Finqalab, Pakistan's end-to-end digital investing app.",
 };
 
-// Flow-state Updates/newsroom page — same chassis as /careers. Content
+// Flow-state Updates/newsroom page, same chassis as /careers. Content
 // (titles, URLs, categories) is verbatim from finqalab.com/updates/ and the
 // live blog. Kept as a distinct route/nav item from the existing /blog page
-// per instruction — no attempt to merge or replace it here.
+// per instruction, no attempt to merge or replace it here.
 // Cards now open the article on-site at /updates/[slug] rather than sending
 // the visitor out to finqalab.com/blog. Titles, categories, banners and the
 // article bodies all live in lib/updates.
@@ -92,12 +92,12 @@ export default function UpdatesPage() {
               <Reveal delay={80}>
                 <p className="max-w-md text-[0.95rem] text-text-onDark-muted">
                   Product launches, partnerships, and milestones from Pakistan&apos;s end-to-end investing app
-                  — in order, as they landed.
+                 , in order, as they landed.
                 </p>
               </Reveal>
             </div>
 
-            {/* Every update is an equal card — no full-width "featured" one.
+            {/* Every update is an equal card, no full-width "featured" one.
                 With 12 updates, promoting the first left 11 for a two-column
                 grid, which stranded the last card alone on its own row.
                 auto-rows-fr keeps every card the same height regardless of

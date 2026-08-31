@@ -8,14 +8,14 @@ import { academyCourses } from "@/lib/academyCourses";
 export const metadata: Metadata = {
   title: "Academy (Stripe Blog Style)",
   description:
-    "Free courses on Pakistan's markets — written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
+    "Free courses on Pakistan's markets, written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
 };
 
 // Third Academy option, alongside /academy and /academy-dark: the course
 // list restyled as stripe.com/blog's floating white card + atmospheric
-// gradient ribbon, one card per course. This experience is self-contained —
+// gradient ribbon, one card per course. This experience is self-contained , 
 // "Read more" goes to this course's own article at /academy-stripe/[slug],
-// not into /academy — while the video still plays right on the card itself
+// not into /academy, while the video still plays right on the card itself
 // via the same <YouTubeEmbed/> used elsewhere.
 export default function AcademyStripePage() {
   return (
@@ -31,7 +31,7 @@ export default function AcademyStripePage() {
                 Explore Our Courses.
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-text-onLight-muted">
-                Every course pairs a written breakdown with a full video lesson — read the summary
+                Every course pairs a written breakdown with a full video lesson, read the summary
                 below, or press play to start watching right away.
               </p>
             </Reveal>

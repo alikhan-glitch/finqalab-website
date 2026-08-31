@@ -7,12 +7,12 @@ import GridMotif from "./GridMotif";
 import { navItems } from "../Navbar";
 
 // Light-theme header used only on /academy, matching the reference design's
-// minimal wordmark + grid-icon + hamburger pattern — visually distinct from
+// minimal wordmark + grid-icon + hamburger pattern, visually distinct from
 // the shared dark <Navbar/> used everywhere else on the site.
 //
 // Unlike Navbar (inline links on desktop, hamburger only below `md`), this
-// header has no inline nav at any width — the reference never shows one, even
-// at desktop size — so the hamburger drives one shared drawer at every
+// header has no inline nav at any width, the reference never shows one, even
+// at desktop size, so the hamburger drives one shared drawer at every
 // breakpoint. It reuses Navbar's own `navItems` so the two headers can never
 // drift to different link sets.
 

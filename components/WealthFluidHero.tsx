@@ -2,7 +2,7 @@
 
 import WordReveal from "./WordReveal";
 
-// The hero's CONTENT only — the fluid canvas + scrim now live in
+// The hero's CONTENT only, the fluid canvas + scrim now live in
 // <FluidPageBackground/>, rendered once at the page level (fixed, behind
 // every section) rather than owned by this one. This component is just a
 // normal-flow block sitting on top of that shared background.
@@ -14,13 +14,13 @@ import WordReveal from "./WordReveal";
 // - No duplicate nav/CTA header baked into the hero, and no inline footer
 //   line: the page already has the site's real <Navbar/> and <Footer/>.
 // - The waitlist email form is gone. Finqalab is a live investing app, not a
-//   waitlist product — the reference's "Join Waitlist" bar doesn't apply, so
+//   waitlist product, the reference's "Join Waitlist" bar doesn't apply, so
 //   it's a single "Get Started" CTA instead, matching every other CTA on
 //   the site.
 // - Copy is Finqalab's own (see the two WordReveal calls below), not the
 //   reference's "Flowstate" placeholder text.
 // - The reference's global `html { font-size: vw }` adaptive-rem grid is
-//   NOT reproduced — that rescales every rem unit on the page, which would
+//   NOT reproduced, that rescales every rem unit on the page, which would
 //   silently distort spacing/type on every other route sharing this layout.
 //   Sizing here uses Tailwind's normal fixed rem scale with responsive
 //   variants instead.
@@ -33,7 +33,7 @@ export default function WealthFluidHero() {
       <div className="flex w-full max-w-sm flex-col items-center sm:max-w-2xl lg:max-w-4xl">
         <WordReveal
           as="h1"
-          text="Every Tool To Grow And Track Your Wealth"
+          text="Features That Outperform"
           baseDelay={320}
           stagger={85}
           duration={720}
@@ -43,7 +43,7 @@ export default function WealthFluidHero() {
 
         <WordReveal
           as="p"
-          text="From instant Raast deposits to real-time portfolio alerts — everything you need to invest with confidence, in one place."
+          text="A modern, fully customizable trading platform, built around how Pakistan actually invests. Everything you need to outdo average."
           baseDelay={1150}
           stagger={22}
           duration={600}

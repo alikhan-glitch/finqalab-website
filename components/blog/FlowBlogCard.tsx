@@ -17,7 +17,7 @@ export function formatPostDate(date: string) {
   });
 }
 
-// Flow-state blog card — the glass-panel counterpart to <BlogCard/> (the
+// Flow-state blog card, the glass-panel counterpart to <BlogCard/> (the
 // solid violet/teal card on the current /blog).
 //
 // Deliberately much shorter than <BlogCard/>'s 520px: that card was built

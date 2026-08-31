@@ -21,7 +21,7 @@ export default function ClosingCTA() {
 
       <div className="relative">
         <Reveal>
-          <h2 className="mx-auto max-w-2xl text-balance text-4xl font-semibold leading-tight text-text-onDark sm:text-5xl">
+          <h2 className="mx-auto max-w-2xl text-balance text-3xl font-semibold leading-tight text-text-onDark sm:text-4xl">
             Ready to invest with a regulated platform?
           </h2>
         </Reveal>

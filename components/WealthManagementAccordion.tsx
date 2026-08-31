@@ -8,7 +8,7 @@ import type { WealthFeature } from "@/lib/wealthManagementFeatures";
 
 // The "editorial" alternate to <JourneyHeroSection/>'s cloud-atmosphere card
 // grid: the same 16 features and scene mockups, reorganized into a numbered,
-// single-open accordion — modeled directly on <CourseAccordion/> (see
+// single-open accordion, modeled directly on <CourseAccordion/> (see
 // components/academy/CourseAccordion.tsx), which proved out this exact
 // pattern (real <button>, aria-expanded/aria-controls, keyboard-operable).
 
@@ -91,7 +91,7 @@ function FeatureRow({
 }
 
 export default function WealthManagementAccordion({ features }: { features: WealthFeature[] }) {
-  // First row open by default — unlike a fresh course list, a feature tour
+  // First row open by default, unlike a fresh course list, a feature tour
   // benefits from showing at a glance that the rows are interactive/expand.
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 

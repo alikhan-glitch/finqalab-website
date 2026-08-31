@@ -2,7 +2,7 @@ import { features as coreFeatures } from "./features";
 import type { Feature } from "./features";
 
 // Extends the homepage's 10-feature list with 6 more for the dedicated
-// features page. Kept separate from lib/features.ts on purpose — the
+// features page. Kept separate from lib/features.ts on purpose, the
 // homepage carousel is locked and must keep showing exactly its original
 // 10 slides.
 const additionalFeatures: Feature[] = [
@@ -31,7 +31,7 @@ const additionalFeatures: Feature[] = [
     icon: "pulse",
     title: "Real-Time Market Data",
     description:
-      "Live PSX quotes, price charts, and market depth — updated the instant the exchange moves.",
+      "Live PSX quotes, price charts, and market depth, updated the instant the exchange moves.",
     accent: "teal",
   },
   {

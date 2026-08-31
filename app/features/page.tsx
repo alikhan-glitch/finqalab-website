@@ -9,7 +9,7 @@ import { allFeatures } from "@/lib/featuresPageContent";
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Everything Finqalab gives you to invest with confidence — instant Raast deposits, real-time portfolio weightage, custom alerts, corporate announcements, and more.",
+    "Everything Finqalab gives you to invest with confidence, instant Raast deposits, real-time portfolio weightage, custom alerts, corporate announcements, and more.",
 };
 
 export default function FeaturesPage() {
@@ -23,7 +23,7 @@ export default function FeaturesPage() {
             className="pointer-events-none absolute inset-0"
             style={{
               background:
-                "radial-gradient(60% 50% at 50% 0%, rgba(147,51,234,0.18) 0%, rgba(5,7,13,0) 70%)",
+                "radial-gradient(60% 50% at 50% 0%, rgba(128,103,218,0.18) 0%, rgba(5,7,13,0) 70%)",
             }}
           />
 

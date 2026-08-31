@@ -12,7 +12,7 @@ export default function Reveal({
   delay?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
-  // Content renders fully visible until JS confirms it can animate it in —
+  // Content renders fully visible until JS confirms it can animate it in , 
   // avoids opacity:0-by-default content for no-JS users/crawlers.
   const [state, setState] = useState({ armed: false, visible: false });
 
@@ -23,7 +23,7 @@ export default function Reveal({
     // Guards against a real bug: IntersectionObserver is not guaranteed to
     // catch every element on every scroll frame. Under a fast fling, an
     // element can go from "below viewport" straight to "above viewport"
-    // without the browser ever sampling the moment it was on-screen — if
+    // without the browser ever sampling the moment it was on-screen, if
     // that happens, .reveal.js-armed leaves it at opacity:0 permanently,
     // with nothing left to trigger a re-check. `done` below is the single
     // source of truth so the two independent triggers (observer + scroll

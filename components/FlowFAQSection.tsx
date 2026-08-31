@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 export type FAQItem = { q: string; a: string };
 
-// Flow-state FAQ block — same <details>/<summary> accordion pattern as the
+// Flow-state FAQ block, same <details>/<summary> accordion pattern as the
 // homepage's <FAQSection/>, but themed to match the product pages (Fraunces
 // heading, glass panel, violet eyebrow) and packaged as a reusable component
 // with its own JSON-LD, since Stocks/Sukuks/other product pages each need

@@ -5,7 +5,7 @@ import { useState } from "react";
 // Click-to-load facade rather than a bare <iframe>. A YouTube embed pulls well
 // over a megabyte of player JS on mount; showing the poster frame first means
 // that cost is only paid by someone who actually presses play. The swap sets
-// autoplay=1 so the single click still starts the video — the facade is
+// autoplay=1 so the single click still starts the video, the facade is
 // invisible to the viewer, not an extra step.
 //
 // youtube-nocookie.com is YouTube's privacy-enhanced host: it does not write

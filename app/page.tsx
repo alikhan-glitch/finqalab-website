@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* Onest body font sitewide on this page, matching the flow-state
           pages. The three video-backed sections (Hero, DiversifySection,
-          ClosingCTA) keep their video layer — only the surface treatment
+          ClosingCTA) keep their video layer, only the surface treatment
           above it is shared with the rest of the site. */}
           <main id="main-content" className="relative z-10 flex-1">
         <Hero />

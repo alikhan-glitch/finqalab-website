@@ -24,7 +24,7 @@ function CourseRow({
     <div className="border-b border-black">
       {/* A real <button>, so the row is reachable by Tab and operable with
           Enter/Space. `aria-expanded` + `aria-controls` let a screen reader
-          announce the open/closed state and jump to the revealed panel — the
+          announce the open/closed state and jump to the revealed panel, the
           reference implementation this is modelled on ships plain <div>s and
           is keyboard-inoperable. */}
       <h3>
@@ -48,7 +48,7 @@ function CourseRow({
 
           <span className="font-serif text-lg font-bold leading-snug sm:text-xl lg:pl-8">{course.title}</span>
 
-          {/* Plus rotating into a minus — one glyph, no icon swap, so the
+          {/* Plus rotating into a minus, one glyph, no icon swap, so the
               transition can be animated rather than popping. */}
           <span aria-hidden="true" className="relative h-4 w-4 shrink-0 justify-self-end">
             <span className="absolute left-0 top-1/2 h-px w-4 -translate-y-1/2 bg-current" />
@@ -71,7 +71,7 @@ function CourseRow({
         >
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
             {/* Video first in the DOM so it is the first thing reached on
-                mobile, where the columns stack — the reason to open a course
+                mobile, where the columns stack, the reason to open a course
                 is usually to watch it. On desktop it is ordered back to the
                 right-hand column. */}
             <div className="lg:order-2 lg:col-span-5">

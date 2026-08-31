@@ -1,5 +1,5 @@
 // Minimal, hand-drawn glyphs for the "Follow us" row on <AcademyStripeFooter/>
-// — same approach as FeatureIcons.tsx (simplified custom paths representing
+//, same approach as FeatureIcons.tsx (simplified custom paths representing
 // each platform, not traced brand assets), sized for a small solid-fill
 // badge rather than a multi-color logo.
 

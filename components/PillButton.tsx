@@ -21,7 +21,7 @@ const variants: Record<Variant, string> = {
   solidDark:
     "bg-bg-black text-text-onDark hover:bg-black/80 focus-visible:ring-bg-black focus-visible:ring-offset-primary",
   // High-contrast pill for the flow-state pages (Careers/Updates/Investment
-  // Calculator) — those pop a solid-white primary CTA against the dark ink
+  // Calculator), those pop a solid-white primary CTA against the dark ink
   // canvas rather than the site's usual purple `primary`, per the
   // management-approved reference files.
   solidWhite:

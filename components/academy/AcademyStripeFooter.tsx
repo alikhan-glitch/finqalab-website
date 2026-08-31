@@ -5,10 +5,10 @@ import SocialIcon, { type SocialIconName } from "./SocialIcons";
 import { legalParagraphs } from "../Footer";
 
 // Footer used only on /academy-stripe (and its /academy-stripe/[slug]
-// articles) — matches "Finqalab Academy Footer.png", the real site footer,
+// articles), matches "Finqalab Academy Footer.png", the real site footer,
 // rather than the Primer-editorial <AcademyFooter/> used on /academy. Not a
 // mockup: logo, link labels, and column structure are the real ones from
-// that reference. The disclaimer paragraph is the one exception — the
+// that reference. The disclaimer paragraph is the one exception, the
 // reference screenshot's last line is cropped off mid-sentence, so rather
 // than guess at compliance wording, this reuses the same complete,
 // already-verified legalParagraphs the rest of the site's footers share.
@@ -62,7 +62,7 @@ export default function AcademyStripeFooter() {
         >
           {/* Plain <img>, matching this codebase's convention of not routing
               local images through next/image (see Navbar.tsx). Reuses the
-              same real logo file Navbar uses on dark backgrounds — brightness(0)
+              same real logo file Navbar uses on dark backgrounds, brightness(0)
               turns its white glyph fully black on transparent, rather than
               maintaining a second logo asset just for colour. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}

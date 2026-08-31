@@ -10,7 +10,7 @@ import { academyCourses } from "@/lib/academyCourses";
 export const metadata: Metadata = {
   title: "Academy",
   description:
-    "Free courses on Pakistan's markets — written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
+    "Free courses on Pakistan's markets, written breakdowns paired with full video lessons on asset classes, the oil and gas sector, refining, and more.",
 };
 
 export default function AcademyPage() {
@@ -30,7 +30,7 @@ export default function AcademyPage() {
                 <p className="font-sans text-sm text-text-onLight-muted">Academy</p>
               </div>
               {/* col-start-6 (not col-span-9 starting right after the eyebrow)
-                  is what actually pushes the headline right — a narrower
+                  is what actually pushes the headline right, a narrower
                   column alone just left-aligns text within more empty space,
                   it doesn't move the text itself. */}
               <Reveal className="lg:col-span-7 lg:col-start-6">
@@ -48,7 +48,7 @@ export default function AcademyPage() {
               <div className="lg:col-span-4">
                 <Reveal>
                   <p className="max-w-sm text-base leading-relaxed text-text-onLight-muted">
-                    Plain-language courses on Pakistan&apos;s markets — free to read, free to
+                    Plain-language courses on Pakistan&apos;s markets, free to read, free to
                     watch.
                   </p>
                 </Reveal>
@@ -82,14 +82,14 @@ export default function AcademyPage() {
         --------------------------------------------------------------- */}
         <section className="pt-24 sm:pt-32">
           {/* px-6 lives on this div, not the <section>, so there is exactly
-              one padding layer — the negative-margin calc below assumes that;
+              one padding layer, the negative-margin calc below assumes that;
               with px-6 on both the section AND this div (the first version),
               it double-counted the gutter and the grid overshot past x=0. */}
           <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-12">
             {/* Bleeds to the true viewport edge rather than stopping at the
                 page's usual left inset. A plain negative margin would pull the
                 element left WITHOUT widening it, which shrinks the gap to the
-                stat box by the same amount it moved — this extends the width
+                stat box by the same amount it moved, this extends the width
                 by the same calc used for the margin, so the left edge reaches
                 x=0 while the right edge (and the gap to the box) stays exactly
                 where col-span-3 would normally put it. */}
@@ -119,7 +119,7 @@ export default function AcademyPage() {
               {/* Content-driven height, not a forced min-h: at this box's
                   actual width (~816px, well short of the reference's ~1444px)
                   a min-h tall enough for a generous gap makes the box more
-                  square, not less — the opposite of "thinner". A smaller
+                  square, not less, the opposite of "thinner". A smaller
                   heading + a real margin-top gets the same generous-gap,
                   bottom-right-paragraph look without fighting the ratio. */}
               <div className="border border-black p-6 sm:p-8 lg:px-10 lg:py-6">
@@ -128,7 +128,7 @@ export default function AcademyPage() {
                 </h2>
                 <p className="mt-10 max-w-md text-[15px] leading-relaxed text-text-onLight-muted lg:ml-auto lg:mt-12">
                   Each course pairs a written breakdown with a full video lesson. Open one below to
-                  read it and watch it in the same place — no sign-up, no redirect.
+                  read it and watch it in the same place, no sign-up, no redirect.
                 </p>
               </div>
             </Reveal>
@@ -156,13 +156,13 @@ export default function AcademyPage() {
         </section>
 
         {/* ---------------------------------------------------------------
-            Closing CTA — left modular grid / center CTA / right diagonal
+            Closing CTA, left modular grid / center CTA / right diagonal
             panel, edge to edge with its own full 4-side border, echoing the
             printed-editorial feel of the Statement section's grid motif.
         --------------------------------------------------------------- */}
         <section className="mt-24 border border-black sm:mt-32">
           <div className="grid grid-cols-1 lg:grid-cols-[18%_1fr_18%]">
-            {/* Left grid — the cells' own border-b/border-r already close
+            {/* Left grid, the cells' own border-b/border-r already close
                 off the seam against the center column; the section's own
                 border closes off the grid's top and left edges. */}
             <div className="hidden lg:block">
@@ -195,7 +195,7 @@ export default function AcademyPage() {
               </Reveal>
             </div>
 
-            {/* Right panel — a vertical divider, a corner-to-corner diagonal
+            {/* Right panel, a vertical divider, a corner-to-corner diagonal
                 implying a large triangle against the section's own top/right
                 borders, and a full-height accent strip at the outer edge. */}
             <div className="hidden border-l border-black lg:flex">

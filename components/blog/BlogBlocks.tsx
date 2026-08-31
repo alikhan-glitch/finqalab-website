@@ -4,7 +4,7 @@ import type { ContentBlock } from "@/lib/blog-posts";
 // current light /blog/[slug] and the flow-state /blog-flow/[slug] so the
 // same post can't render differently in the two designs.
 //
-// Extracted from /blog/[slug]'s own local `Block` function — the light
+// Extracted from /blog/[slug]'s own local `Block` function, the light
 // branch below reproduces those exact classes, so that page renders
 // identically to before. `dark` switches to the flow-state palette
 // (Fraunces headings, onDark text, violet-light accents).
@@ -67,7 +67,7 @@ export default function BlogBlocks({
                 {"”"}
                 {block.attribution && (
                   <footer className={`mt-2 text-sm not-italic ${bodyClass}`}>
-                    — {block.attribution}
+                   , {block.attribution}
                   </footer>
                 )}
               </blockquote>

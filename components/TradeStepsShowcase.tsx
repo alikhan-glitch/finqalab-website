@@ -13,7 +13,7 @@ function prefersReducedMotion() {
 }
 
 // The numbered step list drives, and stays in sync with, a single
-// <PhoneMockup/> — clicking a step jumps the phone straight to it, matching
+// <PhoneMockup/>, clicking a step jumps the phone straight to it, matching
 // the existing home-page pattern (<FeatureShowcase/>) of one mockup with its
 // on-screen content swapped rather than one mockup per step.
 export default function TradeStepsShowcase({ steps }: { steps: TradeStep[] }) {
@@ -82,7 +82,7 @@ export default function TradeStepsShowcase({ steps }: { steps: TradeStep[] }) {
           className="pointer-events-none absolute h-72 w-72 rounded-full"
           style={{
             background:
-              "radial-gradient(closest-side, rgba(147,51,234,0.28) 0%, rgba(63,214,196,0.10) 55%, transparent 75%)",
+              "radial-gradient(closest-side, rgba(128,103,218,0.28) 0%, rgba(63,214,196,0.10) 55%, transparent 75%)",
             filter: "blur(40px)",
           }}
         />

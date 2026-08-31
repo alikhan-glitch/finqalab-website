@@ -10,10 +10,10 @@ import { wealthManagementFeatures } from "@/lib/wealthManagementFeatures";
 export const metadata: Metadata = {
   title: "Wealth Management (Editorial)",
   description:
-    "Download Finqalab, open your account, and start investing in PSX stocks and Sukuks — with real-time market data and portfolio tracking built in.",
+    "Download Finqalab, open your account, and start investing in PSX stocks and Sukuks, with real-time market data and portfolio tracking built in.",
 };
 
-// Alternate design for /features/wealth-management — same 16 features, same
+// Alternate design for /features/wealth-management, same 16 features, same
 // scene mockups, same (placeholder, pending-real-copy) descriptions, none of
 // it changed. What's different is the container: a numbered hairline
 // accordion, borrowing the structured, line-driven language proved out on
@@ -38,7 +38,7 @@ export default function WealthManagementEditorialPage() {
                 Sixteen Tools. One Wealth Management App.
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-text-onDark-muted">
-                From instant Raast deposits to real-time portfolio alerts — everything you need to grow and
+                From instant Raast deposits to real-time portfolio alerts, everything you need to grow and
                 track your wealth, in one place. Open any tool below to see it in action.
               </p>
             </Reveal>
@@ -46,7 +46,7 @@ export default function WealthManagementEditorialPage() {
         </section>
 
         {/* ---------------------------------------------------------------
-            Features — numbered accordion, reusing the exact 16 feature
+            Features, numbered accordion, reusing the exact 16 feature
             entries (title/icon/scene/description) from JourneyHeroSection.
         --------------------------------------------------------------- */}
         <section className="pt-4">

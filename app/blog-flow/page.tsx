@@ -12,12 +12,12 @@ import { blogPosts } from "@/lib/blog-posts";
 export const metadata: Metadata = {
   title: "Blog (Flow State)",
   description:
-    "Learn how to invest in Pakistan Stock Exchange stocks and Sukuks — rights issues, dividends, bonus shares, market cycles, and valuation, explained simply.",
+    "Learn how to invest in Pakistan Stock Exchange stocks and Sukuks, rights issues, dividends, bonus shares, market cycles, and valuation, explained simply.",
 };
 
 // Alternate blog index on the management-approved flow-state theme,
 // alongside the existing /blog (which keeps its ray hero + solid violet/teal
-// cards, untouched). Same posts from lib/blog-posts — nothing forked, so the
+// cards, untouched). Same posts from lib/blog-posts, nothing forked, so the
 // writing can't drift between the two designs.
 //
 // The old layout pulled the newest post into a separate featured panel and

@@ -147,7 +147,7 @@ function BadgeScene({ scene }: { scene: Extract<FeatureScene, { type: "badge" }>
     <div className="flex h-full flex-col items-center justify-center gap-2.5 text-center">
       <span
         className="flex h-14 w-14 items-center justify-center rounded-full text-primary"
-        style={{ background: "radial-gradient(circle, rgba(147,51,234,0.16) 0%, rgba(147,51,234,0) 72%)" }}
+        style={{ background: "radial-gradient(circle, rgba(128,103,218,0.16) 0%, rgba(128,103,218,0) 72%)" }}
       >
         <FeatureIcon name={scene.icon} className="h-8 w-8" />
       </span>
@@ -159,8 +159,8 @@ function BadgeScene({ scene }: { scene: Extract<FeatureScene, { type: "badge" }>
 }
 
 function AvatarScene({ scene, dark }: { scene: Extract<FeatureScene, { type: "avatars" }>; dark?: boolean }) {
-  const colors = ["#9333ea", "#3fd6c4", "#a855f7", "#7e22ce", "#1f9c8c"];
-  // Ring color matches each panel's own base, not a fixed white — the ring's
+  const colors = ["#8067DA", "#3fd6c4", "#9C8CE0", "#6A54B8", "#1f9c8c"];
+  // Ring color matches each panel's own base, not a fixed white, the ring's
   // job is to separate overlapping avatars from what's behind them, so it
   // has to be the panel's color, not the opposite of it.
   const ring = dark ? "border-bg-black" : "border-white";
@@ -190,7 +190,7 @@ function AvatarScene({ scene, dark }: { scene: Extract<FeatureScene, { type: "av
 }
 
 function PieScene({ scene, dark }: { scene: Extract<FeatureScene, { type: "pie" }>; dark?: boolean }) {
-  const colorFor = { primary: "#9333ea", teal: "#3fd6c4", muted: "#d8d3e5" } as const;
+  const colorFor = { primary: "#8067DA", teal: "#3fd6c4", muted: "#d8d3e5" } as const;
   const cumulative = scene.segments.reduce<number[]>(
     (acc, s) => [...acc, (acc[acc.length - 1] ?? 0) + s.value],
     []
@@ -245,8 +245,8 @@ function ChartScene({ dark }: { dark?: boolean }) {
       <svg viewBox="0 0 200 60" className="mt-2 h-14 w-full" aria-hidden="true">
         <defs>
           <linearGradient id="scenesAreaFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#9333ea" stopOpacity="0.25" />
-            <stop offset="100%" stopColor="#9333ea" stopOpacity="0" />
+            <stop offset="0%" stopColor="#8067DA" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="#8067DA" stopOpacity="0" />
           </linearGradient>
         </defs>
         <path
@@ -256,7 +256,7 @@ function ChartScene({ dark }: { dark?: boolean }) {
         <path
           d="M0 46 C 24 40, 36 52, 50 46 S 76 24, 100 28 S 136 10, 200 6"
           fill="none"
-          stroke="#9333ea"
+          stroke="#8067DA"
           strokeWidth="2.5"
           strokeLinecap="round"
         />

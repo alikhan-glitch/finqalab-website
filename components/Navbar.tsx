@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import PillButton from "./PillButton";
 
 export type NavItem = {
@@ -23,22 +24,19 @@ export const navItems: NavItem[] = [
       { label: "Gold", href: "/gold" },
     ],
   },
-  // Wealth Management is now the site's single main feature page — a direct
+  // Wealth Management is now the site's single main feature page, a direct
   // link, not a dropdown with one child. The old listing page (/features)
   // still exists on disk but is no longer linked from navigation.
   { label: "Features", href: "/features/wealth-management" },
-  // Academy and Blog each currently ship two designs: the original, and the
-  // flow-state alternate built for review. Both are linked so management can
-  // compare them in the browser. Once a winner is picked, the alternate
-  // should take over /academy and /blog and these extra entries go away.
+  // The original /academy and /blog designs still exist on disk but are no
+  // longer linked from navigation, the flow-state versions are now the only
+  // ones surfaced here.
   {
     label: "Learn",
     children: [
-      { label: "Finqalab Academy", href: "/academy" },
-      { label: "Academy (Flow State)", href: "/academy-flow" },
+      { label: "Academy", href: "/academy-flow" },
       { label: "Glossary", href: "/glossary" },
-      { label: "Blog", href: "/blog" },
-      { label: "Blog (Flow State)", href: "/blog-flow" },
+      { label: "Blog", href: "/blog-flow" },
     ],
   },
   {
@@ -72,7 +70,15 @@ function ChevronIcon({ open }: { open: boolean }) {
   );
 }
 
+// A dropdown's trigger label lights up when the current page is one of its
+// children, e.g. "Investments" stays highlighted while browsing /stocks.
+function isItemActive(item: NavItem, pathname: string): boolean {
+  if (item.href) return item.href === pathname;
+  return item.children?.some((child) => child.href === pathname) ?? false;
+}
+
 export default function Navbar() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [openMobileGroup, setOpenMobileGroup] = useState<string | null>(null);
@@ -146,7 +152,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* The pill floats independently of the logo/CTA — same chassis as
+        {/* The pill floats independently of the logo/CTA, same chassis as
             the flow-state pages' nav-pill (rounded-full, blurred glass,
             centered), but with a solid enough fill of its own that it reads
             clearly against any page background, not just a hero video. */}
@@ -159,7 +165,7 @@ export default function Navbar() {
             className="relative flex items-center gap-1 rounded-full border border-white/12 bg-bg-black/85 py-1.5 pl-2 pr-2 shadow-[0_8px_32px_rgba(5,7,13,0.45)] backdrop-blur-xl backdrop-saturate-150"
           >
             {/* The glow itself: a soft radial light behind whichever item is
-                active, sliding to it rather than popping — this is the
+                active, sliding to it rather than popping, this is the
                 "spotlight" effect. Sits below the item's own z-10 text. */}
             <span
               aria-hidden="true"
@@ -169,8 +175,8 @@ export default function Navbar() {
                 width: glow.width,
                 opacity: glow.visible ? 1 : 0,
                 background:
-                  "radial-gradient(120% 160% at 50% 20%, rgba(168,85,247,0.55) 0%, rgba(168,85,247,0.18) 55%, rgba(168,85,247,0) 100%)",
-                boxShadow: "0 0 24px 4px rgba(168,85,247,0.35)",
+                  "radial-gradient(120% 160% at 50% 20%, rgba(156,140,224,0.55) 0%, rgba(156,140,224,0.18) 55%, rgba(156,140,224,0) 100%)",
+                boxShadow: "0 0 24px 4px rgba(156,140,224,0.35)",
               }}
             />
 
@@ -189,7 +195,9 @@ export default function Navbar() {
                     onClick={() =>
                       setOpenMenu((cur) => (cur === item.label ? null : item.label))
                     }
-                    className={`flex items-center gap-1 px-3.5 py-2 text-text-onDark ${navLinkClasses}`}
+                    className={`flex items-center gap-1 px-3.5 py-2 ${navLinkClasses} ${
+                      isItemActive(item, pathname) ? "text-primary-light" : "text-text-onDark"
+                    }`}
                   >
                     {item.label}
                     <ChevronIcon open={openMenu === item.label} />
@@ -226,7 +234,7 @@ export default function Navbar() {
                     onMouseEnter={() => setHoveredLabel(item.label)}
                     onFocus={() => setHoveredLabel(item.label)}
                     className={`block px-3.5 py-2 ${navLinkClasses} ${
-                      item.label === "Home" ? "text-primary-light" : "text-text-onDark"
+                      isItemActive(item, pathname) ? "text-primary-light" : "text-text-onDark"
                     }`}
                   >
                     {item.label}
@@ -238,8 +246,8 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex">
-          <PillButton href="#" variant="outlinePrimary">
-            Get Support
+          <PillButton href="/finqalab-circle.html" variant="outlinePrimary">
+            Join Our Community
           </PillButton>
         </div>
 
@@ -271,7 +279,9 @@ export default function Navbar() {
                         cur === item.label ? null : item.label
                       )
                     }
-                    className="flex min-h-11 w-full items-center justify-between rounded-sm text-sm font-medium text-text-onDark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-onDark focus-visible:ring-offset-2 focus-visible:ring-offset-bg-black"
+                    className={`flex min-h-11 w-full items-center justify-between rounded-sm text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-onDark focus-visible:ring-offset-2 focus-visible:ring-offset-bg-black ${
+                      isItemActive(item, pathname) ? "text-primary-light" : "text-text-onDark"
+                    }`}
                   >
                     {item.label}
                     <ChevronIcon open={openMobileGroup === item.label} />
@@ -297,7 +307,7 @@ export default function Navbar() {
                   <Link
                     href={item.href!}
                     className={`flex min-h-11 items-center rounded-sm text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-onDark focus-visible:ring-offset-2 focus-visible:ring-offset-bg-black ${
-                      item.label === "Home" ? "text-primary-light" : "text-text-onDark"
+                      isItemActive(item, pathname) ? "text-primary-light" : "text-text-onDark"
                     }`}
                     onClick={() => setOpen(false)}
                   >
@@ -308,8 +318,8 @@ export default function Navbar() {
             )}
           </ul>
           <div className="mt-4 flex flex-col gap-3">
-            <PillButton href="#" variant="outlinePrimary">
-              Get Support
+            <PillButton href="/finqalab-circle.html" variant="outlinePrimary">
+              Join Our Community
             </PillButton>
           </div>
         </div>

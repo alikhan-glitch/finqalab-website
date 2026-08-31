@@ -3,7 +3,7 @@ import type { ContentBlock } from "./blog-posts";
 // Finqalab newsroom updates.
 //
 // Bodies are the real published articles from finqalab.com/blog, kept
-// verbatim — these are the company's own announcements, not rewrites. Slugs
+// verbatim, these are the company's own announcements, not rewrites. Slugs
 // match the live URLs so the two stay recognisably the same article.
 //
 // Reuses <BlogBlocks/>'s ContentBlock shape (p / h3 / ul / quote) so the
@@ -14,7 +14,7 @@ export type Update = {
   slug: string;
   title: string;
   category: string;
-  /** Absent where the source article doesn't show one — see the 35 Bn entry. */
+  /** Absent where the source article doesn't show one, see the 35 Bn entry. */
   date?: string;
   image: string;
   excerpt: string;
@@ -114,7 +114,7 @@ export const updates: Update[] = [
     date: "2024-10-02",
     image: "/images/updates/sukuks.webp",
     excerpt:
-      "Sukuk investment is now live on Finqalab — a Shariah-compliant, asset-backed way to grow your wealth from the app.",
+      "Sukuk investment is now live on Finqalab, a Shariah-compliant, asset-backed way to grow your wealth from the app.",
     content: [
       {
         type: "p",
@@ -173,21 +173,21 @@ export const updates: Update[] = [
     date: "2025-02-25",
     image: "/images/updates/mascots.webp",
     excerpt:
-      "Meet Bulland and Mandu — Finqalab's official mascots, embodying the highs and lows of the financial world.",
+      "Meet Bulland and Mandu, Finqalab's official mascots, embodying the highs and lows of the financial world.",
     content: [
       {
         type: "p",
-        text: "Finqalab is proud to introduce its new official mascots—Bulland and Mandu—a dynamic duo that embodies the highs and lows of the financial world. These characters aren't just symbols; they're here to make investing more engaging, relatable, and fun for everyone.",
+        text: "Finqalab is proud to introduce its new official mascots, Bulland and Mandu, a dynamic duo that embodies the highs and lows of the financial world. These characters aren't just symbols; they're here to make investing more engaging, relatable, and fun for everyone.",
       },
       { type: "h3", text: "Meet Bulland: The Bull Market Beast" },
       {
         type: "p",
-        text: "Standing tall (and ripped), Bulland is the ultimate optimist. He thrives on energy, ambition, and an unshakable belief in market growth. Whether he's hyping up a rally or flexing his confidence, Bulland represents the drive to seize opportunities and make bold investment moves. With his “Chaotic Good” personality, he's always up for a challenge—just like bullish investors who embrace risk for high rewards.",
+        text: "Standing tall (and ripped), Bulland is the ultimate optimist. He thrives on energy, ambition, and an unshakable belief in market growth. Whether he's hyping up a rally or flexing his confidence, Bulland represents the drive to seize opportunities and make bold investment moves. With his “Chaotic Good” personality, he's always up for a challenge, just like bullish investors who embrace risk for high rewards.",
       },
       { type: "h3", text: "Meet Mandu: The Bear Market Philosopher" },
       {
         type: "p",
-        text: "On the other side, we have Mandu—the wise, skeptical bear who knows that markets don't always go up. Preferring caution over hype, Mandu reminds investors to stay grounded, think critically, and manage risk wisely. His “Lawful Evil” mindset doesn't mean he's against success—he just believes in making calculated moves and waiting for the right moment to strike.",
+        text: "On the other side, we have Mandu, the wise, skeptical bear who knows that markets don't always go up. Preferring caution over hype, Mandu reminds investors to stay grounded, think critically, and manage risk wisely. His “Lawful Evil” mindset doesn't mean he's against success, he just believes in making calculated moves and waiting for the right moment to strike.",
       },
       {
         type: "p",
@@ -243,7 +243,7 @@ export const updates: Update[] = [
     content: [
       {
         type: "p",
-        text: "Finqalab has officially surpassed PKR 5 billion worth of transactions — a major milestone that marks a shift in how people across Pakistan are engaging with investing, personal finance, and wealth-building.",
+        text: "Finqalab has officially surpassed PKR 5 billion worth of transactions, a major milestone that marks a shift in how people across Pakistan are engaging with investing, personal finance, and wealth-building.",
       },
       {
         type: "p",
@@ -251,7 +251,7 @@ export const updates: Update[] = [
       },
       {
         type: "p",
-        text: "From the beginning, Finqalab set out to change how investing feels. We designed the platform to be bold, intuitive, and human-centered — a space where finance is approachable and decisions feel informed, not overwhelming. Crossing 5 billion transactions shows that this vision is resonating. It shows that people are ready for something better.",
+        text: "From the beginning, Finqalab set out to change how investing feels. We designed the platform to be bold, intuitive, and human-centered, a space where finance is approachable and decisions feel informed, not overwhelming. Crossing 5 billion transactions shows that this vision is resonating. It shows that people are ready for something better.",
       },
       {
         type: "p",
@@ -364,11 +364,11 @@ export const updates: Update[] = [
     slug: "finqalab-surpasses-pkr-35-billion-in-transactions",
     title: "Finqalab Surpasses PKR 35 Billion in Transactions",
     category: "Milestone",
-    // The published article carries no visible date — left unset rather than
+    // The published article carries no visible date, left unset rather than
     // inventing one. The page simply omits the dateline for this entry.
     image: "/images/updates/35-billion.webp",
     excerpt:
-      "PKR 35 billion in transactions since launching in June 2024 — a new chapter in the evolution of digital investing in Pakistan.",
+      "PKR 35 billion in transactions since launching in June 2024, a new chapter in the evolution of digital investing in Pakistan.",
     content: [
       {
         type: "p",

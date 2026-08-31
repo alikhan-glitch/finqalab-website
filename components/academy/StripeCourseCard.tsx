@@ -7,7 +7,7 @@ import type { AcademyCourse } from "@/lib/academyCourses";
 // adapted to a two-column "read or watch" layout: course info + a Read
 // more link, and the actual course video embedded directly, reusing
 // <YouTubeEmbed/> as-is. "Read more" goes to this course's own article at
-// /academy-stripe/[slug] — deliberately not into /academy, keeping this
+// /academy-stripe/[slug], deliberately not into /academy, keeping this
 // alternate design self-contained rather than routing through the
 // Primer-inspired page.
 export default function StripeCourseCard({ course, flip = false }: { course: AcademyCourse; flip?: boolean }) {

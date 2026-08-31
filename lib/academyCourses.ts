@@ -31,7 +31,7 @@ export const academyCourses: AcademyCourse[] = [
     title: "Understanding Different Types of Assets",
     kicker: "Foundations",
     summary:
-      "Cash, real estate, commodities, bonds and stocks — what each asset class actually does in a portfolio, in a Pakistani context.",
+      "Cash, real estate, commodities, bonds and stocks, what each asset class actually does in a portfolio, in a Pakistani context.",
     videoId: "IPHZdMlsb0U",
     blocks: [
       { type: "h", text: "Introduction" },
@@ -98,7 +98,7 @@ export const academyCourses: AcademyCourse[] = [
           },
           {
             label: "Refineries",
-            text: "These companies take crude oil from upstream companies and convert it into finished products like petrol, diesel, and kerosene — products used in vehicles and other applications.",
+            text: "These companies take crude oil from upstream companies and convert it into finished products like petrol, diesel, and kerosene, products used in vehicles and other applications.",
           },
           {
             label: "Downstream Companies",
@@ -118,7 +118,7 @@ export const academyCourses: AcademyCourse[] = [
       { type: "h", text: "Competition and Pricing in the E&P Sector" },
       {
         type: "p",
-        text: "Given the large gap between demand and supply, companies don't need to compete aggressively to sell their products — whatever they produce can be sold comfortably. However, this lack of competition doesn't allow companies to charge any price they want, as the government strictly regulates this sector through pricing policies.",
+        text: "Given the large gap between demand and supply, companies don't need to compete aggressively to sell their products, whatever they produce can be sold comfortably. However, this lack of competition doesn't allow companies to charge any price they want, as the government strictly regulates this sector through pricing policies.",
       },
       { type: "p", text: "Pricing Factors:" },
       {
@@ -246,7 +246,7 @@ export const academyCourses: AcademyCourse[] = [
       },
       {
         type: "p",
-        text: "Import parity price considers the landed cost — the total cost of importing a product, which includes freight, insurance, customs duties, and other associated costs.",
+        text: "Import parity price considers the landed cost, the total cost of importing a product, which includes freight, insurance, customs duties, and other associated costs.",
       },
       {
         type: "p",
@@ -264,7 +264,7 @@ export const academyCourses: AcademyCourse[] = [
       { type: "h", text: "Custom/Deemed Duties" },
       {
         type: "p",
-        text: "Another key factor influencing refinery profits is the customs duty on high-speed diesel, currently set at 7.5%. This duty is incorporated into the final price, allowing refineries to benefit from an incremental price that contributes directly to their profits. Estimates suggest that this deemed duty provides approximately PKR 9 billion annually to Pakistan's three main refineries listed on Pakistan Stock Exchange — Attock Refinery, National Refinery, and Pakistan Refinery.",
+        text: "Another key factor influencing refinery profits is the customs duty on high-speed diesel, currently set at 7.5%. This duty is incorporated into the final price, allowing refineries to benefit from an incremental price that contributes directly to their profits. Estimates suggest that this deemed duty provides approximately PKR 9 billion annually to Pakistan's three main refineries listed on Pakistan Stock Exchange, Attock Refinery, National Refinery, and Pakistan Refinery.",
       },
       { type: "h", text: "The Impact of Furnace Oil on Refinery Operations" },
       {

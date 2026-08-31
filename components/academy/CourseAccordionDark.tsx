@@ -4,7 +4,7 @@ import { useId, useState } from "react";
 import YouTubeEmbed from "./YouTubeEmbed";
 import type { AcademyCourse, CourseBlock } from "@/lib/academyCourses";
 
-// Dark-theme fork of <CourseAccordion/>, used only on /academy-dark — same
+// Dark-theme fork of <CourseAccordion/>, used only on /academy-dark, same
 // structure and content, light-theme tokens swapped for dark equivalents.
 
 function Blocks({ blocks }: { blocks: CourseBlock[] }) {

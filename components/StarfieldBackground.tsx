@@ -12,13 +12,13 @@ import { CopyShader } from "three/examples/jsm/shaders/CopyShader.js";
 // Ported from a standalone Three.js r0.143 demo ("Starfield Close") into a
 // hero-scoped background, replacing <BackgroundVideo/> in the same
 // `absolute inset-0` slot. The shaders, geometry, and CONFIG constants below
-// are reproduced verbatim from that spec — the only real departures are
+// are reproduced verbatim from that spec, the only real departures are
 // boilerplate that assumed a full-viewport canvas on a dedicated 300vh
 // scroll-tunnel page, which this isn't:
 //
 //   - Renderer/camera sizing and pointer NDC are computed from the canvas's
 //     own bounding rect (matching this codebase's existing <FluidCanvas/>
-//     convention), not window.innerWidth/innerHeight — the original assumed
+//     convention), not window.innerWidth/innerHeight, the original assumed
 //     the canvas WAS the viewport, but here it's bounded to one section, and
 //     using window dimensions would mismatch the camera's actual aspect and
 //     make the cursor-repel effect track the wrong screen position.
@@ -26,7 +26,7 @@ import { CopyShader } from "three/examples/jsm/shaders/CopyShader.js";
 //     the page's own real scroll position instead of a manufactured one.
 //   - Wrapped in a mount/unmount React effect with full disposal (geometry,
 //     material, render targets, renderer, listeners) rather than a
-//     fire-and-forget script — this can mount and unmount many times across
+//     fire-and-forget script, this can mount and unmount many times across
 //     client-side navigation and Fast Refresh, so leaking GPU resources on
 //     every remount isn't acceptable here the way it is in a one-shot demo.
 
@@ -135,7 +135,7 @@ export default function StarfieldBackground({ className = "" }: { className?: st
     const canvasEl = canvasRef.current;
     if (!canvasEl) return;
     // Rebound to a variable TS can prove is non-null inside every closure
-    // below (event handlers, the resize callback, the tick loop) — narrowing
+    // below (event handlers, the resize callback, the tick loop), narrowing
     // `canvasRef.current` itself doesn't reliably propagate that far.
     const canvas: HTMLCanvasElement = canvasEl;
 
@@ -263,7 +263,7 @@ export default function StarfieldBackground({ className = "" }: { className?: st
     const raycaster = new THREE.Raycaster();
 
     // NDC + world-target computed against the CANVAS's own rect, not the
-    // window — the camera's aspect matches the canvas, not the viewport, so
+    // window, the camera's aspect matches the canvas, not the viewport, so
     // window-relative NDC would make the repel effect track the wrong spot.
     function onPointerMove(e: PointerEvent) {
       const rect = canvas.getBoundingClientRect();
@@ -390,7 +390,7 @@ export default function StarfieldBackground({ className = "" }: { className?: st
         geometry.dispose();
         material.dispose();
         // @types/three@0.143 doesn't declare EffectComposer.dispose(), but
-        // the addon's own JS source has it (frees the two render targets) —
+        // the addon's own JS source has it (frees the two render targets) , 
         // a gap in the third-party types, not a real type error.
         (torusComposer as unknown as { dispose(): void }).dispose();
         (bloomComposer as unknown as { dispose(): void }).dispose();

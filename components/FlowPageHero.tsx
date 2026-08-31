@@ -2,16 +2,16 @@ import type { ReactNode } from "react";
 import PillButton from "./PillButton";
 import Reveal from "./Reveal";
 
-// Flow-state counterpart to <PageHero/> — same prop API and layout (eyebrow
+// Flow-state counterpart to <PageHero/>, same prop API and layout (eyebrow
 // line, headline with caller-controlled <br/> breaks, subtitle, single CTA),
 // so a page can swap one for the other with no content changes. What
 // changes is purely the theme: Fraunces headline instead of italic Figtree,
 // Onest-inherited body, a solid-white CTA instead of the purple primary
-// pill, and no owned background — the ink canvas now lives once at the page
+// pill, and no owned background, the ink canvas now lives once at the page
 // level via <FluidPageBackground/>, not scoped to just the hero section, so
 // this component renders content only.
 //
-// Currently used by /stocks only. <PageHero/> (and the pages still on it —
+// Currently used by /stocks only. <PageHero/> (and the pages still on it , 
 // Sukuks, About) is untouched; once every page has moved to this look,
 // PageHero/StarfieldBackground become dead code to remove.
 export default function FlowPageHero({

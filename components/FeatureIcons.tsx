@@ -44,7 +44,7 @@ function Megaphone({ className }: { className?: string }) {
   );
 }
 
-// Stacked coins — added for the homepage's Gold asset-class card; the set
+// Stacked coins, added for the homepage's Gold asset-class card; the set
 // had no precious-metal/currency metaphor before it.
 function Coins({ className }: { className?: string }) {
   return (

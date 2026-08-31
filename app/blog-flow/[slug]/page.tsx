@@ -30,7 +30,7 @@ export async function generateMetadata({
   };
 }
 
-// The readable article behind a <FlowBlogCard/> — flow-state counterpart to
+// The readable article behind a <FlowBlogCard/>, flow-state counterpart to
 // /blog/[slug]. Same posts and the same <BlogBlocks/> renderer (its `dark`
 // variant), so a post's body can't drift between the two designs.
 //

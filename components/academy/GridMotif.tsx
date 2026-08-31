@@ -26,9 +26,9 @@ export default function GridMotif({
   cols: number;
   rows: number;
   cells: Cell[];
-  /** fr-unit weights, e.g. [1, 1.4, 4.7] — must have length `cols`. Omit for equal tracks. */
+  /** fr-unit weights, e.g. [1, 1.4, 4.7], must have length `cols`. Omit for equal tracks. */
   colSizes?: number[];
-  /** fr-unit weights, e.g. [1, 1.4, 1.2, 3.6] — must have length `rows`. Omit for equal tracks. */
+  /** fr-unit weights, e.g. [1, 1.4, 1.2, 3.6], must have length `rows`. Omit for equal tracks. */
   rowSizes?: number[];
   /** Swaps the hairline colour for use on a dark background. */
   dark?: boolean;

@@ -126,7 +126,7 @@ export default async function UpdateArticlePage({
                 style={{ borderColor: "rgba(255,255,255,0.12)" }}
               >
                 {/* Plain <img>: pre-cropped to this exact ratio. alt is empty
-                    on purpose — the headline directly above says the same
+                    on purpose, the headline directly above says the same
                     thing, so describing it again just repeats for screen
                     readers. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}

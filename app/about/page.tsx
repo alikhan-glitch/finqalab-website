@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 // Theme is now the flow-state system, same swap as /stocks and /sukuks:
 // <FluidPageBackground/> + <FlowPageHero/>/<FlowClosingCTA/> + Fraunces for
 // display headings and stat numbers, Onest (inherited) for everything else.
-// Every photo is real — downloaded from the live finqalab.com/about/ page,
-// not stock art — and every word of copy below is either verbatim from that
+// Every photo is real, downloaded from the live finqalab.com/about/ page,
+// not stock art, and every word of copy below is either verbatim from that
 // page or a direct, honest derivation of it (see comments per section).
 //
 // Two departures from the reference worth flagging:
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 //     lists Humaira Asad twice with two different titles. Reconciled here
 //     into one 5-person grid using her more senior/current title (Chief
 //     Operating Officer) rather than reproducing that inconsistency.
-//   - The template's per-card social icons are dropped — the source page
+//   - The template's per-card social icons are dropped, the source page
 //     doesn't expose real per-person profile links, and wiring placeholder
 //     "#" links under named executives' photos would read as broken or
 //     fake rather than simply absent.
@@ -79,7 +79,7 @@ const faqs = [
 ];
 
 // A soft, blurred glow pair standing in for the template's flat decorative
-// shape band — reuses the exact violet/teal radial-glow language already
+// shape band, reuses the exact violet/teal radial-glow language already
 // established in <PageHero/> and <Hero/>, rather than inventing a new motif.
 function GlowFlourish({ flip = false }: { flip?: boolean }) {
   return (
@@ -90,7 +90,7 @@ function GlowFlourish({ flip = false }: { flip?: boolean }) {
           left: flip ? "auto" : "8%",
           right: flip ? "8%" : "auto",
           bottom: "-40%",
-          background: "radial-gradient(closest-side, rgba(147,51,234,0.35) 0%, transparent 75%)",
+          background: "radial-gradient(closest-side, rgba(128,103,218,0.35) 0%, transparent 75%)",
           filter: "blur(30px)",
         }}
       />
@@ -119,16 +119,16 @@ export default function AboutPage() {
         <FlowPageHero
           title={
             <>
-              Financial Empowerment,
+              We built the app
               <br />
-              For All.
+              we wished existed
             </>
           }
-          subtitle="An intuitive online trading platform and transparent practices, revolutionizing the financial and investment landscape in Pakistan."
+          subtitle="Three decades inside Pakistan's stock market taught us investing shouldn't be this hard, so we fixed it."
         />
 
         {/* ---------------------------------------------------------------
-            Our Vision — verbatim from finqalab.com/about
+            Our Vision, verbatim from finqalab.com/about
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pt-24 sm:pt-28">
           <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
@@ -145,16 +145,15 @@ export default function AboutPage() {
                       Our Vision
                     </p>
                     <h2 className="mt-4 text-3xl font-semibold leading-[1.1] tracking-tight text-text-onDark sm:text-4xl">
-                      Our mission is to bridge the gap between saving and investing for everyday
-                      Pakistanis.
+                      Every rupee sitting idle is a rupee losing to inflation.
                     </h2>
                   </Reveal>
                   <Reveal delay={100}>
                     <p className="mt-6 text-[15px] leading-relaxed text-text-onDark-muted">
-                      We strive to empower and educate individuals to become informed investors
-                      through accessible investment tools for all communities in Pakistan. Finqalab
-                      exists to make investing in the Pakistan Stock Exchange, ETFs and other asset
-                      classes as simple as any other app on your phone.
+                      We built Finqalab to remove the friction between wanting to invest and
+                      actually doing it, no branch visits, no paperwork, no specialized knowledge
+                      required. Just a direct, transparent path to putting your money to work in
+                      Pakistan&apos;s stock market.
                     </p>
                   </Reveal>
                 </div>
@@ -175,7 +174,7 @@ export default function AboutPage() {
         </section>
 
         {/* ---------------------------------------------------------------
-            Our Story — verbatim from finqalab.com/about, photo mirrored to
+            Our Story, verbatim from finqalab.com/about, photo mirrored to
             the left for the same alternating rhythm as the reference.
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 py-16">
@@ -210,22 +209,23 @@ export default function AboutPage() {
                   <Reveal delay={100}>
                     <p className="mt-6 text-[15px] leading-relaxed text-text-onDark-muted">
                       Najam Ali and Irtaza Ali spent over three decades working inside Pakistan&apos;s
-                      capital markets before they started Finqalab. That time taught them a simple,
-                      frustrating truth: millions of Pakistanis were watching inflation quietly erode
-                      their savings, with no easy way to put their money to work in the stock market
-                      instead.
+                      capital markets before they set out to build Finqalab. That time taught them
+                      a frustrating truth, millions of Pakistanis were watching inflation quietly
+                      erode their savings, with no easy way to put that money to work in the stock
+                      market instead.
                     </p>
                     <p className="mt-4 text-[15px] leading-relaxed text-text-onDark-muted">
                       So they built the platform they wished had existed for their own families and
-                      friends: one that treats investing not as something reserved for a select few,
-                      but as something every household in Pakistan can access, understand, and trust.
+                      friends, one that treats investing not as something reserved for a select
+                      few, but as something every household in Pakistan can access, understand,
+                      and trust.
                     </p>
                   </Reveal>
                 </div>
               </div>
 
               {/* Stat callout pulled out of the narrow text column and given
-                  the full panel width — stacked under two paragraphs in a
+                  the full panel width, stacked under two paragraphs in a
                   5/12-wide column it read as just more text with a border;
                   as its own horizontal band it reads as the distinct,
                   intentional highlight it's meant to be. */}
@@ -297,7 +297,7 @@ export default function AboutPage() {
         </section>
 
         {/* ---------------------------------------------------------------
-            Regulated & Trusted — the same real compliance facts already
+            Regulated & Trusted, the same real compliance facts already
             established on /stocks and /sukuks, not new claims.
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pb-24 sm:pb-28">
@@ -313,8 +313,8 @@ export default function AboutPage() {
 
                   <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8">
                     {[
-                      { value: "PSX Member", label: "Licensed brokerage firm" },
-                      { value: "SECP", label: "Regulated brokerage" },
+                      { value: "Nationwide", label: "Accessible from anywhere in Pakistan" },
+                      { value: "2 Years", label: "Strong and growing" },
                       { value: "NEXT", label: "Publicly listed on PSX" },
                       { value: "Karachi", label: "Where we're based" },
                     ].map((fact, i) => (

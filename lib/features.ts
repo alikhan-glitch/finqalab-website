@@ -12,7 +12,7 @@ export const features: Feature[] = [
     icon: "megaphone",
     title: "Corporate Announcements",
     description:
-      "Dividend declarations, bonus issues, and rights offers — the moment they're announced, not the next morning.",
+      "Dividend declarations, bonus issues, and rights offers, the moment they're announced, not the next morning.",
     accent: "primary",
   },
   {
@@ -26,7 +26,7 @@ export const features: Feature[] = [
     icon: "userCheck",
     title: "Digital Onboarding",
     description:
-      "Open your account from your phone in about 2–3 working days — no paperwork, no branch visits.",
+      "Open your account from your phone in about 2–3 working days, no paperwork, no branch visits.",
     accent: "primary",
   },
   {
@@ -75,7 +75,7 @@ export const features: Feature[] = [
     icon: "lifeBuoy",
     title: "Help Center",
     description:
-      "Answers to your account, deposit, and trading questions — searchable, in-app, whenever you need them.",
+      "Answers to your account, deposit, and trading questions, searchable, in-app, whenever you need them.",
     accent: "teal",
   },
 ];
