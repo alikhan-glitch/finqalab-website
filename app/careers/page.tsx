@@ -64,7 +64,7 @@ export default function CareersPage() {
           <div className="flex w-full max-w-sm flex-col items-center sm:max-w-2xl lg:max-w-4xl">
             <WordReveal
               as="h1"
-              text="Help Pakistan learn to invest"
+              text="Join Us!"
               baseDelay={320}
               stagger={85}
               duration={720}
@@ -74,7 +74,7 @@ export default function CareersPage() {
 
             <WordReveal
               as="p"
-              text="We're building the platform and the education to bring an entire country into the market for the first time. That mission runs both ways, the people building it get to grow just as fast as the thing they're building."
+              text="Help build the future of investing in Pakistan."
               baseDelay={1150}
               stagger={22}
               duration={600}
@@ -137,16 +137,17 @@ export default function CareersPage() {
               <Reveal delay={160} className="space-y-4 lg:col-span-7">
                 <p className="text-[1.02rem] leading-[1.7] text-text-onDark-muted">
                   Whether you&apos;re building the product, researching the market, or supporting an
-                  investor, your work here reaches real people and real portfolios. Finqalab is
-                  building the infrastructure, technology, and education that can bring investing
-                  to millions of Pakistanis, and every team has a direct hand in making that happen.
+                  investor, what you do here reaches real people and real portfolios. Finqalab is
+                  building the infrastructure, technology, and education to make investing more
+                  accessible to millions of Pakistanis, and every team plays a part in making that
+                  happen.
                 </p>
                 <p className="text-[1.02rem] leading-[1.7] text-text-onDark-muted">
-                  We&apos;re solving problems that don&apos;t come with a playbook. From building new
-                  financial integrations to making sense of Pakistan&apos;s markets, or helping a
-                  first-time investor understand where to start, you&apos;ll have the chance to work
-                  on problems that matter and see the impact of what you build. As Finqalab grows,
-                  so will your opportunity to shape where it goes.
+                  We&apos;re solving problems that don&apos;t come with a playbook. You could be
+                  building a new financial integration, making sense of Pakistan&apos;s markets, or
+                  helping a first-time investor understand where to start. Whatever your role,
+                  you&apos;ll be solving problems that matter and seeing the impact of what you
+                  build.
                 </p>
               </Reveal>
             </div>

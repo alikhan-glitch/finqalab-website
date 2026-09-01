@@ -43,7 +43,7 @@ export default function WealthFluidHero() {
 
         <WordReveal
           as="p"
-          text="A modern, fully customizable trading platform, built around how Pakistan actually invests. Everything you need to outdo average."
+          text="A modern, fully customizable trading platform, built around how Pakistan actually invests."
           baseDelay={1150}
           stagger={22}
           duration={600}

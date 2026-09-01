@@ -24,12 +24,16 @@ export default function FluidPageBackground({
   hueMin,
   hueMax,
   pauseOrbitPastHero,
+  pointerOnly,
 }: {
   /** Forwarded to <FluidCanvas/>, omit to keep its cyan→magenta default. */
   hueMin?: number;
   hueMax?: number;
   /** Forwarded to <FluidCanvas/>, see its own doc comment. */
   pauseOrbitPastHero?: boolean;
+  /** Forwarded to <FluidCanvas/>: no load-in burst, no auto-orbiting virtual
+   *  cursor, ink only ever appears where the visitor's own pointer goes. */
+  pointerOnly?: boolean;
 } = {}) {
   useEffect(() => {
     let lenis: import("lenis").default | undefined;
@@ -60,6 +64,7 @@ export default function FluidPageBackground({
         hueMin={hueMin}
         hueMax={hueMax}
         pauseOrbitPastHero={pauseOrbitPastHero}
+        pointerOnly={pointerOnly}
       />
       <div
         className="pointer-events-none absolute inset-0 z-[1]"

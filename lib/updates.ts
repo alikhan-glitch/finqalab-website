@@ -67,7 +67,7 @@ export const updates: Update[] = [
       {
         type: "quote",
         text: "Financial literacy is the foundation of financial independence. Collaborating with corporate partners like P&G allows us to extend our mission of making investing approachable for everyone.",
-        attribution: "Fatiq Bin Khursheed, CEO Finqalab",
+        attribution: "Fatiq Bin Khursheed, Ex-CEO Finqalab",
       },
       {
         type: "p",
@@ -153,12 +153,12 @@ export const updates: Update[] = [
       },
       {
         type: "p",
-        text: "The first episode features Finqalab's CEO, Fatiq Bin Khursheed, CFA, answering key questions on investing, from strategies, analytical approaches, to insights into different investment avenues and even career advice. Speaking about the vision behind Fintalk, Fatiq said:",
+        text: "The first episode features Finqalab's Ex-CEO, Fatiq Bin Khursheed, CFA, answering key questions on investing, from strategies, analytical approaches, to insights into different investment avenues and even career advice. Speaking about the vision behind Fintalk, Fatiq said:",
       },
       {
         type: "quote",
         text: "There's a common misconception that finance and investing are too complex for the average person. With Fintalk, we aim to challenge that belief by making financial knowledge accessible, practical, and engaging for everyone.",
-        attribution: "Fatiq Bin Khursheed, CFA, CEO Finqalab",
+        attribution: "Fatiq Bin Khursheed, CFA, Ex-CEO Finqalab",
       },
       {
         type: "p",
@@ -285,7 +285,7 @@ export const updates: Update[] = [
       {
         type: "quote",
         text: "We believe that financial education is the foundation of financial independence. Collaborating with innovative fintechs like SadaPay helps us extend that mission into forward-thinking organizations.",
-        attribution: "Fatiq Bin Khursheed, CEO of Finqalab",
+        attribution: "Fatiq Bin Khursheed, Ex-CEO of Finqalab",
       },
       {
         type: "p",

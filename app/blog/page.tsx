@@ -39,9 +39,9 @@ export default function BlogIndexPage() {
                 The building blocks of your investing journey
               </h1>
               <p className="mt-4 max-w-lg text-balance text-sm text-text-onDark-muted sm:text-base lg:text-lg">
-                Straightforward explainers on investing in Pakistan&apos;s
-                markets, from rights issues to valuation, written for real
-                PSX investors.
+                Simple investing guides to help you understand the basics,
+                paired with real-time commentary on the PSX and the events
+                shaping markets in Pakistan and around the world.
               </p>
             </div>
           </div>

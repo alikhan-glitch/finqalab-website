@@ -6,7 +6,7 @@ import type { Feature } from "@/lib/features";
 
 export type TradeStep = Feature & { n: string; image?: string };
 
-const STEP_MS = 3200;
+const STEP_MS = 5000;
 
 function prefersReducedMotion() {
   return typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

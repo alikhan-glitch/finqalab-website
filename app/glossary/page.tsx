@@ -48,7 +48,7 @@ export default function GlossaryPage() {
 
             <WordReveal
               as="p"
-              text="The vocabulary you'll meet investing in Pakistan's markets, defined without sending you looking up three more words to understand the first one."
+              text="Make sense of Pakistan's stock market. Clear, jargon-free definitions for every term you will see in your investing journey."
               baseDelay={1150}
               stagger={22}
               duration={600}

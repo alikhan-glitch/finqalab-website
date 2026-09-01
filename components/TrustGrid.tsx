@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 const items = [
   {
     caption:
-      "Regulated by the SECP, PSX, NCCPL, and CDC, with every trade settling through licensed infrastructure.",
+      "Regulated by the SECP with every trade settling through licensed infrastructure.",
     logo: "/images/trust-logos/secp.webp",
     alt: "SECP",
   },
@@ -16,14 +16,15 @@ const items = [
   },
   {
     caption:
-      "Backed by Next Capital Limited, a PSX-listed broker (ticker: NEXT) holding TREC #048.",
-    logo: "/images/trust-logos/next-capital.webp",
-    alt: "Next Capital Limited",
+      "Every trade clears through the National Clearing Company of Pakistan (NCCPL), the exchange's central counterparty.",
+    logo: "/images/trust-logos/nccpl.webp",
+    alt: "National Clearing Company of Pakistan",
   },
   {
-    caption: "Have a question? Our support team is here to help, every step of the way.",
-    logo: "/images/trust-logos/support-team.webp",
-    alt: "",
+    caption:
+      "Finqalab is backed by Next Capital Limited, a PSX-listed broker (ticker: NEXT) holding TREC #048.",
+    logo: "/images/trust-logos/next-capital.webp",
+    alt: "Next Capital Limited",
   },
 ];
 
@@ -48,10 +49,10 @@ export default function TrustGrid() {
 
         {/* Glass panels rather than the previous bare icon + caption columns,
             to match the card treatment used across the rest of the site.
-            Real institutional logos (SECP, CDC, Next Capital) plus a generic
-            mark for support, each on its own white badge so every logo's
-            native branding/colors stay intact regardless of which one has a
-            transparent background and which doesn't. */}
+            Real institutional logos (SECP, CDC, NCCPL, Next Capital), each
+            on its own white badge so every logo's native branding/colors
+            stay intact regardless of which one has a transparent
+            background and which doesn't. */}
         {/* auto-rows-fr so both rows match height, without it each row sizes
             to its own longest caption and the 2x2 reads as uneven. */}
             <div className="mx-auto mt-8 grid max-w-4xl auto-rows-fr grid-cols-1 gap-4 sm:grid-cols-2">
@@ -63,7 +64,6 @@ export default function TrustGrid() {
                   <img
                     src={item.logo}
                     alt={item.alt}
-                    aria-hidden={item.alt === "" ? "true" : undefined}
                     loading="lazy"
                     className="h-full w-full object-contain"
                   />

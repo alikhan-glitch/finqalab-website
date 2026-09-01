@@ -65,27 +65,30 @@ const benefits: { image: string; title: string; eyebrow: string }[] = [
     image: "/images/icons/buy-sell-digitally.webp",
     title: "Buy & Sell Digitally",
     eyebrow:
-      "Buy and sell gold digitally, backed by contracts traded on the Pakistan Mercantile Exchange. Skip the jeweller, the vault, and second-guessing purity, gold moves the same way your stocks already do, right from the app you use every day. One tap in, one tap out, whenever the moment feels right.",
+      "Buy and sell gold digitally through the app, backed by contracts traded on the Pakistan Mercantile Exchange. No jeweller, physical gold, or separate platform. Trade gold alongside your stocks and ETFs from the same app.",
   },
   {
     image: "/images/icons/one-portfolio-view.webp",
     title: "One Portfolio View",
     eyebrow:
-      "Track your gold holdings in the same portfolio view as your stocks and ETFs, so your full net worth stays in one place instead of scattered across apps. Every rupee you've put into gold sits right next to what you've put into the market. One number tells you exactly where you stand.",
+      "See your gold, stocks, and ETFs in one portfolio. Track how much you've invested across each asset and get a complete view of your holdings without switching between apps.",
   },
   {
     image: "/images/icons/no-new-account.webp",
     title: "No New Account",
     eyebrow:
-      "Add a new asset class to your portfolio without opening a separate account or repeating your CNIC verification. Gold simply appears inside the app you already use, ready to trade alongside your other holdings the day it launches. Same login, same portfolio, one more way to grow it.",
+      "Start investing in gold without opening another account or repeating your verification. Your existing Finqalab account gives you access to gold alongside your other investments.",
   },
 ];
 
 const facts = [
+  // "One Account" and "Real-Time Pricing" swapped out, both are already
+  // used as stats on /etf. "Contract-Backed" also dropped, it restated the
+  // same fact as "PMEX Partnership", replaced with liquidity instead.
   { value: "PMEX Partnership", label: "Contracts traded on the Pakistan Mercantile Exchange" },
   { value: "Coming Soon", label: "Currently in development" },
-  { value: "One Account", label: "No separate app or account needed" },
-  { value: "Real-Time Pricing", label: "Trade gold as the market moves" },
+  { value: "Storage-Free", label: "No vault, no jeweller, no physical gold to guard" },
+  { value: "Instant Liquidity", label: "Sell anytime, no buyer needed" },
 ];
 
 const faqs = [

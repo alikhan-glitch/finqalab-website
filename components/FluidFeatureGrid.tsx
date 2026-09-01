@@ -64,14 +64,14 @@ export default function FluidFeatureGrid() {
   const [page, setPage] = useState(0);
   const go = (delta: number) => setPage((p) => mod(p + delta, PAGE_COUNT));
 
-  // True circular indexing rather than clamping the last page: with 16
-  // features and 3 per page, the last page wraps past the final feature
-  // and picks up again from the first (16, 1, 2), instead of repeating the
-  // previous page's 14-15-16. Every page reads as a full 3-card row, and
-  // paging never dead-ends, "next" from the last page loops straight back
-  // to the start.
-  const start = page * PER_PAGE;
-  const pageItems = [0, 1, 2].map((i) => wealthManagementFeatures[mod(start + i, TOTAL)]);
+  // 16 features doesn't divide evenly by 3, five full pages of three (items
+  // 1-15) plus the 16th left over. Rather than wrap that leftover card in
+  // with the first two again, it gets its own final page, alone and
+  // centered, see the single-card branch in the JSX below.
+  const isLastPage = page === PAGE_COUNT - 1;
+  const pageItems = isLastPage
+    ? [wealthManagementFeatures[TOTAL - 1]]
+    : wealthManagementFeatures.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
 
   return (
     <section className="relative z-10 px-5 pb-28 pt-0 sm:px-10">
@@ -86,10 +86,17 @@ export default function FluidFeatureGrid() {
 
           {/* auto-rows-fr so every card in a row matches height regardless of
               how long its title/description runs. key=page forces each
-              card's Reveal to re-run its entrance animation on page change. */}
+              card's Reveal to re-run its entrance animation on page change.
+              The final, single-card page swaps the 3-col grid for a centered
+              column instead, a lone card stretched to fill a 3-wide row
+              would look like a layout bug, not a deliberate close. */}
           <div
             key={page}
-            className="grid flex-1 auto-rows-fr grid-cols-1 gap-6 lg:grid-cols-3"
+            className={
+              isLastPage
+                ? "mx-auto flex w-full max-w-sm flex-1 justify-center"
+                : "grid flex-1 auto-rows-fr grid-cols-1 gap-6 lg:grid-cols-3"
+            }
           >
             {pageItems.map((feature, i) => {
               const theme = feature.panelTheme ?? "light";

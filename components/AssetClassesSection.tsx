@@ -5,8 +5,8 @@ import Reveal from "./Reveal";
 // The homepage's asset-class overview.
 //
 // Content is exactly as supplied. Note that Sukuks are not listed here even
-// though Finqalab sells them (see /sukuks and <DiversifySection/> further
-// down this same page), that's the supplied copy, not an omission
+// though Finqalab sells them (see /sukuks), that's the supplied copy, not
+// an omission
 // introduced here.
 const assets: {
   visual: AssetVisualKind;
@@ -30,7 +30,7 @@ const assets: {
     visual: "gold",
     title: "Gold",
     description:
-      "Digital gold trading is coming soon through our partnership with the Pakistan Mercantile Exchange, right inside the same app.",
+      "Digital gold trading is coming soon through our partnership with the Pakistan Mercantile Exchange (PMEX), right inside the same app.",
     status: "Coming soon",
   },
   {
@@ -38,6 +38,7 @@ const assets: {
     title: "More Asset Classes",
     description:
       "More asset classes, including fixed income, mutual funds, and insurance, are on the way as Finqalab keeps growing.",
+    status: "Coming soon",
   },
 ];
 

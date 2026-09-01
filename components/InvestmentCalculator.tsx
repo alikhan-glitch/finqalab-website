@@ -169,8 +169,8 @@ export default function InvestmentCalculator() {
           </div>
         </div>
         <p className="mt-7 text-[0.78rem] leading-relaxed text-text-onDark-muted">
-          Figures are illustrative only, assume monthly compounding at a constant rate, and are not a
-          guarantee of future performance. All investments involve risk, including loss of principal.
+          Figures assume monthly compounding at a constant rate, and are not a guarantee of future
+          performance. All investments involve risk, including loss of principal.
         </p>
       </div>
     </>

@@ -51,7 +51,7 @@ const team = [
   },
   {
     name: "Humaira Asad",
-    title: "Chief Operating Officer",
+    title: "Managing Director",
     tag: "The Catalyst",
     photo: "/images/about/about-humaira.webp",
   },
@@ -264,7 +264,7 @@ export default function AboutPage() {
             <Reveal delay={100}>
               <p className="mx-auto mt-5 max-w-xl text-balance text-center text-base text-text-onDark-muted">
                 Three decades of experience navigating Pakistan&apos;s capital markets, now building
-                the platform we wished we&apos;d had.
+                the platform we wished we would have had.
               </p>
             </Reveal>
 

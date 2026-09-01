@@ -8,19 +8,15 @@ import SocialIcon, { type SocialIconName } from "./academy/SocialIcons";
 export const columns = [
   {
     heading: "Product",
-    links: [
-      "Stocks",
-      "ETF",
-      "Gold",
-      "Watchlist",
-      "Custom Alerts",
-      "Portfolio Weightage",
-      "News",
-    ],
+    links: ["Stocks", "ETFs", "Gold"],
   },
   {
     heading: "Company",
-    links: ["About Us", "Careers", "Academy", "Help Center", "Updates"],
+    links: ["About Us", "Careers", "Updates"],
+  },
+  {
+    heading: "Learn",
+    links: ["Academy"],
   },
   {
     heading: "Legal & Regulatory",
@@ -43,7 +39,17 @@ const socials: { name: SocialIconName; label: string }[] = [
   { name: "x", label: "X" },
   { name: "linkedin", label: "LinkedIn" },
   { name: "instagram", label: "Instagram" },
+  { name: "facebook", label: "Facebook" },
+  { name: "youtube", label: "YouTube" },
+  { name: "tiktok", label: "TikTok" },
+  { name: "reddit", label: "Reddit" },
 ];
+
+const contact = {
+  email: "hello@finqalab.com",
+  address:
+    "Office 124, 2nd Floor, Imperial Court, Dr Ziauddin Ahmed Rd, opposite Karachi Club, Civil Lines Kashmir Mujahid Colony, Karachi, 75530",
+};
 
 const linkFocus =
   "rounded-sm transition-colors hover:text-text-onDark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-onDark-muted focus-visible:ring-offset-2 focus-visible:ring-offset-bg-black";
@@ -71,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 pt-12 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-10 pt-12 sm:grid-cols-3 lg:grid-cols-5">
           {columns.map((col) => (
             <div key={col.heading}>
               <p className="font-heading text-sm font-semibold text-text-onDark">
@@ -88,9 +94,21 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+
+          <div>
+            <p className="font-heading text-sm font-semibold text-text-onDark">Contact</p>
+            <ul className="mt-4 flex flex-col gap-4 text-sm">
+              <li>
+                <Link href={`mailto:${contact.email}`} className={`inline-block py-1 ${linkFocus}`}>
+                  {contact.email}
+                </Link>
+              </li>
+              <li className="max-w-[20rem] py-1 leading-relaxed">{contact.address}</li>
+            </ul>
+          </div>
         </div>
 
-        <div className="max-w-[62ch] space-y-4 border-t border-border-onDark pt-10 text-xs leading-relaxed">
+        <div className="space-y-4 border-t border-border-onDark pt-10 text-xs leading-relaxed">
           <p className="font-semibold text-text-onDark-muted">
             All investing involves risk.
           </p>

@@ -21,7 +21,14 @@ export const metadata: Metadata = {
 // Cards now open the article on-site at /updates/[slug] rather than sending
 // the visitor out to finqalab.com/blog. Titles, categories, banners and the
 // article bodies all live in lib/updates.
-const UPDATES = updates;
+// Newest first. Entries without a published date (currently just the PKR 35
+// Bn milestone) are treated as the most recent, since that's the latest
+// milestone reached and the source article simply doesn't show a dateline.
+const UPDATES = [...updates].sort((a, b) => {
+  const aTime = a.date ? new Date(a.date).getTime() : Infinity;
+  const bTime = b.date ? new Date(b.date).getTime() : Infinity;
+  return bTime - aTime;
+});
 
 const heading ="font-semibold tracking-tight text-text-onDark";
 
@@ -89,12 +96,6 @@ export default function UpdatesPage() {
                   <p className="mt-1.5 text-base text-white">Everything, as it happens.</p>
                 </Reveal>
               </div>
-              <Reveal delay={80}>
-                <p className="max-w-md text-[0.95rem] text-text-onDark-muted">
-                  Product launches, partnerships, and milestones from Pakistan&apos;s end-to-end investing app
-                 , in order, as they landed.
-                </p>
-              </Reveal>
             </div>
 
             {/* Every update is an equal card, no full-width "featured" one.

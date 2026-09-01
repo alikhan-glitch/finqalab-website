@@ -29,61 +29,60 @@ const steps: TradeStep[] = [
     n: "01",
     icon: "clipboard",
     accent: "primary",
-    title: "Open Your Account",
+    title: "Search For an ETF",
     description:
-      "Open a fully digital account from the Finqalab app, with no branch visit and no separate paperwork.",
-    image: "/images/steps/sign-up.webp",
+      "From the market screen in the app, search for an ETF and see the full list of what's available to buy.",
+    image: "/images/steps/etf-search.webp",
   },
   {
     n: "02",
-    icon: "wallet",
+    icon: "candlestick",
     accent: "teal",
-    title: "Fund Your Account",
+    title: "Select And Buy",
     description:
-      "Add money instantly through Raast, Pakistan's real-time payment rail, straight from your bank.",
-    image: "/images/steps/instant-deposit.webp",
+      "Pick the ETF you want, tap buy, and enter your order details, just like placing a stock trade.",
+    image: "/images/steps/etf-buy.webp",
   },
   {
     n: "03",
-    icon: "candlestick",
+    icon: "bolt",
     accent: "primary",
-    title: "Place Your ETF Order",
+    title: "Execute Your Order",
     description:
-      "Search for the ETF you want and place your order, which settles the same way a PSX stock trade does.",
-    image: "/images/steps/place-etf-order.webp",
+      "Confirm, and your order settles the same way a PSX stock trade does, right inside your portfolio.",
+    image: "/images/steps/etf-executed.webp",
   },
 ];
 
 const benefits: { image: string; title: string; eyebrow: string }[] = [
   {
     image: "/images/icons/diversification.webp",
-    title: "Spread Your Risk in One Tap",
+    title: "Own An Entire Market, Not Just One Stock",
     eyebrow:
-      "Buy a single Finqalab ETF and you're instantly holding dozens of underlying companies, not just one. Instead of researching and buying each stock separately, one purchase spreads your money across an entire sector or index. It's the same diversification serious investors chase, done in a single tap instead of twenty.",
+      "An ETF bundles many companies from a sector or index into one tradeable basket. Buy it once and you instantly hold a slice of everything inside, all in a single tap.",
   },
   {
     image: "/images/icons/lower-research-burden.webp",
-    title: "Skip the Research Marathon",
+    title: "Diversify Without Doing The Digging",
     eyebrow:
-      "The fund's managers already did the homework, picking and weighting the companies inside each ETF. You get the diversification without spending your weekends reading balance sheets and annual reports. Less research, same broad exposure, more time for the parts of investing you actually enjoy.",
+      "One ETF spreads your money across many companies at once, so you're never relying on a single stock's performance. Get the safety of diversification without researching each company yourself.",
   },
   {
     image: "/images/icons/real-time-trading.webp",
-    title: "Trade It Like Any Stock",
+    title: "Trade It Like Any Other Stock",
     eyebrow:
-      "Every ETF on Finqalab prices and trades in real time on the PSX, just like any individual stock. You're never stuck waiting on an end-of-day valuation to know where you stand, and there's no separate application or waiting period to start. Buy, sell, or hold, the same way you already trade, just spread across more companies at once.",
+      "ETFs are priced and traded in real time on Finqalab, just like every other stock. You're never stuck waiting on an end-of-day valuation to know where you stand, and you don't need to open a new account. Simply buy, sell, or hold an ETF the same way you already trade stocks on Finqalab.",
   },
 ];
 
 const facts = [
-  // Swapped out the licensing-credential stat ("PSX Member") for one that's
-  // actually about diversification, and reframed the PSX-Listed stat around
-  // real-time pricing instead, so all four now tie to the section heading
-  // below rather than mixing in a compliance fact covered elsewhere.
-  { value: "One Trade", label: "A whole sector or index at once" },
+  // This band argues risk-smoothing + integration + zero extra setup,
+  // deliberately not the account/regulation stats used on /stocks or the
+  // homepage's Trust Grid.
+  { value: "Lower Risk", label: "Spread across many holdings, not one" },
   { value: "One Account", label: "Sits right beside your stocks" },
   { value: "Real-Time", label: "Priced and traded like any stock" },
-  { value: "Diversified", label: "Spread across many holdings, not one" },
+  { value: "Diversify Instantly", label: "One ETF, many companies at once" },
 ];
 
 const faqs = [
@@ -187,7 +186,7 @@ export default function EtfPage() {
         </section>
 
         {/* ---------------------------------------------------------------
-            What are ETFs?
+            The Case For Not Betting On One
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pb-24 sm:pb-28">
           <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
@@ -196,7 +195,7 @@ export default function EtfPage() {
                 <div className="lg:col-span-5">
                   <Reveal>
                     <h2 className="text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-4xl">
-                      A simpler way to hold the whole market
+                      The Case For Not Betting On One
                     </h2>
                   </Reveal>
 
@@ -216,23 +215,19 @@ export default function EtfPage() {
                   <Reveal delay={100}>
                     <div className="max-w-[62ch] space-y-5 text-[15px] leading-relaxed text-text-onDark-muted">
                       <p>
-                        One trade puts a whole sector or index in your portfolio, instead of
-                        buying each company inside it separately. It's the same diversification
-                        serious investors chase, done in a single tap and priced in real time,
-                        right alongside your PSX stocks.
+                        A single stock can have a bad day for reasons that have nothing to do
+                        with the market. An ETF absorbs that shock, because you&apos;re never
+                        betting on just one story.
                       </p>
                       <p>
-                        Finqalab lets you trade ETFs the same way you already invest in stocks:
-                        funded instantly through Raast, tracked in the same portfolio, and reviewed
-                        by the same real-time market data, all inside one app. No separate account,
-                        no separate app to download, and no extra paperwork to sign, just another
-                        asset class sitting right next to your existing stock holdings.
+                        That balance shouldn&apos;t cost you a separate account. Every ETF you
+                        hold sits in the same portfolio as your PSX stocks. It&apos;s tracked,
+                        funded, and reported the exact same way.
                       </p>
                       <p>
-                        Every ETF traded through Finqalab runs through Next Capital Limited, a
-                        licensed brokerage firm and member of the Pakistan Stock Exchange, regulated
-                        by the Securities and Exchange Commission of Pakistan. Next Capital is
-                        itself publicly listed on the PSX under the ticker NEXT.
+                        Placing an ETF order takes the same three taps as any stock trade.
+                        Search, select, confirm. Nothing new to learn. Nothing extra to set up.
+                        Just one more way to grow what you already started.
                       </p>
                     </div>
                   </Reveal>

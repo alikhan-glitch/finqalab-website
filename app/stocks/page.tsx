@@ -45,7 +45,7 @@ const steps: TradeStep[] = [
     accent: "teal",
     title: "Enter Order Details",
     description:
-      "Pick the PSX-listed company you want, set your quantity and your price, and review the whole order before anything goes out.",
+      "Pick the PSX-listed company you want, and set your quantity and price. Choose your order type: limit order, stop loss, or market order. Review the whole order once before anything goes out.",
     image: "/images/steps/enter-stock-details.webp",
   },
   {
@@ -54,7 +54,7 @@ const steps: TradeStep[] = [
     accent: "primary",
     title: "Execute Order",
     description:
-      "Confirm, and your order routes to the Pakistan Stock Exchange in real time. See it appear in your portfolio the instant it's filled.",
+      "Confirm, and your order routes straight to the Pakistan Stock Exchange. Once it's filled, it shows up in your portfolio automatically.",
     image: "/images/steps/filled-order.webp",
   },
 ];
@@ -62,32 +62,33 @@ const steps: TradeStep[] = [
 const pillars: { image: string; title: string; eyebrow: string }[] = [
   {
     image: "/images/icons/low-investment.webp",
-    title: "Start With What You Have",
+    title: "Start Today, Not Someday",
     eyebrow:
-      "There's no minimum balance to open with, and no fee just for holding an account. Add as much or as little as fits your budget right now, funded instantly through Raast, and build your position over time. Whether you're testing the waters or going all in, the app scales with you, not the other way around.",
-  },
-  {
-    image: "/images/icons/community.webp",
-    title: "You're Never Trading Alone",
-    eyebrow:
-      "Ask a question in the Finqalab community and get an answer from someone who's actually traded PSX stocks, not a script. Our team keeps every conversation active and useful, so even a question you'd hesitate to ask still gets answered. New investors and veterans share the same space, and that's on purpose.",
+      "Investing used to demand a headstart, savings, a broker, a reason to finally do it. Finqalab needs none of that. Fund your account in seconds, own your first share of a PSX-listed company in the same breath, and let today be the day you actually started, instead of the day you just planned to.",
   },
   {
     image: "/images/icons/education-cap.webp",
-    title: "Understand Before You Invest",
+    title: "Built To Make Sense",
     eyebrow:
-      "Finqalab Academy walks you through every asset class and sector in plain language, no finance degree required. Watch a short video or read the breakdown, whichever fits how you learn, built around the Pakistani market specifically. You'll know exactly why you're buying before you ever tap confirm.",
+      "The market is not complicated. It's just been explained badly. Every stock, every price, every chart in Finqalab is built with a purpose, so a first-time investor and a twenty-year veteran read it the same way, clearly, instantly, with no glossary in the other hand.",
+  },
+  {
+    image: "/images/icons/one-portfolio-view.webp",
+    title: "One App, Every Tool",
+    eyebrow:
+      "Real-time PSX prices. Personal watchlists. Alerts that find you. Research you can trust. What used to take five apps and a spreadsheet now takes just one download. Finqalab isn't a piece of your investing life, it's the whole thing.",
   },
 ];
 
 const facts = [
-  // Swapped the credential/tenure stats (CDC-Backed, 30+ years) for the
-  // actual in-app tools that help someone invest better day to day, tied
-  // to the section heading and body copy below.
+  // Deliberately not the app-tool stats (watchlists/alerts), those are
+  // "One App, Every Tool"'s territory above, and not the PSX Member/SECP
+  // credentials, those belong to the homepage's Trust Grid. These four are
+  // real features not named anywhere else on this page.
   { value: "Raast", label: "Instant account funding" },
-  { value: "Watchlists", label: "Track what you actually care about" },
-  { value: "Custom Alerts", label: "Know the moment a price moves" },
   { value: "Juice List", label: "Curated picks from our research desk" },
+  { value: "Corporate Announcements", label: "Dividends and AGM notices, the moment they're filed" },
+  { value: "Finqueue", label: "Your Friday order, carried into Monday" },
 ];
 
 const faqs = [
@@ -97,7 +98,7 @@ const faqs = [
   },
   {
     q: "Is trading on the Pakistan Stock Exchange safe?",
-    a: "PSX trading through a licensed broker like Finqalab is regulated by the Securities and Exchange Commission of Pakistan (SECP). Finqalab operates under Next Capital's PSX brokerage license, so your trades are placed through an officially licensed PSX member.",
+    a: "PSX trading through a licensed broker is regulated by the Securities and Exchange Commission of Pakistan (SECP). Finqalab operates under Next Capital's PSX brokerage license, so your trades are placed through an officially licensed PSX member.",
   },
   {
     q: "What documents do I need to start trading PSX stocks?",
@@ -125,7 +126,7 @@ export default function StocksPage() {
               Pakistan&apos;s biggest companies
             </>
           }
-          subtitle="The Pakistan Stock Exchange, live in your pocket. Buy and sell in seconds, funded instantly through Raast."
+          subtitle="The Pakistan Stock Exchange, live in your pocket. Fund your account in seconds and start trading immediately."
         />
 
         {/* ---------------------------------------------------------------
@@ -138,7 +139,7 @@ export default function StocksPage() {
           <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
             <Reveal>
               <h2 className="mx-auto max-w-2xl text-balance text-center text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-5xl">
-                Three taps to your first trade
+                Three steps to your first trade
               </h2>
             </Reveal>
             <Reveal delay={100}>
@@ -212,7 +213,7 @@ export default function StocksPage() {
                 <div className="lg:col-span-5">
                   <Reveal>
                     <h2 className="text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-4xl">
-                      Everything you need. Nothing in your way.
+                      The Numbers Behind The Confidence
                     </h2>
                   </Reveal>
 
@@ -232,20 +233,22 @@ export default function StocksPage() {
                   <Reveal delay={100}>
                     <div className="max-w-[62ch] space-y-5 text-[15px] leading-relaxed text-text-onDark-muted">
                       <p>
-                        No noise, no clutter. Just the tools investors actually use: live quotes
-                        and charts as the market moves, a watchlist built around the companies you
-                        care about, and price or volume alerts that reach you when something
-                        happens, not the next morning.
+                        Every minute your money sits outside the market is a minute it isn&apos;t
+                        working for you. Fund your account instantly through Raast, and act on an
+                        opportunity the moment you see it, not after a slow bank transfer catches
+                        up days later.
                       </p>
                       <p>
-                        Not sure where to start? Our Juice List is a research-backed shortlist
-                        from Finqalab&apos;s own desk, organised by strategy. Think of it as a
-                        starting point for your own research, not a buy signal.
+                        Once your money&apos;s in, the next question is where it goes. Not every
+                        investor starts with a plan, so our Juice List gives you a research-backed
+                        shortlist from Finqalab&apos;s own desk, organised by strategy, a starting
+                        point for your own research, never a replacement for it.
                       </p>
                       <p>
-                        Fund instantly through Raast and withdraw straight back to your bank,
-                        without a branch visit. Every order is executed through Next Capital
-                        Limited, a PSX-member brokerage regulated by the SECP.
+                        And behind every decision you make, there&apos;s real infrastructure
+                        standing guard. Every order you place runs through Next Capital Limited, a
+                        PSX-member brokerage regulated by the SECP, the same institutional
+                        discipline behind trades of any size.
                       </p>
                     </div>
                   </Reveal>

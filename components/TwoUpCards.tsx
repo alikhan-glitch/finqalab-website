@@ -2,20 +2,32 @@ import Reveal from "./Reveal";
 
 const cards = [
   {
-    title: "Investing, Simplified",
+    title: "Hassle-Free Account Opening",
     description:
-      "What if investing felt as easy as it should? With Finqalab, it does. One clean screen, built for the investor you are today and the one you're becoming.",
-    image: "/images/smart-baskets-bg.webp",
-    // Sharpest phone in frame sits left-of-center in the source photo.
-    objectPosition: "35% 50%",
+      "Go from application to investing without the usual hassle. Complete your account opening digitally, right from the app, and get started investing from wherever you happen to be.",
+    image: "/images/open-account-bg.webp",
+    objectPosition: "60% 50%",
   },
   {
-    title: "Your Money, On Your Time",
+    title: "A Better Way to Invest",
     description:
-      "Withdraw through RAAST and get your money back in your bank in minutes. Your money moves as fast as you do.",
-    image: "/images/trading-tools-bg.jpg",
-    // Phone and its screen sit right-of-center, upper half of the frame.
-    objectPosition: "75% 25%",
+      "Our sleek, intuitive UX/UI makes the app easy to navigate, whether you're making your first investment or managing an existing portfolio. Everything sits right where you expect it.",
+    image: "/images/seamless-experience-bg.webp",
+    objectPosition: "50% 50%",
+  },
+  {
+    title: "Instant Deposits. Quick Withdrawals.",
+    description:
+      "Put money into your account instantly and withdraw it quickly when you need it. Move funds in and out of Finqalab with minimal friction and full control.",
+    image: "/images/instant-deposits-bg.webp",
+    objectPosition: "50% 50%",
+  },
+  {
+    title: "An App You Can Trust",
+    description:
+      "Accurate prices, charts, and portfolio data, presented exactly as they should be. A reliable experience that keeps you focused on your investments, not on the app itself.",
+    image: "/images/reliable-app-bg.webp",
+    objectPosition: "50% 50%",
   },
 ];
 

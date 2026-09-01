@@ -246,7 +246,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex">
-          <PillButton href="/finqalab-circle.html" variant="outlinePrimary">
+          <PillButton href="/community" variant="outlinePrimary">
             Join Our Community
           </PillButton>
         </div>
@@ -318,7 +318,7 @@ export default function Navbar() {
             )}
           </ul>
           <div className="mt-4 flex flex-col gap-3">
-            <PillButton href="/finqalab-circle.html" variant="outlinePrimary">
+            <PillButton href="/community" variant="outlinePrimary">
               Join Our Community
             </PillButton>
           </div>
