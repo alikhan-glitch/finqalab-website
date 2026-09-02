@@ -48,6 +48,7 @@ const showcaseScenes: CommunityScene[] = [
     title: "Expert Insights",
     description:
       "Market reports and curated picks from our research desk, including early access to the Juice List.",
+    image: "/images/community/expert-insights.webp",
   },
   {
     icon: "users",
@@ -56,6 +57,7 @@ const showcaseScenes: CommunityScene[] = [
     title: "Peer Discussion",
     description:
       "Serious, focused conversation with fellow investors in a dedicated Discussion Forum, built for genuine investing dialogue.",
+    image: "/images/community/peer-discussion.webp",
   },
   {
     icon: "signal",
@@ -64,6 +66,7 @@ const showcaseScenes: CommunityScene[] = [
     title: "Community Fun",
     description:
       "A space to step away from the market for a bit. Bold opinions, off-topic banter, and the occasional joke are welcome.",
+    image: "/images/community/community-fun.webp",
   },
   {
     icon: "pulse",
@@ -72,6 +75,7 @@ const showcaseScenes: CommunityScene[] = [
     title: "Members Weigh In",
     description:
       "Live polls, real debates, and reactions from the community, shaping the conversation every single day.",
+    image: "/images/community/members-weigh-in.webp",
   },
 ];
 
@@ -169,14 +173,9 @@ export default function CommunityPage() {
             />
 
             <Reveal delay={1450} className="mt-7 sm:mt-10">
-              <div className="flex flex-wrap items-center justify-center gap-3.5">
-                <PillButton href="https://finqalab.com/download/" variant="solidWhite" className="px-7 py-3.5 text-[0.95rem]">
-                  Download the App
-                </PillButton>
-                <PillButton href="#showcase" variant="outlineDark" className="px-7 py-3.5 text-[0.95rem]">
-                  See what&apos;s inside
-                </PillButton>
-              </div>
+              <PillButton href="https://finqalab.com/download/" variant="solidWhite" className="px-7 py-3.5 text-[0.95rem]">
+                Download the App
+              </PillButton>
             </Reveal>
           </div>
         </section>

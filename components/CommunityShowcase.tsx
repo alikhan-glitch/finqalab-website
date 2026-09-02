@@ -5,7 +5,7 @@ import GlassCard from "./GlassCard";
 import PhoneMockup from "./PhoneMockup";
 import type { Feature } from "@/lib/features";
 
-export type CommunityScene = Feature & { eyebrow: string };
+export type CommunityScene = Feature & { eyebrow: string; image?: string };
 
 // Recreates the reference site's scroll-driven "pinned phone, alternating
 // left/right scene cards" showcase, rather than the simpler click-to-select
@@ -65,9 +65,17 @@ export default function CommunityShowcase({ scenes }: { scenes: CommunityScene[]
       >
         <div
           style={{ gridColumn: 2, gridRow: "1 / -1" }}
-          className="sticky top-32 self-start justify-self-center"
+          className="sticky top-20 self-start justify-self-center"
         >
-          <PhoneMockup slide={scenes[active]} />
+          {/* Scaled down from <PhoneMockup/>'s default size (tuned for
+              in-flow use on Stocks/ETF/Gold): at full size plus this
+              section's sticky offset, the frame ran taller than a typical
+              desktop viewport and its bottom half rendered off-screen.
+              transform scale (not a width override) keeps the component's
+              own internals untouched, this is a display-only shrink. */}
+          <div style={{ transform: "scale(0.78)", transformOrigin: "top center" }}>
+            <PhoneMockup slide={scenes[active]} />
+          </div>
         </div>
 
         {scenes.map((scene, i) => {
