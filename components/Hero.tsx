@@ -69,7 +69,7 @@ export default function Hero() {
 
         <WordReveal
           as="p"
-          text="Investing in Pakistan's stock market, made effortless. Open a fully digital, SECP-regulated account in minutes, then trade PSX stocks and ETFs with confidence. No branch visits, no paperwork, no experience needed."
+          text="Everything you need to start investing, right from your phone. Open your SECP-regulated account digitally and get started from wherever you are."
           baseDelay={1100}
           stagger={18}
           duration={600}

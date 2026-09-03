@@ -64,11 +64,11 @@ const pillars: { image: string; title: string; eyebrow: string }[] = [
     image: "/images/icons/low-investment.webp",
     title: "Start Today, Not Someday",
     eyebrow:
-      "Investing used to demand a headstart, savings, a broker, a reason to finally do it. Finqalab needs none of that. Fund your account in seconds, own your first share of a PSX-listed company in the same breath, and let today be the day you actually started, instead of the day you just planned to.",
+      "Investing used to demand a headstart, savings, a broker, a reason to finally do it. Finqalab needs none of that. Fund your account in seconds, own your first share of a PSX-listed company in the same breath, and let today be the day you actually started.",
   },
   {
     image: "/images/icons/education-cap.webp",
-    title: "Built To Make Sense",
+    title: "Made for Beginners. Proven for Pros.",
     eyebrow:
       "The market is not complicated. It's just been explained badly. Every stock, every price, every chart in Finqalab is built with a purpose, so a first-time investor and a twenty-year veteran read it the same way, clearly, instantly, with no glossary in the other hand.",
   },
@@ -86,8 +86,8 @@ const facts = [
   // credentials, those belong to the homepage's Trust Grid. These four are
   // real features not named anywhere else on this page.
   { value: "Raast", label: "Instant account funding" },
-  { value: "Juice List", label: "Curated picks from our research desk" },
-  { value: "Corporate Announcements", label: "Dividends and AGM notices, the moment they're filed" },
+  { value: "Juice List", label: "Data-backed stock picks, vetted for you" },
+  { value: "Announcements", label: "Dividends and AGM notices, the moment they're filed" },
   { value: "Finqueue", label: "Your Friday order, carried into Monday" },
 ];
 
@@ -213,7 +213,7 @@ export default function StocksPage() {
                 <div className="lg:col-span-5">
                   <Reveal>
                     <h2 className="text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-4xl">
-                      The Numbers Behind The Confidence
+                      The Infrastructure Behind The Confidence
                     </h2>
                   </Reveal>
 
@@ -234,21 +234,21 @@ export default function StocksPage() {
                     <div className="max-w-[62ch] space-y-5 text-[15px] leading-relaxed text-text-onDark-muted">
                       <p>
                         Every minute your money sits outside the market is a minute it isn&apos;t
-                        working for you. Fund your account instantly through Raast, and act on an
+                        working for you. Deploy cash instantly through Raast, and act on an
                         opportunity the moment you see it, not after a slow bank transfer catches
                         up days later.
                       </p>
                       <p>
-                        Once your money&apos;s in, the next question is where it goes. Not every
+                        Once your money is ready, the next question is where it goes. Not every
                         investor starts with a plan, so our Juice List gives you a research-backed
-                        shortlist from Finqalab&apos;s own desk, organised by strategy, a starting
-                        point for your own research, never a replacement for it.
+                        stocks list straight from Finqalab&apos;s in-house experts, acting as a
+                        launchpad for your own investor journey, never a replacement for it.
                       </p>
                       <p>
                         And behind every decision you make, there&apos;s real infrastructure
                         standing guard. Every order you place runs through Next Capital Limited, a
-                        PSX-member brokerage regulated by the SECP, the same institutional
-                        discipline behind trades of any size.
+                        PSX-member brokerage regulated by SECP, the federal authority safeguarding
+                        market integrity and protecting every trade you make.
                       </p>
                     </div>
                   </Reveal>

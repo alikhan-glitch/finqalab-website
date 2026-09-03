@@ -18,7 +18,7 @@ const assets: {
     visual: "stocks",
     title: "Stocks",
     description:
-      "Trade PSX-listed companies in real time, with live prices, order books, and portfolio tracking built right into the app.",
+      "Trade PSX-listed companies in real time, with live prices, order books, and full portfolio tracking.",
   },
   {
     visual: "etfs",
@@ -30,7 +30,7 @@ const assets: {
     visual: "gold",
     title: "Gold",
     description:
-      "Digital gold trading is coming soon through our partnership with the Pakistan Mercantile Exchange (PMEX), right inside the same app.",
+      "Digital gold is coming soon to Finqalab in partnership with Pakistan Mercantile Exchange (PMEX). Buy, hold, and manage gold investments right alongside your PSX stocks.",
     status: "Coming soon",
   },
   {

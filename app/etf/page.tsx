@@ -59,13 +59,13 @@ const benefits: { image: string; title: string; eyebrow: string }[] = [
     image: "/images/icons/diversification.webp",
     title: "Own An Entire Market, Not Just One Stock",
     eyebrow:
-      "An ETF bundles many companies from a sector or index into one tradeable basket. Buy it once and you instantly hold a slice of everything inside, all in a single tap.",
+      "An ETF bundles many companies from a sector or index into one tradeable basket, turning an entire portfolio strategy into a single move. Buy it once and you instantly hold a slice of everything inside, all in one tap.",
   },
   {
     image: "/images/icons/lower-research-burden.webp",
     title: "Diversify Without Doing The Digging",
     eyebrow:
-      "One ETF spreads your money across many companies at once, so you're never relying on a single stock's performance. Get the safety of diversification without researching each company yourself.",
+      "One ETF spreads your money across many companies at once, so you're never relying on an individual stock's performance. Get the safety of diversification without researching each company yourself.",
   },
   {
     image: "/images/icons/real-time-trading.webp",

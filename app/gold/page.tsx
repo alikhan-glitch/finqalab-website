@@ -65,19 +65,19 @@ const benefits: { image: string; title: string; eyebrow: string }[] = [
     image: "/images/icons/buy-sell-digitally.webp",
     title: "Buy & Sell Digitally",
     eyebrow:
-      "Buy and sell gold digitally through the app, backed by contracts traded on the Pakistan Mercantile Exchange. No jeweller, physical gold, or separate platform. Trade gold alongside your stocks and ETFs from the same app.",
+      "Cash sitting idle quietly loses worth as prices rise. Gold has held its value through every cycle, but owning it always meant dealing with physical gold, a jeweller, or a safe of your own. Now it's digital, through Finqalab.",
   },
   {
     image: "/images/icons/one-portfolio-view.webp",
     title: "One Portfolio View",
     eyebrow:
-      "See your gold, stocks, and ETFs in one portfolio. Track how much you've invested across each asset and get a complete view of your holdings without switching between apps.",
+      "New asset classes usually mean new paperwork. Not with Finqalab. Add gold to your existing account and see it in the same portfolio. Different asset, same profile. That's how it should be.",
   },
   {
     image: "/images/icons/no-new-account.webp",
-    title: "No New Account",
+    title: "Stay Tuned for Launch",
     eyebrow:
-      "Start investing in gold without opening another account or repeating your verification. Your existing Finqalab account gives you access to gold alongside your other investments.",
+      "Gold is the next commodity we're building on Finqalab, backed by our partnership with the Pakistan Mercantile Exchange. We'd rather launch it right than launch it early. Join the waitlist to be first when it's ready.",
   },
 ];
 

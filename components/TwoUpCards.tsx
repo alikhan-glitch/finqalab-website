@@ -2,28 +2,35 @@ import Reveal from "./Reveal";
 
 const cards = [
   {
-    title: "Hassle-Free Account Opening",
+    title: "100% Digital Account Setup. Zero Hassle",
     description:
-      "Go from application to investing without the usual hassle. Complete your account opening digitally, right from the app, and get started investing from wherever you happen to be.",
+      "Skip the paperwork and long forms. Complete your entire application digitally right from your phone, and we'll handle the rest so you can start investing in no time.",
     image: "/images/open-account-bg.webp",
     objectPosition: "60% 50%",
   },
   {
-    title: "A Better Way to Invest",
+    title: "Designed For Simplicity",
     description:
       "Our sleek, intuitive UX/UI makes the app easy to navigate, whether you're making your first investment or managing an existing portfolio. Everything sits right where you expect it.",
     image: "/images/seamless-experience-bg.webp",
     objectPosition: "50% 50%",
+    // Mockup: this card's background (banknotes, coins, a growth arrow) is
+    // busier and more colorful than the other three, and the standard
+    // half-height scrim wasn't dark enough behind it for the white text to
+    // read cleanly. Taller + darker, bottom-anchored only (not a flat tint
+    // over the whole image), so the top of the artwork stays at full
+    // vibrancy and only the text's own zone gets the extra contrast.
+    strongScrim: true,
   },
   {
-    title: "Instant Deposits. Quick Withdrawals.",
+    title: "Instant Top-Ups, Stress-Free Withdrawals",
     description:
-      "Put money into your account instantly and withdraw it quickly when you need it. Move funds in and out of Finqalab with minimal friction and full control.",
+      "Move funds in and out of Finqalab with minimal friction and full control. Seize the moment when opportunities peak, or cash back out before the tide turns.",
     image: "/images/instant-deposits-bg.webp",
     objectPosition: "50% 50%",
   },
   {
-    title: "An App You Can Trust",
+    title: "Zero Lag. Total Focus",
     description:
       "Accurate prices, charts, and portfolio data, presented exactly as they should be. A reliable experience that keeps you focused on your investments, not on the app itself.",
     image: "/images/reliable-app-bg.webp",
@@ -61,10 +68,11 @@ export default function TwoUpCards() {
 
               <div
                 aria-hidden
-                className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2"
+                className={`pointer-events-none absolute inset-x-0 bottom-0 ${card.strongScrim ? "h-[68%]" : "h-1/2"}`}
                 style={{
-                  background:
-                    "linear-gradient(0deg, rgba(5,7,13,0.85) 0%, rgba(5,7,13,0) 100%)",
+                  background: card.strongScrim
+                    ? "linear-gradient(0deg, rgba(5,7,13,0.94) 0%, rgba(5,7,13,0.55) 45%, rgba(5,7,13,0) 100%)"
+                    : "linear-gradient(0deg, rgba(5,7,13,0.85) 0%, rgba(5,7,13,0) 100%)",
                 }}
               />
 

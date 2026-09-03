@@ -27,6 +27,66 @@ export type AcademyCourse = {
 
 export const academyCourses: AcademyCourse[] = [
   {
+    slug: "pharma-sector-fintalk",
+    title: "Pakistan's Pharmaceutical Industry: What Investors Need to Know",
+    kicker: "Fintalk",
+    summary:
+      "A Fintalk episode breaking down Pakistan's pharmaceutical sector, from pricing regulation to what actually drives earnings for listed pharma names.",
+    videoId: "s3zPu26pNPI",
+    blocks: [
+      { type: "h", text: "Introduction" },
+      {
+        type: "p",
+        text: "Pharmaceuticals are one of the more misunderstood sectors on the PSX, shaped as much by government pricing policy as by demand. This episode of Fintalk walks through how the industry is structured, what regulation means for margins, and the factors investors should weigh before looking at pharma stocks.",
+      },
+      { type: "h", text: "Watch The Full Episode" },
+      {
+        type: "p",
+        text: "Watch the full conversation above for the complete breakdown, including how pricing controls, import dependence, and currency movements feed into pharma sector earnings.",
+      },
+    ],
+  },
+  {
+    slug: "real-estate-dolmen-city-reit",
+    title: "What Investors Need to Know About Real Estate & Dolmen City REIT",
+    kicker: "Fintalk",
+    summary:
+      "A Fintalk episode on investing in Pakistani real estate through REITs, using Dolmen City REIT as a working example of how the structure functions.",
+    videoId: "OBe0FyF14js",
+    blocks: [
+      { type: "h", text: "Introduction" },
+      {
+        type: "p",
+        text: "Real estate has long been a preferred store of value in Pakistan, but direct ownership demands large capital and offers little liquidity. This episode looks at Real Estate Investment Trusts (REITs) as an alternative, using Dolmen City REIT, built around Dolmen Mall Clifton, as a live example of how a listed REIT actually works.",
+      },
+      { type: "h", text: "Watch The Full Episode" },
+      {
+        type: "p",
+        text: "Watch the full conversation above for more on how REITs distribute rental income, what sets them apart from direct property ownership, and what to check before investing in one.",
+      },
+    ],
+  },
+  {
+    slug: "npl-ncpl-stock-analysis",
+    title: "NPL & NCPL Stock Analysis: Financials, Valuation & Outlook",
+    kicker: "Stock Analysis",
+    summary:
+      "A closer look at Nishat Power (NPL) and Nishat Chunian Power (NCPL), covering their financials, how they're valued, and the outlook for both.",
+    videoId: "SRWDZ5nxSgI",
+    blocks: [
+      { type: "h", text: "Introduction" },
+      {
+        type: "p",
+        text: "Independent power producers like Nishat Power (NPL) and Nishat Chunian Power (NCPL) run on a business model that looks very different from most other PSX sectors, built around long-term power purchase agreements rather than open-market demand. This video breaks down how that model shows up in their financials and what it means for valuing them.",
+      },
+      { type: "h", text: "Watch The Full Video" },
+      {
+        type: "p",
+        text: "Watch the full analysis above for the detailed look at NPL and NCPL's financials, how their valuations compare, and the outlook for both companies.",
+      },
+    ],
+  },
+{
     slug: "types-of-assets",
     title: "Understanding Different Types of Assets",
     kicker: "Foundations",
@@ -320,64 +380,4 @@ export const academyCourses: AcademyCourse[] = [
       },
     ],
   },
-  {
-    slug: "pharma-sector-fintalk",
-    title: "Pakistan's Pharmaceutical Industry: What Investors Need to Know",
-    kicker: "Fintalk",
-    summary:
-      "A Fintalk episode breaking down Pakistan's pharmaceutical sector, from pricing regulation to what actually drives earnings for listed pharma names.",
-    videoId: "s3zPu26pNPI",
-    blocks: [
-      { type: "h", text: "Introduction" },
-      {
-        type: "p",
-        text: "Pharmaceuticals are one of the more misunderstood sectors on the PSX, shaped as much by government pricing policy as by demand. This episode of Fintalk walks through how the industry is structured, what regulation means for margins, and the factors investors should weigh before looking at pharma stocks.",
-      },
-      { type: "h", text: "Watch The Full Episode" },
-      {
-        type: "p",
-        text: "Watch the full conversation above for the complete breakdown, including how pricing controls, import dependence, and currency movements feed into pharma sector earnings.",
-      },
-    ],
-  },
-  {
-    slug: "real-estate-dolmen-city-reit",
-    title: "What Investors Need to Know About Real Estate & Dolmen City REIT",
-    kicker: "Fintalk",
-    summary:
-      "A Fintalk episode on investing in Pakistani real estate through REITs, using Dolmen City REIT as a working example of how the structure functions.",
-    videoId: "OBe0FyF14js",
-    blocks: [
-      { type: "h", text: "Introduction" },
-      {
-        type: "p",
-        text: "Real estate has long been a preferred store of value in Pakistan, but direct ownership demands large capital and offers little liquidity. This episode looks at Real Estate Investment Trusts (REITs) as an alternative, using Dolmen City REIT, built around Dolmen Mall Clifton, as a live example of how a listed REIT actually works.",
-      },
-      { type: "h", text: "Watch The Full Episode" },
-      {
-        type: "p",
-        text: "Watch the full conversation above for more on how REITs distribute rental income, what sets them apart from direct property ownership, and what to check before investing in one.",
-      },
-    ],
-  },
-  {
-    slug: "npl-ncpl-stock-analysis",
-    title: "NPL & NCPL Stock Analysis: Financials, Valuation & Outlook",
-    kicker: "Stock Analysis",
-    summary:
-      "A closer look at Nishat Power (NPL) and Nishat Chunian Power (NCPL), covering their financials, how they're valued, and the outlook for both.",
-    videoId: "SRWDZ5nxSgI",
-    blocks: [
-      { type: "h", text: "Introduction" },
-      {
-        type: "p",
-        text: "Independent power producers like Nishat Power (NPL) and Nishat Chunian Power (NCPL) run on a business model that looks very different from most other PSX sectors, built around long-term power purchase agreements rather than open-market demand. This video breaks down how that model shows up in their financials and what it means for valuing them.",
-      },
-      { type: "h", text: "Watch The Full Video" },
-      {
-        type: "p",
-        text: "Watch the full analysis above for the detailed look at NPL and NCPL's financials, how their valuations compare, and the outlook for both companies.",
-      },
-    ],
-  },
-];
+  ];
