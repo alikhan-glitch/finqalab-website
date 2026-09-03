@@ -85,7 +85,7 @@ const facts = [
   // "One Account" and "Real-Time Pricing" swapped out, both are already
   // used as stats on /etf. "Contract-Backed" also dropped, it restated the
   // same fact as "PMEX Partnership", replaced with liquidity instead.
-  { value: "PMEX Partnership", label: "Contracts traded on the Pakistan Mercantile Exchange" },
+  { value: "PMEX", label: "Contracts traded on the Pakistan Mercantile Exchange" },
   { value: "Coming Soon", label: "Currently in development" },
   { value: "Storage-Free", label: "No vault, no jeweller, no physical gold to guard" },
   { value: "Instant Liquidity", label: "Sell anytime, no buyer needed" },
@@ -219,21 +219,21 @@ export default function GoldPage() {
                     <div className="max-w-[62ch] space-y-5 text-[15px] leading-relaxed text-text-onDark-muted">
                       <p>
                         Gold has long been one of the most trusted ways Pakistanis store and grow
-                        wealth. Finqalab is bringing that same asset class into the app, through a
-                        partnership with the Pakistan Mercantile Exchange (PMEX), so you&apos;ll be
-                        able to buy and hold gold digitally alongside your PSX stocks and ETFs,
-                        without visiting a jeweller or managing physical storage.
+                        wealth. Finqalab brings that timeless asset into the digital age, letting
+                        you buy fractional gold directly through our app without jewelery
+                        markups, purity doubts, or physical security concerns.
                       </p>
                       <p>
-                        Once live, gold will work the same way ETFs and stocks already do on
-                        Finqalab: funded through Raast, tracked in the same portfolio, all inside
-                        one app. No separate account, no separate app to download, and no extra
-                        paperwork to sign.
+                        Digital gold will take the extra steps out of holding precious metals.
+                        You&apos;ll get exposure to pure 24K gold through contracts traded on a
+                        regulated commodity exchange, at live market prices. Start with tiny
+                        amounts, track real-time values, and sell instantly back to cash whenever
+                        you need to.
                       </p>
                       <p>
-                        Gold is a work in progress, and we&apos;re excited to bring it to you as
-                        soon as it&apos;s ready. Follow Finqalab on social media to be the first to
-                        know the moment it goes live.
+                        A smarter way to build wealth is coming soon. Finqalab gives you that same
+                        quiet edge, turning pure gold into a fluid, digital advantage. Follow us on
+                        social media to be the first to know when it goes live.
                       </p>
                     </div>
                   </Reveal>

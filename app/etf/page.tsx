@@ -82,7 +82,7 @@ const facts = [
   { value: "Lower Risk", label: "Spread across many holdings, not one" },
   { value: "One Account", label: "Sits right beside your stocks" },
   { value: "Real-Time", label: "Priced and traded like any stock" },
-  { value: "Diversify Instantly", label: "One ETF, many companies at once" },
+  { value: "Diversify", label: "One ETF, many companies at once" },
 ];
 
 const faqs = [

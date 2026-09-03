@@ -150,10 +150,10 @@ export default function AboutPage() {
                   </Reveal>
                   <Reveal delay={100}>
                     <p className="mt-6 text-[15px] leading-relaxed text-text-onDark-muted">
-                      We built Finqalab to remove the friction between wanting to invest and
-                      actually doing it, no branch visits, no paperwork, no specialized knowledge
-                      required. Just a direct, transparent path to putting your money to work in
-                      Pakistan&apos;s stock market.
+                      We built Finqalab because your money deserves to grow, not sit still. By
+                      sweeping aside the old complexities, we give you a clear, confident path to
+                      take control of your financial future and invest in Pakistan&apos;s
+                      momentum.
                     </p>
                   </Reveal>
                 </div>
