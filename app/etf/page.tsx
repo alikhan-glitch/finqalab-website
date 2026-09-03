@@ -220,14 +220,19 @@ export default function EtfPage() {
                         betting on just one story.
                       </p>
                       <p>
-                        That balance shouldn&apos;t cost you a separate account. Every ETF you
-                        hold sits in the same portfolio as your PSX stocks. It&apos;s tracked,
-                        funded, and reported the exact same way.
+                        Investing shouldn&apos;t feel like guessing. ETFs turn market noise into
+                        steady direction. They give you a way to grow your money effortlessly,
+                        putting proven market strength on your side without forcing you to watch
+                        charts or stress over daily moves.
                       </p>
                       <p>
-                        Placing an ETF order takes the same three taps as any stock trade.
-                        Search, select, confirm. Nothing new to learn. Nothing extra to set up.
-                        Just one more way to grow what you already started.
+                        It&apos;s wealth building designed for clarity, not complexity. Finqalab
+                        gives you the quiet edge that comes with having ETFs in your portfolio.
+                        Less time spent chasing the moment, more control over where your money
+                        goes.
+                      </p>
+                      <p>
+                        So why wait another day? Download the app and buy your first ETF today.
                       </p>
                     </div>
                   </Reveal>
