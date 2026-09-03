@@ -17,6 +17,25 @@ html {
   font-size: clamp(16px, 14px + 0.15vw, 19px);
 }
 
+/* Stronger override for the specific case this was actually requested for:
+   a high-density panel (2560x1600-class, common on 16" gaming laptops) left
+   at 100% Windows scaling instead of the OS's own recommended ~150%. Such a
+   display reports devicePixelRatio ~1, same as a correctly-scaled normal
+   monitor, there's no API that exposes the OS's actual recommended scaling
+   factor to a webpage, so (max-resolution: 1dppx) + a wide viewport is the
+   closest available proxy, not a certain signal. Known, accepted trade-off:
+   this will also fire for a legitimately large, correctly-configured desktop
+   monitor at 100% scaling (e.g. a 27" 2560x1440 display), inflating its text
+   too even though nothing is wrong there, chosen deliberately over leaving
+   the mis-scaled-laptop case under-corrected. min-width is set above
+   ordinary 1080p/1440p desktop monitor widths to reduce (not eliminate) that
+   overlap. */
+@media (max-resolution: 1dppx) and (min-width: 2200px) {
+  html {
+    font-size: clamp(18px, 0.4px + 0.8vw, 26px);
+  }
+}
+
 :root {
   /* Dark surfaces, reserved for the hero-style immersive video/image blocks
      (Hero, TwoUpCards, TradingToolsSection, DiversifySection) */
