@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* Every Tailwind rem-based size (font sizes, padding, gaps, etc.) is
+   relative to this root value, and it's fixed at 16px by default regardless
+   of viewport width. That's fine on ordinary screens, but a high-density
+   16" laptop panel (2560x1600 and similar) run at 100% Windows display
+   scaling instead of the OS's own recommended ~150% draws 1 CSS pixel as
+   exactly 1 physical pixel, so every rem-sized element renders at its
+   literal on-screen size, physically tiny on that dense a panel. Windows'
+   own scaling is what normally compensates for this; this clamp is the
+   site-side fallback for visitors who leave it at 100% anyway.
+   clamp(16px, ...) keeps every normal desktop/laptop/mobile width (up to
+   ~1333px) at the standard, untouched 16px base, then eases up to at most
+   19px as the viewport gets wider, so only very wide/high-res, unscaled
+   displays are affected. */
+html {
+  font-size: clamp(16px, 14px + 0.15vw, 19px);
+}
+
 :root {
   /* Dark surfaces, reserved for the hero-style immersive video/image blocks
      (Hero, TwoUpCards, TradingToolsSection, DiversifySection) */
