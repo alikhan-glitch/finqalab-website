@@ -136,7 +136,7 @@ export default function Navbar() {
       ref={navRef}
       className="sticky top-0 z-50 bg-bg-black px-4 py-4 shadow-[0_4px_20px_rgba(5,7,13,0.4)] sm:px-6 md:bg-transparent md:shadow-none"
     >
-      <nav className="mx-auto flex max-w-[clamp(72rem,86vw,90rem)] items-center justify-between">
+      <nav className="mx-auto flex max-w-[clamp(72rem,92vw,110rem)] items-center justify-between">
         <Link
           href="/"
           className="flex items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-text-onDark focus-visible:ring-offset-2 focus-visible:ring-offset-bg-black"
@@ -264,7 +264,7 @@ export default function Navbar() {
 
       {open && (
         <div
-          className="mx-auto mt-3 max-w-[clamp(72rem,86vw,90rem)] rounded-3xl border border-white/12 bg-bg-black px-6 py-4 md:hidden"
+          className="mx-auto mt-3 max-w-[clamp(72rem,92vw,110rem)] rounded-3xl border border-white/12 bg-bg-black px-6 py-4 md:hidden"
           style={{ boxShadow: "0 16px 40px rgba(5,7,13,0.45)" }}
         >
           <ul className="flex flex-col gap-1">

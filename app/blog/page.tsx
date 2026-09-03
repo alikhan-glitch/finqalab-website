@@ -28,13 +28,13 @@ export default function BlogIndexPage() {
           />
           <div className="relative flex h-full flex-col">
             <div className="border-b border-white/15">
-              <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)] px-6 py-5 sm:py-6 lg:py-7">
+              <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)] px-6 py-5 sm:py-6 lg:py-7">
                 <p className="font-heading text-2xl font-semibold tracking-tight text-text-onDark sm:text-3xl lg:text-4xl">
                   Investing Basics
                 </p>
               </div>
             </div>
-            <div className="mx-auto w-full max-w-[clamp(72rem,86vw,90rem)] px-6 pt-8 sm:pt-10 lg:pt-12">
+            <div className="mx-auto w-full max-w-[clamp(72rem,92vw,110rem)] px-6 pt-8 sm:pt-10 lg:pt-12">
               <h1 className="max-w-xl text-balance font-display text-3xl italic leading-[1.05] tracking-tight text-text-onDark sm:text-4xl lg:text-5xl">
                 The building blocks of your investing journey
               </h1>
@@ -48,7 +48,7 @@ export default function BlogIndexPage() {
         </section>
 
         <div className="px-6 py-16 sm:py-20">
-          <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
               <BlogCard key={post.slug} post={post} />
             ))}

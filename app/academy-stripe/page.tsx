@@ -24,7 +24,7 @@ export default function AcademyStripePage() {
 
       <main id="main-content" className="flex-1 bg-[#f4f6fa] text-text-onLight">
         <section className="px-6 pt-20 pb-10 sm:pt-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <Reveal>
               <p className="font-sans text-sm text-text-onLight-muted">Academy</p>
               <h1 className="mt-4 max-w-2xl font-serif text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">

@@ -60,7 +60,7 @@ export default function AcademyHeader() {
       ref={rootRef}
       className="sticky top-0 z-50 border-b border-black bg-white"
     >
-      <nav className="mx-auto flex max-w-[clamp(72rem,86vw,90rem)] items-center justify-between px-6 py-4 sm:py-5">
+      <nav className="mx-auto flex max-w-[clamp(72rem,92vw,110rem)] items-center justify-between px-6 py-4 sm:py-5">
         <Link
           href="/"
           className="rounded-sm font-serif text-xl font-bold tracking-tight text-text-onLight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:text-2xl"
@@ -99,7 +99,7 @@ export default function AcademyHeader() {
 
       {open && (
         <div className="border-t border-black bg-white px-6 py-6">
-          <ul className="mx-auto flex max-w-[clamp(72rem,86vw,90rem)] flex-col gap-1">
+          <ul className="mx-auto flex max-w-[clamp(72rem,92vw,110rem)] flex-col gap-1">
             {navItems.map((item) =>
               item.children ? (
                 <li key={item.label} className="border-b border-text-onLight/10 py-1">
@@ -141,7 +141,7 @@ export default function AcademyHeader() {
               )
             )}
           </ul>
-          <div className="mx-auto mt-5 max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto mt-5 max-w-[clamp(72rem,92vw,110rem)]">
             <PillButton href="#" variant="solidDark">
               Get Support
             </PillButton>

@@ -74,7 +74,7 @@ export default function AcademyFlowPage() {
             Courses
         --------------------------------------------------------------- */}
         <section id="courses" className="relative z-10 scroll-mt-20 px-5 pb-20 sm:px-10 sm:pb-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <Reveal>
               <h2 className={`max-w-2xl text-3xl leading-[1.15] sm:text-4xl lg:text-[2.6rem] ${heading}`}>
                 Explore Our Courses.

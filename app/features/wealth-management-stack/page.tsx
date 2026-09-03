@@ -29,7 +29,7 @@ export default function WealthManagementStackPage() {
       <Navbar />
       <main id="main-content" className="flex-1 bg-[#ecf0ef] text-[#12100e]">
         <section className="overflow-hidden px-6 py-24 sm:px-10 lg:py-32">
-          <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 items-center gap-20 lg:grid-cols-[minmax(0,0.86fr)_minmax(0,1fr)] lg:gap-16">
+          <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 items-center gap-20 lg:grid-cols-[minmax(0,0.86fr)_minmax(0,1fr)] lg:gap-16">
             {/* Left, intro. No container, border or card: the whitespace
                 around it is the composition. */}
             <div>

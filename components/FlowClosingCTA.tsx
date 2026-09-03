@@ -17,7 +17,7 @@ export default function FlowClosingCTA({
 }) {
   return (
     <section className="relative z-10 px-5 pb-20 pt-4 sm:px-10 sm:pb-28">
-      <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+      <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
         <Reveal>
           <div
           className="relative overflow-hidden rounded-[1.5rem] border px-7 py-16 text-center sm:px-12 sm:py-24"

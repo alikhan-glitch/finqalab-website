@@ -136,7 +136,7 @@ export default function StocksPage() {
             auto-scrolling film strip.
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pb-24 pt-12 sm:pb-28 sm:pt-16">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <Reveal>
               <h2 className="mx-auto max-w-2xl text-balance text-center text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-5xl">
                 Three steps to your first trade
@@ -207,7 +207,7 @@ export default function StocksPage() {
             The market, in real time
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pb-24 sm:pb-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <GlassCard interactive={false} className="p-8 sm:p-12 lg:p-16">
               <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
                 <div className="lg:col-span-5">

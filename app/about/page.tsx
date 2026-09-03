@@ -131,7 +131,7 @@ export default function AboutPage() {
             Our Vision, verbatim from finqalab.com/about
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pt-24 sm:pt-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <GlassCard interactive={false} className="relative overflow-hidden p-8 sm:p-12 lg:p-16">
               <GlowFlourish />
               <div className="relative grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
@@ -178,7 +178,7 @@ export default function AboutPage() {
             the left for the same alternating rhythm as the reference.
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 py-16">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <GlassCard interactive={false} className="relative overflow-hidden p-8 sm:p-12 lg:p-16">
               <GlowFlourish flip />
               <div className="relative grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
@@ -255,7 +255,7 @@ export default function AboutPage() {
             Meet the Team
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pb-24 pt-8 sm:pb-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <Reveal>
               <h2 className="mx-auto max-w-2xl text-balance text-center text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-5xl">
                 Meet The Team
@@ -301,7 +301,7 @@ export default function AboutPage() {
             established on /stocks and /sukuks, not new claims.
         --------------------------------------------------------------- */}
         <section className="relative z-10 px-6 pb-24 sm:pb-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <GlassCard interactive={false} className="p-8 sm:p-12 lg:p-16">
               <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
                 <div className="lg:col-span-5">

@@ -55,7 +55,7 @@ const linkFocus =
 export default function AcademyStripeFooter() {
   return (
     <footer className="relative border-t border-black/10 bg-white text-text-onLight">
-      <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)] px-6 py-16 sm:py-20">
+      <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)] px-6 py-16 sm:py-20">
         <Link
           href="/"
           className="inline-block rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"

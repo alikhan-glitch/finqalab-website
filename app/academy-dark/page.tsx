@@ -28,7 +28,7 @@ export default function AcademyDarkPage() {
             Hero
         --------------------------------------------------------------- */}
         <section className="px-6 pt-20 sm:pt-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <div className="grid grid-cols-1 items-end gap-8 pb-10 lg:grid-cols-12 lg:gap-12">
               <div className="lg:col-span-3">
                 <p className="font-sans text-sm text-text-onDark-muted">Academy</p>
@@ -44,7 +44,7 @@ export default function AcademyDarkPage() {
           </div>
 
           <div className="border-t border-white/40">
-            <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 gap-10 pt-12 lg:grid-cols-12 lg:gap-12">
+            <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 gap-10 pt-12 lg:grid-cols-12 lg:gap-12">
               <div className="lg:col-span-4">
                 <Reveal>
                   <p className="max-w-sm text-base leading-relaxed text-text-onDark-muted">
@@ -79,7 +79,7 @@ export default function AcademyDarkPage() {
             Statement
         --------------------------------------------------------------- */}
         <section className="pt-24 sm:pt-32">
-          <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-12">
+          <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-12">
             <div
               className="hidden lg:col-span-3 lg:block"
               style={{
@@ -121,7 +121,7 @@ export default function AcademyDarkPage() {
             Courses
         --------------------------------------------------------------- */}
         <section id="courses" className="scroll-mt-24 px-6 pt-24 sm:pt-32">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <div className="grid grid-cols-1 gap-8 pb-10 lg:grid-cols-12 lg:gap-12">
               <div className="hidden lg:col-span-3 lg:block" />
               <Reveal className="lg:col-span-9">
@@ -132,7 +132,7 @@ export default function AcademyDarkPage() {
             </div>
           </div>
 
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <CourseAccordionDark courses={academyCourses} />
           </div>
         </section>

@@ -57,7 +57,7 @@ const linkFocus =
 export default function Footer() {
   return (
     <footer className="relative z-10 bg-bg-black px-6 py-16 text-text-onDark-muted">
-      <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+      <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
         <div className="flex flex-col justify-between gap-8 border-b border-border-onDark pb-12 sm:flex-row sm:items-center">
           <p className="font-heading text-lg font-semibold text-text-onDark">
             Finqalab

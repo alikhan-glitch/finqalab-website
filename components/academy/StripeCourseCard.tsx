@@ -18,7 +18,7 @@ export default function StripeCourseCard({ course, flip = false }: { course: Aca
         className="left-1/2 top-1/2 h-[24rem] w-[160vw] max-w-none -translate-x-1/2 -translate-y-1/2 sm:h-[30rem] lg:h-[34rem]"
       />
 
-      <div className="relative z-10 mx-auto max-w-[clamp(72rem,86vw,90rem)] px-6">
+      <div className="relative z-10 mx-auto max-w-[clamp(72rem,92vw,110rem)] px-6">
         <div className="rounded-[2rem] bg-white p-6 shadow-[0_40px_80px_-20px_rgba(15,23,42,0.25)] sm:p-10 lg:p-12">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
             <div>

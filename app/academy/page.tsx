@@ -24,7 +24,7 @@ export default function AcademyPage() {
             Hero
         --------------------------------------------------------------- */}
         <section className="px-6 pt-20 sm:pt-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <div className="grid grid-cols-1 items-end gap-8 pb-10 lg:grid-cols-12 lg:gap-12">
               <div className="lg:col-span-3">
                 <p className="font-sans text-sm text-text-onLight-muted">Academy</p>
@@ -44,7 +44,7 @@ export default function AcademyPage() {
           </div>
 
           <div className="border-t border-black">
-            <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 gap-10 pt-12 lg:grid-cols-12 lg:gap-12">
+            <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 gap-10 pt-12 lg:grid-cols-12 lg:gap-12">
               <div className="lg:col-span-4">
                 <Reveal>
                   <p className="max-w-sm text-base leading-relaxed text-text-onLight-muted">
@@ -85,7 +85,7 @@ export default function AcademyPage() {
               one padding layer, the negative-margin calc below assumes that;
               with px-6 on both the section AND this div (the first version),
               it double-counted the gutter and the grid overshot past x=0. */}
-          <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-12">
+          <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 gap-10 px-6 lg:grid-cols-12 lg:gap-12">
             {/* Bleeds to the true viewport edge rather than stopping at the
                 page's usual left inset. A plain negative margin would pull the
                 element left WITHOUT widening it, which shrinks the gap to the
@@ -139,7 +139,7 @@ export default function AcademyPage() {
             Courses
         --------------------------------------------------------------- */}
         <section id="courses" className="scroll-mt-24 px-6 pt-24 sm:pt-32">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <div className="grid grid-cols-1 gap-8 pb-10 lg:grid-cols-12 lg:gap-12">
               <div className="hidden lg:col-span-3 lg:block" />
               <Reveal className="lg:col-span-9">
@@ -150,7 +150,7 @@ export default function AcademyPage() {
             </div>
           </div>
 
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <CourseAccordion courses={academyCourses} />
           </div>
         </section>

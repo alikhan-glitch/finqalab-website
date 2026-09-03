@@ -69,7 +69,7 @@ export default function GlossaryPage() {
             Terms
         --------------------------------------------------------------- */}
         <section id="terms" className="relative z-10 scroll-mt-20 px-5 pb-20 sm:px-10 sm:pb-28">
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <Reveal>
               <p className="text-[0.78rem] font-semibold uppercase tracking-[0.08em] text-primary-light">
                 A–Z

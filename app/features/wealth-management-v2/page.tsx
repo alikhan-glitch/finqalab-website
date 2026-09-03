@@ -29,7 +29,7 @@ export default function WealthManagementEditorialPage() {
             Hero
         --------------------------------------------------------------- */}
         <section className="border-b border-white/40 px-6 pt-24 pb-16 sm:pt-28 sm:pb-20">
-          <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 items-end gap-8 lg:grid-cols-12 lg:gap-12">
+          <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 items-end gap-8 lg:grid-cols-12 lg:gap-12">
             <div className="lg:col-span-3">
               <p className="font-sans text-sm text-text-onDark-muted">Finqalab · Wealth Management</p>
             </div>
@@ -50,7 +50,7 @@ export default function WealthManagementEditorialPage() {
             entries (title/icon/scene/description) from JourneyHeroSection.
         --------------------------------------------------------------- */}
         <section className="pt-4">
-          <div className="mx-auto grid max-w-[clamp(72rem,86vw,90rem)] grid-cols-1 gap-10 px-6 pb-10 pt-20 lg:grid-cols-12 lg:gap-12">
+          <div className="mx-auto grid max-w-[clamp(72rem,92vw,110rem)] grid-cols-1 gap-10 px-6 pb-10 pt-20 lg:grid-cols-12 lg:gap-12">
             <div
               className="hidden lg:col-span-3 lg:block"
               style={{
@@ -78,7 +78,7 @@ export default function WealthManagementEditorialPage() {
             </Reveal>
           </div>
 
-          <div className="mx-auto max-w-[clamp(72rem,86vw,90rem)]">
+          <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <WealthManagementAccordion features={wealthManagementFeatures} />
           </div>
         </section>
