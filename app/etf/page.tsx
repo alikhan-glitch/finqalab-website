@@ -130,7 +130,7 @@ export default function EtfPage() {
           <div className="mx-auto max-w-[clamp(72rem,92vw,110rem)]">
             <Reveal>
               <h2 className="mx-auto max-w-2xl text-balance text-center text-3xl font-semibold leading-[1.05] tracking-tight text-text-onDark sm:text-5xl">
-                How to Buy ETFs Online in Pakistan
+                The Easiest Way to Build a Balanced Portfolio
               </h2>
             </Reveal>
             <Reveal delay={100}>

@@ -88,7 +88,7 @@ const facts = [
   { value: "Raast", label: "Instant account funding" },
   { value: "Juice List", label: "Data-backed stock picks, vetted for you" },
   { value: "Announcements", label: "Dividends and AGM notices, the moment they're filed" },
-  { value: "Finqueue", label: "Your Friday order, carried into Monday" },
+  { value: "Finqueue", label: "Your Friday order, queued through the midday break" },
 ];
 
 const faqs = [
