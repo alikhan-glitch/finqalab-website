@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="space-y-4 border-t border-border-onDark pt-10 text-xs leading-relaxed">
           <p className="font-semibold text-text-onDark-muted">
-            All investing involves risk.
+            Important Disclosures
           </p>
           {legalParagraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>

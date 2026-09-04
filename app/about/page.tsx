@@ -330,15 +330,20 @@ export default function AboutPage() {
 
                 <div className="lg:col-span-7">
                   <Reveal delay={100}>
-                    <p className="max-w-[62ch] text-[15px] leading-relaxed text-text-onDark-muted">
-                      Finqalab is a subsidiary of Next Capital Limited, a licensed brokerage firm and
-                      member of the Pakistan Stock Exchange, operating out of Karachi, Pakistan. Next
-                      Capital Limited is regulated by the Securities and Exchange Commission of
-                      Pakistan (SECP), and is itself a publicly listed entity on the Pakistan Stock
-                      Exchange, trading under the ticker NEXT. The same market discipline and
-                      oversight our team has operated under for three decades now stands behind
-                      every account Finqalab opens.
-                    </p>
+                    <div className="max-w-[62ch] space-y-4 text-[15px] leading-relaxed text-text-onDark-muted">
+                      <p>
+                        Next Capital Limited isn&apos;t new to Pakistan&apos;s markets, it&apos;s
+                        been a PSX member and SECP-regulated brokerage for decades, and trades
+                        publicly on the exchange itself under the ticker NEXT. Finqalab operates as
+                        its subsidiary, built in Karachi, carrying that same standing into every
+                        account we open.
+                      </p>
+                      <p>
+                        Trust isn&apos;t something you can claim overnight. It&apos;s built trade
+                        by trade, cycle by cycle, decade by decade. That&apos;s the foundation
+                        Finqalab stands on, not a promise, a record.
+                      </p>
+                    </div>
                   </Reveal>
                 </div>
               </div>

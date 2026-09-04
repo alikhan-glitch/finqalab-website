@@ -107,14 +107,15 @@ export default function AcademyVideoCarousel() {
   };
 
   return (
-    <div className="mx-auto mt-6 w-full max-w-[1800px] overflow-hidden px-2 pb-4">
+    <div className="mx-auto mt-3 w-full max-w-[1800px] overflow-hidden px-2 pb-1">
       {/* Neighbors are absolutely positioned against this centered box (not
           flex siblings with a gap) so they can overlap behind the focused
           card and peek out at its edges, instead of sitting apart from it
-          across a strip of plain purple background. max-w-2xl (not the
-          earlier 4xl) so the whole section, heading, subtext, button,
+          across a strip of plain purple background. max-w-xl (tightened
+          further from an earlier max-w-2xl, itself already trimmed down
+          from a 4xl) so the whole section, heading, subtext, button,
           player, link, dots, fits inside one screen without scrolling. */}
-      <div className="relative mx-auto max-w-2xl" style={{ perspective: "1600px" }}>
+      <div className="relative mx-auto max-w-lg" style={{ perspective: "1600px" }}>
         {videoCourses.length > 1 && (
           <>
             <NeighborSlide course={prevCourse} side="left" onClick={() => go(-1)} />
@@ -148,7 +149,7 @@ export default function AcademyVideoCarousel() {
       {/* Its own row below the card, not tucked into the card's text block , 
           a plain underlined link there read as a footnote, not a second CTA
           worth noticing. */}
-      <div className="mt-3 flex justify-center">
+      <div className="mt-2 flex justify-center">
         <Link
           href={`/academy-flow/${course.slug}`}
           className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/10 px-5 py-2.5 text-sm font-semibold text-onPrimary backdrop-blur-md transition-colors hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
@@ -169,7 +170,7 @@ export default function AcademyVideoCarousel() {
         </Link>
       </div>
 
-      <div className="mt-3 flex items-center justify-center gap-2">
+      <div className="mt-2 flex items-center justify-center gap-2">
         {videoCourses.map((c, i) => (
           <button
             key={c.slug}

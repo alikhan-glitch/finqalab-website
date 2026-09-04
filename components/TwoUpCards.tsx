@@ -23,9 +23,9 @@ const cards = [
     strongScrim: true,
   },
   {
-    title: "Instant Top-Ups, Stress-Free Withdrawals",
+    title: "Instant Deposits, Stress-Free Withdrawals",
     description:
-      "Move funds in and out of Finqalab with minimal friction and full control. Seize the moment when opportunities peak, or cash back out before the tide turns.",
+      "Move funds in and out of Finqalab without friction and full control. Seize the moment when opportunities peak, or cash back out before the tide turns.",
     image: "/images/instant-deposits-bg.webp",
     objectPosition: "50% 50%",
   },
@@ -34,7 +34,7 @@ const cards = [
     description:
       "Accurate prices, charts, and portfolio data, presented exactly as they should be. A reliable experience that keeps you focused on your investments, not on the app itself.",
     image: "/images/reliable-app-bg.webp",
-    objectPosition: "50% 50%",
+    objectPosition: "40% 35%",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function TwoUpCards() {
               />
 
               <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col items-end px-6 pb-6 text-right sm:px-10 sm:pb-8">
-                <h3 className="text-[26px] font-semibold leading-tight text-white sm:text-[32px]">
+                <h3 className="text-xl font-semibold leading-tight text-white">
                   {card.title}
                 </h3>
                 {/* Fixed min-height, not line-clamp: the two cards' copy
@@ -86,7 +86,7 @@ export default function TwoUpCards() {
                     description let its card's heading sit lower than the
                     other's, reserving the taller card's height for both
                     keeps the two cards' titles level. */}
-                <p className="mt-2 min-h-[4rem] max-w-[420px] text-[0.95rem] text-white">
+                <p className="mt-2 min-h-[4rem] max-w-[420px] text-[0.85rem] text-white">
                   {card.description}
                 </p>
               </div>
