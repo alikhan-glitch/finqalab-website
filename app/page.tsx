@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import AssetClassesSection from "@/components/AssetClassesSection";
 import TwoUpCards from "@/components/TwoUpCards";
 import TrustGrid from "@/components/TrustGrid";
-import AppPreviewBlock from "@/components/AppPreviewBlock";
+import HomeFeaturesShowcase from "@/components/HomeFeaturesShowcase";
 import FAQSection from "@/components/FAQSection";
 import ClosingCTA from "@/components/ClosingCTA";
 import Footer from "@/components/Footer";
@@ -28,7 +28,7 @@ export default function Home() {
 
         <TwoUpCards />
 
-        <AppPreviewBlock />
+        <HomeFeaturesShowcase />
 
         <FAQSection />
 
